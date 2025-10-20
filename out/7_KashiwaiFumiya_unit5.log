@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  20 OCT 2025 00:05
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  20 OCT 2025 09:16
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/kashi/report/organic/unit5/7_KashiwaiFumiya_unit5.tex
@@ -1085,15 +1085,15 @@ Package luatex.def Info: NMR_5-1-A-2.pdf  used on input line 391.
 
 Here is how much of LuaTeX's memory you used:
  26063 strings out of 477785
- 305787,1648299 words of node,token memory allocated
+ 305788,1648299 words of node,token memory allocated
  29723 words of node memory still in use:
    10 hlist, 2 vlist, 5 rule, 2 glue, 418 kern, 1 glyph, 11180 attribute, 659 glue_spec, 588 attribute_list, 2 write, 139 user_defined nodes
-   avail lists: 1:46,2:78529,3:530,4:429,5:69,6:63,7:5709,8:63,9:2162,10:31,11:162
+   avail lists: 1:46,2:78445,3:530,4:429,5:69,6:63,7:5716,8:63,9:2166,10:31,11:162
  45597 multiletter control sequences out of 65536+600000
  98 fonts using 62574103 bytes
  114i,20n,115p,1814b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on 7_KashiwaiFumiya_unit5.pdf (11 pages, 1274334 bytes).
+Output written on 7_KashiwaiFumiya_unit5.pdf (11 pages, 1274779 bytes).
 
 PDF statistics: 329 PDF objects out of 1000 (max. 8388607)
  250 compressed objects within 3 object streams

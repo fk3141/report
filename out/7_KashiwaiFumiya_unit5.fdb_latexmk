@@ -1,5 +1,5 @@
 # Fdb version 3
-["lualatex"] 1760886336 "/Users/kashi/report/organic/unit5/7_KashiwaiFumiya_unit5.tex" "/Users/kashi/report/out/7_KashiwaiFumiya_unit5.pdf" "7_KashiwaiFumiya_unit5" 1760886339
+["lualatex"] 1760919396 "/Users/kashi/report/organic/unit5/7_KashiwaiFumiya_unit5.tex" "/Users/kashi/report/out/7_KashiwaiFumiya_unit5.pdf" "7_KashiwaiFumiya_unit5" 1760919399
   "/Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/haranoajigothic-medium.luc" 1754553821 1875292 410c3324c1fe22623b9898970742fdb2 ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/haranoajimincho-regular.luc" 1754553819 1961805 a4e8ee39345c1319a0076bad6921f9ae ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/lmmono9-regular.luc" 1754553819 81875 9e8265965c5b4584efdeff727dbbed59 ""
@@ -32,8 +32,8 @@
   "/Users/kashi/Library/texlive/2022/texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc" 1754553817 1643631 91cfe6be2985e96c1aa98a60c52fbe03 ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatexja/ltj-jisx0208.luc" 1754553819 93919 1f6dc76354e6e3b148c06f9f9254f22e ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatexja/ltj-kinsoku_default.luc" 1754553817 17710 2bc89a84ede82dabd46ec677aef5f865 ""
-  "/Users/kashi/report/organic/unit5/7_KashiwaiFumiya_unit5.tex" 1760886336 19852 d6848463a7433a10e41d0c7c71c1c967 ""
-  "/Users/kashi/report/out/7_KashiwaiFumiya_unit5.aux" 1760886339 8827 43f1f9ac6bf0ff89b721c2a1c0b67cdd "lualatex"
+  "/Users/kashi/report/organic/unit5/7_KashiwaiFumiya_unit5.tex" 1760919369 19859 1e2ead9b62e46fdd086ac4f26c72736d ""
+  "/Users/kashi/report/out/7_KashiwaiFumiya_unit5.aux" 1760919399 8827 43f1f9ac6bf0ff89b721c2a1c0b67cdd "lualatex"
   "/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf" 1645391598 4689988 4bd9bbfdb9c60b058a20001e71194cb6 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf" 1645391598 6355800 6b1b8c908756db366b95140471b25bc0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -319,7 +319,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1601931076 5585 8e4615c54073c390d14154b29cee89cb ""
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/luahbtex/lualatex.fmt" 1678257777 4558587 838f6d4fc2e50e2840c760e642192066 ""
-  "7_KashiwaiFumiya_unit5.tex" 1760886336 19852 d6848463a7433a10e41d0c7c71c1c967 ""
+  "7_KashiwaiFumiya_unit5.tex" 1760919369 19859 1e2ead9b62e46fdd086ac4f26c72736d ""
   "IR_5-1-A.pdf" 1760871110 46371 d032476c695f8f9efcadbeaa1a40b88f ""
   "IR_5-1-B.pdf" 1760871110 45467 0372153cfb12d54e6e91bb7c37a86fb8 ""
   "NMR_5-1-A-2.pdf" 1760871110 249573 54c0ad7e523ab4d348efd963212b2a7e ""
