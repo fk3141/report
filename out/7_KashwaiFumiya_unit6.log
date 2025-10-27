@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  25 OCT 2025 00:48
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  25 OCT 2025 12:44
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/kashi/report/organic/unit6/7_KashwaiFumiya_unit6.tex
@@ -1042,94 +1042,94 @@ LaTeX Font Info:    Font shape `JY3/gt/m/it' in size <14.4> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 221.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 13.31586pt on input line 221.
-<scheme_6-2.png, id=73, 2409.0pt x 602.25pt>
+<scheme_6-2.png, id=76, 2409.0pt x 602.25pt>
 File: scheme_6-2.png Graphic file (type png)
 <use scheme_6-2.png>
 Package luatex.def Info: scheme_6-2.png  used on input line 227.
 (luatex.def)             Requested size: 426.79134pt x 106.69106pt.
  [4] [5<./scheme_6-2.png>] [6](load cache: extra_lmmono10-regular.luc) [7] [8]
-<mechanism_6-1.jpg, id=161, 1553.805pt x 1483.5425pt>
+<mechanism_6-1.jpg, id=165, 1553.805pt x 1483.5425pt>
 File: mechanism_6-1.jpg Graphic file (type jpg)
 <use mechanism_6-1.jpg>
-Package luatex.def Info: mechanism_6-1.jpg  used on input line 349.
+Package luatex.def Info: mechanism_6-1.jpg  used on input line 348.
 (luatex.def)             Requested size: 426.79134pt x 407.48875pt.
-<mechanism_6-2.jpg, id=162, 1527.7075pt x 840.13875pt>
+<mechanism_6-2.jpg, id=166, 1527.7075pt x 840.13875pt>
 File: mechanism_6-2.jpg Graphic file (type jpg)
 <use mechanism_6-2.jpg>
-Package luatex.def Info: mechanism_6-2.jpg  used on input line 357.
+Package luatex.def Info: mechanism_6-2.jpg  used on input line 356.
 (luatex.def)             Requested size: 426.79134pt x 234.69882pt.
  [9<./mechanism_6-1.jpg>]
-<IR_6-1-2.pdf, id=168, 597.5123pt x 845.04709pt>
+<IR_6-1-2.pdf, id=172, 597.5123pt x 845.04709pt>
 File: IR_6-1-2.pdf Graphic file (type pdf)
 <use IR_6-1-2.pdf>
-Package luatex.def Info: IR_6-1-2.pdf  used on input line 445.
+Package luatex.def Info: IR_6-1-2.pdf  used on input line 444.
 (luatex.def)             Requested size: 426.79134pt x 603.61095pt.
 
 
-LaTeX Warning: Float too large for page by 0.74986pt on input line 449.
+LaTeX Warning: Float too large for page by 0.74986pt on input line 448.
 
-<IR_6-1-3.pdf, id=169, 597.5123pt x 845.04709pt>
+<IR_6-1-3.pdf, id=173, 597.5123pt x 845.04709pt>
 File: IR_6-1-3.pdf Graphic file (type pdf)
 <use IR_6-1-3.pdf>
-Package luatex.def Info: IR_6-1-3.pdf  used on input line 453.
+Package luatex.def Info: IR_6-1-3.pdf  used on input line 452.
 (luatex.def)             Requested size: 426.79134pt x 603.61095pt.
 
-LaTeX Warning: Float too large for page by 0.74986pt on input line 457.
+LaTeX Warning: Float too large for page by 0.74986pt on input line 456.
 
-<IR_6-2-1.pdf, id=170, 597.5123pt x 845.04709pt>
+<IR_6-2-1.pdf, id=174, 597.5123pt x 845.04709pt>
 File: IR_6-2-1.pdf Graphic file (type pdf)
 <use IR_6-2-1.pdf>
-Package luatex.def Info: IR_6-2-1.pdf  used on input line 461.
+Package luatex.def Info: IR_6-2-1.pdf  used on input line 460.
 (luatex.def)             Requested size: 426.79134pt x 603.61095pt.
 
-LaTeX Warning: Float too large for page by 0.74986pt on input line 465.
+LaTeX Warning: Float too large for page by 0.74986pt on input line 464.
 
-<IR_6-2-2.pdf, id=171, 597.5123pt x 845.04709pt>
+<IR_6-2-2.pdf, id=175, 597.5123pt x 845.04709pt>
 File: IR_6-2-2.pdf Graphic file (type pdf)
 <use IR_6-2-2.pdf>
-Package luatex.def Info: IR_6-2-2.pdf  used on input line 469.
+Package luatex.def Info: IR_6-2-2.pdf  used on input line 468.
 (luatex.def)             Requested size: 426.79134pt x 603.61095pt.
 
-LaTeX Warning: Float too large for page by 0.74986pt on input line 473.
+LaTeX Warning: Float too large for page by 0.74986pt on input line 472.
 
 [10<./mechanism_6-2.jpg>] [11] [12<./IR_6-1-2.pdf>] [13<./IR_6-1-3.pdf>] [14<./IR_6-2-1.pdf>] [15<./IR_6-2-2.pdf>]
-<GC_6-2-1.pdf, id=246, 845.04709pt x 597.5123pt>
+<GC_6-2-1.pdf, id=249, 845.04709pt x 597.5123pt>
 File: GC_6-2-1.pdf Graphic file (type pdf)
 <use GC_6-2-1.pdf>
-Package luatex.def Info: GC_6-2-1.pdf  used on input line 499.
+Package luatex.def Info: GC_6-2-1.pdf  used on input line 498.
 (luatex.def)             Requested size: 426.79134pt x 301.77324pt.
  [16](load cache: extra_lmroman7-italic.luc)
-<NMR_6_attribute.png, id=256, 668.388pt x 339.231pt>
+<NMR_6_attribute.png, id=259, 668.388pt x 339.231pt>
 File: NMR_6_attribute.png Graphic file (type png)
 <use NMR_6_attribute.png>
-Package luatex.def Info: NMR_6_attribute.png  used on input line 519.
+Package luatex.def Info: NMR_6_attribute.png  used on input line 518.
 (luatex.def)             Requested size: 284.52756pt x 144.40678pt.
-<NMR_6-1-3.pdf, id=257, 845.1575pt x 597.23125pt>
+<NMR_6-1-3.pdf, id=260, 845.1575pt x 597.23125pt>
 File: NMR_6-1-3.pdf Graphic file (type pdf)
 <use NMR_6-1-3.pdf>
-Package luatex.def Info: NMR_6-1-3.pdf  used on input line 569.
+Package luatex.def Info: NMR_6-1-3.pdf  used on input line 568.
 (luatex.def)             Requested size: 426.79134pt x 301.59483pt.
-<NMR_6-2-2.pdf, id=258, 845.1575pt x 597.23125pt>
+<NMR_6-2-2.pdf, id=261, 845.1575pt x 597.23125pt>
 File: NMR_6-2-2.pdf Graphic file (type pdf)
 <use NMR_6-2-2.pdf>
-Package luatex.def Info: NMR_6-2-2.pdf  used on input line 579.
+Package luatex.def Info: NMR_6-2-2.pdf  used on input line 578.
 (luatex.def)             Requested size: 426.79134pt x 301.59483pt.
  [17<./GC_6-2-1.pdf>] [18<./NMR_6_attribute.png>] [19<./NMR_6-1-3.pdf>] [20<./NMR_6-2-2.pdf>] (/Users/kashi/report/out/7_KashwaiFumiya_unit6.aux))
 
 Here is how much of LuaTeX's memory you used:
  26163 strings out of 477785
- 382244,1373583 words of node,token memory allocated
- 39727 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 516 kern, 1 glyph, 14480 attribute, 1107 glue_spec, 765 attribute_list, 2 write, 219 user_defined nodes
-   avail lists: 1:39,2:107953,3:388,4:537,5:177,6:38,7:6848,8:73,9:2996,10:43,11:89
+ 382237,1648299 words of node,token memory allocated
+ 39742 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 516 kern, 1 glyph, 14480 attribute, 1110 glue_spec, 765 attribute_list, 2 write, 219 user_defined nodes
+   avail lists: 1:41,2:99685,3:391,4:537,5:177,6:38,7:6599,8:73,9:2828,10:43,11:89
  45656 multiletter control sequences out of 65536+600000
  102 fonts using 63096215 bytes
  114i,17n,115p,1813b,846s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-oblique.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on 7_KashwaiFumiya_unit6.pdf (20 pages, 1706437 bytes).
+Output written on 7_KashwaiFumiya_unit6.pdf (20 pages, 1706277 bytes).
 
-PDF statistics: 472 PDF objects out of 1000 (max. 8388607)
- 360 compressed objects within 4 object streams
+PDF statistics: 474 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
  102 named destinations out of 1000 (max. 131072)
  128 words of extra memory for PDF output out of 10000 (max. 100000000)
 
