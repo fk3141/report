@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  20 OCT 2025 00:31
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  29 OCT 2025 14:18
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/kashi/report/organic/unit7/7_KashwaiFumiya_unit7.tex
@@ -873,7 +873,11 @@ Package: amsthm 2020/05/29 v2.20.6
 Package: lltjp-tascmac 2020/12/24 Patch to (t)ascmac for LuaTeX-ja
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 warning  (map file): entry for 'ascgrp' already exists, duplicates ignored
-) (/Users/kashi/report/out/7_KashwaiFumiya_unit7.aux)
+) (/Users/kashi/report/out/7_KashwaiFumiya_unit7.aux
+
+LaTeX Warning: Label `default' multiply defined.
+
+)
 \openout1 = 7_KashwaiFumiya_unit7.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
@@ -992,45 +996,78 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (load cache: extra_lmsans12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
 (Font)              scaled to size 11.09656pt on input line 159.
+<scheme_7-1.png, id=15, 2409.0pt x 602.25pt>
+File: scheme_7-1.png Graphic file (type png)
+<use scheme_7-1.png>
+Package luatex.def Info: scheme_7-1.png  used on input line 162.
+(luatex.def)             Requested size: 426.79134pt x 106.69106pt.
+ [2<./scheme_7-1.png>]
+<scheme_7-2.png, id=30, 2409.0pt x 602.25pt>
+File: scheme_7-2.png Graphic file (type png)
+<use scheme_7-2.png>
+Package luatex.def Info: scheme_7-2.png  used on input line 180.
+(luatex.def)             Requested size: 426.79134pt x 106.69106pt.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 198.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 198.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 198.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 198.
+(load cache: extra_lmroman7-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 205.
+(load cache: extra_lmroman5-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 205.
+<IR_7-1.pdf, id=31, 597.5123pt x 845.04709pt>
+File: IR_7-1.pdf Graphic file (type pdf)
+<use IR_7-1.pdf>
+Package luatex.def Info: IR_7-1.pdf  used on input line 217.
+(luatex.def)             Requested size: 426.79134pt x 603.61095pt.
 
 
-LaTeX Warning: File `scheme6-1.png' not found on input line 162.
+LaTeX Warning: Float too large for page by 0.74986pt on input line 221.
 
+<IR_7-2.pdf, id=32, 597.5123pt x 845.04709pt>
+File: IR_7-2.pdf Graphic file (type pdf)
+<use IR_7-2.pdf>
+Package luatex.def Info: IR_7-2.pdf  used on input line 225.
+(luatex.def)             Requested size: 426.79134pt x 603.61095pt.
 
-/Users/kashi/report/organic/unit7/7_KashwaiFumiya_unit7.tex:162: Package luatex.def Error: File `scheme6-1.png' not found: using draft setting.
+LaTeX Warning: Float too large for page by 0.74986pt on input line 229.
 
-See the luatex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162 \includegraphics[width = 15 cm]{scheme6-1.png}
-                                                  
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
+<NMR_7-1.pdf, id=33, 845.1575pt x 597.23125pt>
+File: NMR_7-1.pdf Graphic file (type pdf)
+<use NMR_7-1.pdf>
+Package luatex.def Info: NMR_7-1.pdf  used on input line 234.
+(luatex.def)             Requested size: 426.79134pt x 301.59483pt.
+<NMR_7-2.pdf, id=34, 845.1575pt x 597.23125pt>
+File: NMR_7-2.pdf Graphic file (type pdf)
+<use NMR_7-2.pdf>
+Package luatex.def Info: NMR_7-2.pdf  used on input line 243.
+(luatex.def)             Requested size: 426.79134pt x 301.59483pt.
+[3<./scheme_7-2.png>] [4<./IR_7-1.pdf>] [5<./IR_7-2.pdf>] [6<./NMR_7-1.pdf>] [7<./NMR_7-2.pdf>] (/Users/kashi/report/out/7_KashwaiFumiya_unit7.aux)
 
-(load cache: extra_lmmono10-regular.luc)
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 162.
-[2] [3] (/Users/kashi/report/out/7_KashwaiFumiya_unit7.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 25898 strings out of 477785
+ 25963 strings out of 477785
  125244,794899 words of node,token memory allocated
- 15268 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 265 kern, 1 glyph, 6150 attribute, 129 glue_spec, 320 attribute_list, 2 write, 28 user_defined nodes
-   avail lists: 1:24,2:14736,3:88,4:112,5:56,6:15,7:802,8:13,9:144,10:10,11:72
- 45497 multiletter control sequences out of 65536+600000
- 63 fonts using 45232495 bytes
- 114i,6n,115p,1813b,521s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf>
-Output written on 7_KashwaiFumiya_unit7.pdf (3 pages, 31383 bytes).
+ 22510 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 367 kern, 1 glyph, 9018 attribute, 233 glue_spec, 470 attribute_list, 2 write, 72 user_defined nodes
+   avail lists: 1:24,2:36211,3:259,4:351,5:80,6:40,7:2236,8:26,9:472,10:11,11:112
+ 45554 multiletter control sequences out of 65536+600000
+ 95 fonts using 62178015 bytes
+ 114i,12n,115p,1813b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf>
+Output written on 7_KashwaiFumiya_unit7.pdf (7 pages, 820095 bytes).
 
-PDF statistics: 97 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 131072)
- 56 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 179 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 28 named destinations out of 1000 (max. 131072)
+ 104 words of extra memory for PDF output out of 10000 (max. 100000000)
 
