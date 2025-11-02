@@ -157,18 +157,61 @@
 \newpage
 \section{1,1-diphenylethyleneの合成}
 \subsection{Purpose and Background}
+グリニャール反応を経由して1,1-diphenylethyleneを合成する。
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width = 15 cm]{scheme_7-1.png}
-\caption{default}
-\label{default}
+\caption{7-1の反応スキーム}
+\label{scheme_7-1}
 \end{center}
 \end{figure}
 
 \subsection{Experimental}
+\paragraph{Day1}
+\begin{enumerate}
+\item オーブンで乾燥させた三口フラスコに粉末状の\ce{Mg} 2.75 g, 無水\ce{Et2O} 8 mL, 化合物\textbf{3} 1.52 gを量りとった。外部への開放部は塩化カルシウム管に接続した。
+\item 室温で激しく撹拌したところ、褐変して発熱した。
+\item 化合物\textbf{3} 16.75 g, 無水\ce{Et2O} 41 mLを滴下ロートに加え、発熱が継続する程度に少量ずつ滴下した。
+\item 滴下が完了したのち、発熱が終了するまで15 min程度撹拌した。
+\item 滴下ロートに無水\ce{AcOEt} 4.40 g, 無水\ce{Et2O} 5 mLを加えた。
+\item 氷浴により三口フラスコを冷却しながら、滴下ロートから溶液を10 minかけて滴下した。
+\item 滴下完了後5 min撹拌し、飽和\ce{NH4Cl}\textit{aq.} 8 mLを滴下ロートから滴下し、白色~灰色の固体が析出した。デカントにより上澄を得たのち、残渣を\ce{Et2O} 30 mL $\times$ 5 で洗浄した。各洗液をTLCプレートにプロットし、UV照射下で呈色を確認し、呈色が薄くなったことを確認した。
+\item 混入した固体をひだ付きろしにより除去したところ、濾紙を通過した。
+\item 二重にした濾紙を用いて吸引濾過を行い、固体を完全に除去した。
+\item 無水\ce{Na2SO4}を加え、乾燥、ひだ付きろしによる濾過により固体を除去した。
+\item エバポレーション ($35\D$/300 mmHg) により溶媒を留去し、黄色溶液を得た。
+\end{enumerate}
+
+\paragraph{Day2}
+\begin{enumerate}
+\item Day1から放置した黄色溶液から、黄色固体 (6.60 g, 33.3\%) が析出していた。
+\item 20\% \ce{H2SO4}\textit{aq.} 10 mL に黄色固体を溶解し、$130\D$の湯浴で還流した。TLC (hexane:EtOAc = 2:1) で反応を追跡し、1 h還流したのち、撹拌を停止して室温まで冷却した。
+\item 反応溶液を水で希釈し、分液ロートに水で洗い込んだ。\ce{Et2O} 30 mL で抽出し、有機層をBrineで洗浄、無水\ce{MgSO4}で乾燥、濾過ののち、溶媒をエバポレーター ($35\D$/300 mmHg) で留去した。
+\end{enumerate}
+\paragraph{day3}
+\begin{enumerate}
+\item 得られた油状液体を減圧蒸留し、$125\D$/21 mmHgで流出した留分として無色油状の液体 (0.95 g, 16.1\%) を得た。
+\item 得られた無色油状の液体の\ce{^1H} NMRスペクトル(図\ref{NMR_7-1})、IRスペクトル(図\ref{IR_7-1})を取得した。
+\end{enumerate}
 
 \subsection{Result and Discussion}
+Grignard試薬\textbf{4}は強力な塩基であり、水と反応する。具体的には、\textbf{4}は水からプロトンを引き抜いて
+ベンゼンとマグネシウム塩が生成する副反応が生じる。そのため水を除いた反応系で反応を行うことが重要である(\textbf{課題1})。
 
+また、このグリニャール反応の副反応として、酢酸エチルの一置換体(化合物\textbf{9})や、Grignard試薬が塩基として働き、酢酸エチルの$\alpha$水素を引き抜きエノラートを作ることによる縮合反応が生じる可能性がある。この経路についても反応機構(図\ref{mechanism_7-1})に示した。同時にWurtzカップリングを経てビフェニルが生じる可能性がある\cite{Wurtz}(\textbf{課題2})。
+
+また、粒状の\ce{Mg}を用いているため、表面に酸化被膜が生じて、Grignard試薬を生じる反応が生じにくくなる。一度反応が生じると、発熱反応であるために自触媒的に反応が進行するが、反応を開始するためには反応系を温めるか、還元剤として\ce{I2}やジブロモエタンを加えることが効果的である(\textbf{課題3})。なお、今回の実験では室温での攪拌のみで反応が開始した。
+
+反応溶液中、エーテルがGrignard試薬の\ce{Mg}に配位し、4配位状態を作っていると考えられる(図\ref{grignard})。この構造により、エーテルやTHFなどの配位性の溶媒がGrignard反応に用いられる。(\textbf{課題4})。
+
+推定された反応機構は図\ref{mechanism_7-1}に示した。Grignard反応後の、\ce{NH4Cl}によるクエンチの後、TLC (hexane:EtOAc = 2:1) で$R_f = 0.81, 0.69$の2つのスポットがUV照射下でピンク色に呈色した。その後、硫酸酸性下での1 hの撹拌ののち、$R_f=0.81$のスポットのみがUV照射下で呈色した。このことから、$R_f=0.81$のスポットは化合物\textbf{1}、$0.69$のスポットが化合物\textbf{6}に対応すると考えられる。ある程度の脱水反応がすでに進行していたと考えられるが、grignard試薬が塩基として働いて脱水が生じた可能性がある。この場合、この反応もGrignard試薬を消費する副反応となり収率を低下させる原因となる。
+
+化合物\textbf{1}の沸点は$277\D$であり、減圧蒸留中の21 mmHgでは$150\D$程度となると考えられる。今回の蒸留では$125\D$で流出したため、やや不純物が混じっていた可能性がある。再蒸留により純度を上げられる可能性があるが、今回得られた液体は0.95 gと少なかったため再蒸留は行わなかった。
+
+IRスペクトルは多数のC-Hによると思われるピークが出現していた。
+3000-3500 cm$^{-1}$にbroadに出現すると考えられる、\ce{OH}基に由来するピークは観測されなかったため、化合物\textbf{6}からの脱水が進行したことが確認される。
+
+\ce{^1H} NMRスペクトルでは、図\ref{NMR_7-1_attribute}に示した通り、目的化合物\textbf{1}に対応するスペクトルが観測された。芳香環の10Hは、本来4:4:2に分かれるはずであるが、置換基の影響が小さいために無置換のbenzeneとほぼ同程度のケミカルシフトのピークとなり、重なり合っていた。
 \subsection{Conclusion}
 
 
@@ -178,14 +221,32 @@
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width = 15 cm]{scheme_7-2.png}
-\caption{default}
-\label{default}
+\caption{7-2の反応スキーム}
+\label{scheme_7-2}
 \end{center}
 \end{figure}
 
 \subsection{Experimental}
+\paragraph{Day2}
+\begin{enumerate}
+\item オーブンで乾燥させた三口フラスコに\ce{AlCl3} 7.92 g, 無水1,2-dichloroethane 30 mLを量りとり、塩化カルシウム管を経てアルカリトラップに接続した。
+\item 氷浴による冷却下で撹拌し、黄色の懸濁液となるまで撹拌した。
+\item 滴下ロートに化合物\textbf{8} 4.3 mLを量りとり、氷浴下で滴下した。
+\item 化合物\textbf{7} 4.31 gを滴下ロートに量りとり、氷浴下で5 minかけて滴下した。滴下完了後、1,2-dichloroethane 5 mL程度で滴下ロートを洗い込んだ。
+\item TLC (hexane:EtOAc = 2:1) で反応を追跡し、75 minの反応後に撹拌を停止した。
+\item 氷50 gに反応溶液を注ぎ、濃\ce{HCl}\textit{aq.}5 mL$\times 2$で洗い込んだ。撹拌すると白色の沈澱が解消した。
+\item 反応溶液を分液ロートに移し、\ce{CHCl3}10 mL$\times 2$で洗い込み、分液を行った。合わせた有機層を、水で洗浄、無水\ce{Na2SO4}で乾燥、濾過し、エバポレーション ($35\D$/100 mmHg) により溶媒を留去した。濾過の際、漏斗が転倒して一部の溶液をロスした。
+\item 残渣を少量の\ce{CHCl3}により30 mL ナスフラスコに洗い込み、再度エバポレーション ($35\D$/100 mmHg) によって溶媒を留去した。
+\end{enumerate}
+
+\paragraph{day3}
+\begin{enumerate}
+\item 得られた残渣を減圧蒸留し、$105\D$/25 Torrで無色油状の留分 (3.02 g, 52.0\%) が得られた。
+\item 得られた無色油状の液体の\ce{^1H} NMRスペクトル(図\ref{NMR_7-2})、IRスペクトル(図\ref{IR_7-2})を取得した。
+\end{enumerate}
 
 \subsection{Result and Discussion}
+
 
 \subsection{Conclusion}
 
@@ -193,7 +254,46 @@
 \section{Appendix}
 
 \begin{table}[htp]
-\caption{IR: \textbf{7} の帰属 (majorなもののみ)}
+\caption{1,1-diphenylethylene合成における各化合物の物性、等量一覧}
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+compound & Mw & weight / g & mmol & m.p. / $\D$ & b.p. / $\D$\\
+\midrule
+\textbf{3} & 157.01 & 18.27 & 116.4 & - & 156\\
+Mg & 24.3 & 2.75 & 113.2 & & \\%沸点はGCの考察に必要
+\textbf{4} & 181.3 & 20.3 (theoretical) & 113.2 & \\
+\textbf{5} & 88.11 & 4.40 & 50.0 & & 77.1\\
+\textbf{6} & 198.3 & 19.8 (theoretical) & 100 & &155 (12 mmHg) \\
+ & & 6.60 (used) & 33.3 & \\
+\textbf{1} & 180.25 & 6.0 (theoretical) & 33.3 & & 277\\ 
+\bottomrule
+\end{tabular}
+\end{center}
+\label{properties_6-2}
+\end{table}%
+
+\begin{table}[htp]
+\caption{4-Acetylcumene合成における各化合物の物性、等量一覧}
+\begin{center}
+\begin{tabular}{cccccc}
+\toprule
+compound & Mw & weight / g & mmol & m.p. / $\D$ & b.p. / $\D$\\
+\midrule
+\textbf{7} & 120.19 & 4.3 & 116.4 & - & 152.4 \\
+Mg & 24.3 & 2.75 & 113.2 & & 51\\%沸点はGCの考察に必要
+\textbf{8} & 181.3 & 20.3 (theoretical) & 113.2 & \\
+\textbf{2} & 88.11 & 4.40 & 50.0 & & 115-116 (12 mmHg)\\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{properties_6-2}
+\end{table}%
+
+
+
+\begin{table}[htp]
+\caption{IR: \textbf{1} の帰属 (majorなもののみ)}
 \begin{center}
 \begin{tabular}{cc cc}
 \toprule
@@ -209,13 +309,34 @@ No. & Wavenumber [cm-1] & Intensity & attribution \\
 \bottomrule
 \end{tabular}
 \end{center}
-\label{IR_6-2-2_attribute}
+\label{IR_7-1_attribute}
 \end{table}%
+
+\begin{table}[htp]
+\caption{IR: \textbf{2} の帰属 (majorなもののみ)}
+\begin{center}
+\begin{tabular}{cc cc}
+\toprule
+No. & Wavenumber [cm-1] & Intensity & attribution \\
+\midrule
+14 & 2954 & strong & nujol\\
+15 & 2923 & strong & nujol\\
+16 & 2853 & mid & nujol\\
+19 & 1758 & strong  & \ce{C=O} stretch\\
+22 & 1461 & mid & nujol\\
+23 & 1401 & week & 芳香族\ce{C-H} stretch\\
+24 & 1377 & mid & nujol\\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{IR_7-2_attribute}
+\end{table}%
+
 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width = 15 cm]{IR_7-1.pdf}
-\caption{IR: 化合物\textbf{3} (nujol)}
+\caption{IR: 化合物\textbf{1}}
 \label{IR_7-1}
 \end{center}
 \end{figure}
@@ -223,16 +344,57 @@ No. & Wavenumber [cm-1] & Intensity & attribution \\
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width = 15 cm]{IR_7-2.pdf}
-\caption{IR: 化合物\textbf{3} (nujol)}
+\caption{IR: 化合物\textbf{2}}
 \label{IR_7-2}
 \end{center}
 \end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 8 cm]{NMR_attribution_7.png}
+\caption{NMRの帰属}
+\label{NMR_7_attribute}
+\end{center}
+\end{figure}
+
+\begin{table}[htp]
+\caption{化合物\textbf{1}のNMRの帰属}
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+chemical shift [ppm] & integration ratio & coupling & species\\
+\midrule
+5.46 & 1.92 & s & \ce{H^a} \\
+7.31-7.34 & 10.00 & m & \ce{H^b}, \ce{H^c}, \ce{H^d}\\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{NMR_7-1_attribute}
+\end{table}%
+
+\begin{table}[htp]
+\caption{化合物\textbf{2}のNMRの帰属}
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+chemical shift [ppm] & integration ratio & coupling & species\\
+\midrule
+1.27 & 6.30 & d & \ce{H^e} \\
+2.58 & 2.89 & s & \ce{H^a}\\
+2.97 & 1.00 & hep & \ce{H^d}\\
+7.31 & 1.96 & s & \ce{H^c}\\
+7.89 & 2.00 & s & \ce{H^b}\\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{NMR_7-2_attribute}
+\end{table}%
 
 
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width = 15 cm]{NMR_7-1.pdf}
-\caption{IR: 化合物\textbf{3} (nujol)}
+\caption{\ce{^1H} NMR: 化合物\textbf{1} (溶媒: \ce{CDCl3})}
 \label{NMR_7-1}
 \end{center}
 \end{figure}
@@ -241,7 +403,7 @@ No. & Wavenumber [cm-1] & Intensity & attribution \\
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width = 15 cm]{NMR_7-2.pdf}
-\caption{IR: 化合物\textbf{3} (nujol)}
+\caption{\ce{^1H} NMR: 化合物\textbf{2} (溶媒: \ce{CDCl3})}
 \label{NMR_7-2}
 \end{center}
 \end{figure}
