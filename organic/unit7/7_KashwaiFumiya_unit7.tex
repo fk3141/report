@@ -204,6 +204,15 @@ Grignard試薬\textbf{4}は強力な塩基であり、水と反応する。具�
 
 反応溶液中、エーテルがGrignard試薬の\ce{Mg}に配位し、4配位状態を作っていると考えられる(図\ref{grignard})。この構造により、エーテルやTHFなどの配位性の溶媒がGrignard反応に用いられる。(\textbf{課題4})。
 
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 3 cm]
+{grignard.jpeg}
+\caption{Grignard試薬のエーテル中での構造}
+\label{grignard}
+\end{center}
+\end{figure}
+
 推定された反応機構は図\ref{mechanism_7-1}に示した。Grignard反応後の、\ce{NH4Cl}によるクエンチの後、TLC (hexane:EtOAc = 2:1) で$R_f = 0.81, 0.69$の2つのスポットがUV照射下でピンク色に呈色した。その後、硫酸酸性下での1 hの撹拌ののち、$R_f=0.81$のスポットのみがUV照射下で呈色した。このことから、$R_f=0.81$のスポットは化合物\textbf{1}、$0.69$のスポットが化合物\textbf{6}に対応すると考えられる。ある程度の脱水反応がすでに進行していたと考えられるが、grignard試薬が塩基として働いて脱水が生じた可能性がある。この場合、この反応もGrignard試薬を消費する副反応となり収率を低下させる原因となる。
 
 化合物\textbf{1}の沸点は$277\D$であり、減圧蒸留中の21 mmHgでは$150\D$程度となると考えられる。今回の蒸留では$125\D$で流出したため、やや不純物が混じっていた可能性がある。再蒸留により純度を上げられる可能性があるが、今回得られた液体は0.95 gと少なかったため再蒸留は行わなかった。
@@ -211,10 +220,18 @@ Grignard試薬\textbf{4}は強力な塩基であり、水と反応する。具�
 IRスペクトルは多数のC-Hによると思われるピークが出現していた。
 3000-3500 cm$^{-1}$にbroadに出現すると考えられる、\ce{OH}基に由来するピークは観測されなかったため、化合物\textbf{6}からの脱水が進行したことが確認される。
 
-\ce{^1H} NMRスペクトルでは、図\ref{NMR_7-1_attribute}に示した通り、目的化合物\textbf{1}に対応するスペクトルが観測された。芳香環の10Hは、本来4:4:2に分かれるはずであるが、置換基の影響が小さいために無置換のbenzeneとほぼ同程度のケミカルシフトのピークとなり、重なり合っていた。主な不純物として芳香族領域に見られるピークはbiphenylのケミカルシフトの文献値\cite{biphenyl}%https://www.rsc.org/suppdata/cc/c3/c3cc45132a/c3cc45132a.pdf
+\ce{^1H} NMRスペクトルでは、図\ref{NMR_7-1_attribute}に示した通り、目的化合物\textbf{1}に対応するスペクトルが観測された。芳香環の10Hは、本来4:4:2に分かれるはずであるが、置換基の影響が小さいために無置換のbenzeneとほぼ同程度のケミカルシフトのピークとなり、重なり合っていた。主な不純物として芳香族領域に見られるピークはbiphenylのケミカルシフトの文献値\cite{biphenyl}
 とほぼ合致し、分裂様式も矛盾しない。なお最も高磁場側に生じると期待される1Hは、10.00Hに埋もれていると考えられる。biphenylの沸点は$255\D$、22mmHgで$135\D$程度であり、一つ目の留分($110\D$/22mmHg)がbiphenylであったと考えられる。2つ目の留分に対してもbipheylが相当量コンタミネーションしてしまっていたと考えられる。
-\subsection{Conclusion}
 
+また、はじめgrignard反応後の化合物\textbf{6}が結晶化しなかった要因として、Wurtzカップリングにより生じた、高沸点のbipheylの混入が挙げられる。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{mechanism_7-1.jpg}
+\caption{proposed mechanism for 7-1}
+\label{mechanism_7-1}
+\end{center}
+\end{figure}
 
 \newpage
 \section{4-Acetylcumeneの合成}
@@ -242,14 +259,28 @@ IRスペクトルは多数のC-Hによると思われるピークが出現して
 
 \paragraph{day3}
 \begin{enumerate}
-\item 得られた残渣を減圧蒸留し、$105\D$/25 Torrで無色油状の留分 (3.02 g, 52.0\%) が得られた。
+\item 得られた残渣を減圧蒸留した。$94\D$/25 Torr程度で流出が開始し、$105\D$/25 Torrまで上昇した。無色油状の留分 (3.02 g, 52.0\%) が得られた。
 \item 得られた無色油状の液体の\ce{^1H} NMRスペクトル(図\ref{NMR_7-2})、IRスペクトル(図\ref{IR_7-2})を取得した。
 \end{enumerate}
 
 \subsection{Result and Discussion}
+Friedel-Craftsアルキル化ではカルボカチオンの転移により安定なカチオンを経由した産物が主生成物になる他、アルキル基の付加により芳香環は活性化するため、多置換体が生じやすい。対してアシル化では転位が生じず、かつアシル化により芳香環は不活性化されるため1置換体が主生成物となると期待される(\textbf{課題5})。
 
+推定される反応機構については図\ref{mechanism_7-2}に示した。上述の理由により、アシル化は良好に進行すると考えられ、実際一部を操作ミスによりロスしつつも収率52\%であった。
 
-\subsection{Conclusion}
+IRスペクトルでは、ベンゼン環に共役したカルボニル\ce{C=O}伸縮に帰属される、1683 cm$^{-1}$の強い吸収ピークが観測された。
+
+\ce{1H} NMR (図\ref{NMR_7-2})はほぼ\textit{p-}1置換体のピークのみを与えた。
+2.605 ppmの積分比0.15のsingletは{p-}1置換体ではなく、主要な複生成物として考えられる\textit{o-}1置換体に由来する可能性がある。1.27 ppmの積分比6.30のピークに、\textit{o-}置換体のイソプロピル基由来のシグナルも含まれており、芳香族領域の微小ピークが\textit{o-}置換体に由来すると考えると矛盾しない。
+\textit{o-}置換体の沸点についての1次文献は見つけられなかったが、\cite{o}によれば$237.8 \pm 19.0\D$であり、\textit{p-}体の$238\D$と同程度であるため蒸留による分離は困難であると考えられる。蒸留における流出温度が、25 mmHgにおける沸点$130\D$よりも低い$105\D$であった原因の一部は、\textit{o-}体の混入にあると考えられ、カラム精製により分離が可能であると考えられる。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{mechanism_7-2.jpg}
+\caption{proposed mechanism for 7-2}
+\label{mechanism_7-2}
+\end{center}
+\end{figure}
 
 
 \section{Appendix}
@@ -284,7 +315,7 @@ compound & Mw & weight / g & mmol & m.p. / $\D$ & b.p. / $\D$\\
 \textbf{7} & 120.19 & 4.3 & 116.4 & - & 152.4 \\
 Mg & 24.3 & 2.75 & 113.2 & & 51\\%沸点はGCの考察に必要
 \textbf{8} & 181.3 & 20.3 (theoretical) & 113.2 & \\
-\textbf{2} & 88.11 & 4.40 & 50.0 & & 115-116 (12 mmHg)\\
+\textbf{2} & 88.11 & 4.40 & 50.0 & & 115-116 (12 mmHg), 238 (760 mmHg)\\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -292,7 +323,7 @@ Mg & 24.3 & 2.75 & 113.2 & & 51\\%沸点はGCの考察に必要
 \end{table}%
 
 
-
+\if0
 \begin{table}[htp]
 \caption{IR: \textbf{1} の帰属 (majorなもののみ)}
 \begin{center}
@@ -333,6 +364,7 @@ No. & Wavenumber [cm-1] & Intensity & attribution \\
 \label{IR_7-2_attribute}
 \end{table}%
 
+\fi
 
 \begin{figure}[htbp]
 \begin{center}
@@ -420,6 +452,12 @@ Abraham Nudelman,
 NMR Chemical Shifts of Common
 Laboratory Solvents as Trace Impurities
 J. Org. Chem. 1997, 62, 7512-7515
+\bibitem{Wurtz}
+\url{https://www.chem-station.com/odos/2009/07/wurtz-wurtz-reaction.html}
+\bibitem{biphenyl}
+\url{https://www.rsc.org/suppdata/cc/c3/c3cc45132a/c3cc45132a.pdf}
+\bibitem{o}
+\url{https://www.chemspider.com/Chemical-Structure.15646.html}
 \end{thebibliography}
 
 \end{document}

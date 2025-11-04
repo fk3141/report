@@ -520,9 +520,18 @@ INPUT /Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl
 INPUT /Users/kashi/Library/texlive/2022/texmf-var/luatexja/extra_lmroman5-regular.luc
 INPUT /Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc
 INPUT /Users/kashi/Library/texlive/2022/texmf-var/luatexja/extra_lmroman10-italic.luc
+INPUT ./grignard.jpeg
+INPUT ./grignard.jpeg
+INPUT ./grignard.jpeg
+INPUT ./mechanism_7-1.jpg
+INPUT ./mechanism_7-1.jpg
+INPUT ./mechanism_7-1.jpg
 INPUT ./scheme_7-2.png
 INPUT ./scheme_7-2.png
 INPUT ./scheme_7-2.png
+INPUT ./mechanism_7-2.jpg
+INPUT ./mechanism_7-2.jpg
+INPUT ./mechanism_7-2.jpg
 INPUT ./IR_7-1.pdf
 INPUT ./IR_7-1.pdf
 INPUT ./IR_7-1.pdf
@@ -540,6 +549,8 @@ INPUT ./NMR_7-1.pdf
 INPUT ./NMR_7-2.pdf
 INPUT ./NMR_7-2.pdf
 INPUT ./NMR_7-2.pdf
+INPUT /Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc
+INPUT /Users/kashi/Library/texlive/2022/texmf-var/luatexja/extra_lmmono10-regular.luc
 INPUT /Users/kashi/report/out/7_KashwaiFumiya_unit7.aux
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb

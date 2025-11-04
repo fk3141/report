@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  2 NOV 2025 16:38
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  3 NOV 2025 11:58
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/kashi/report/organic/unit7/7_KashwaiFumiya_unit7.tex
@@ -1028,84 +1028,86 @@ LaTeX Font Info:    Font shape `JY3/mc/m/it' in size <10> not available
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 9.24713pt on input line 178.
  [2<./scheme_7-1.png>]
-
-LaTeX Warning: Reference `mechanism_7-1' on page 3 undefined on input line 201.
-
-
-LaTeX Warning: Citation `Wurtz' on page 3 undefined on input line 201.
-
-
-LaTeX Warning: Reference `grignard' on page 3 undefined on input line 205.
-
-
-LaTeX Warning: Reference `mechanism_7-1' on page 3 undefined on input line 207.
-
-
-LaTeX Warning: Citation `biphenyl' on page 3 undefined on input line 214.
-
-[3] [4]
-<scheme_7-2.png, id=73, 2409.0pt x 602.25pt>
+<grignard.jpeg, id=55, 668.4975pt x 631.35875pt>
+File: grignard.jpeg Graphic file (type jpg)
+<use grignard.jpeg>
+Package luatex.def Info: grignard.jpeg  used on input line 210.
+(luatex.def)             Requested size: 85.35826pt x 80.61519pt.
+ [3<./grignard.jpeg>]
+<mechanism_7-1.jpg, id=75, 1674.255pt x 2162.0775pt>
+File: mechanism_7-1.jpg Graphic file (type jpg)
+<use mechanism_7-1.jpg>
+Package luatex.def Info: mechanism_7-1.jpg  used on input line 230.
+(luatex.def)             Requested size: 284.52756pt x 367.41635pt.
+ [4<./mechanism_7-1.jpg>]
+<scheme_7-2.png, id=84, 2409.0pt x 602.25pt>
 File: scheme_7-2.png Graphic file (type png)
 <use scheme_7-2.png>
-Package luatex.def Info: scheme_7-2.png  used on input line 224.
+Package luatex.def Info: scheme_7-2.png  used on input line 241.
 (luatex.def)             Requested size: 426.79134pt x 106.69106pt.
  [5<./scheme_7-2.png>]
-<IR_7-1.pdf, id=100, 597.5123pt x 845.04709pt>
+<mechanism_7-2.jpg, id=114, 1603.9925pt x 483.8075pt>
+File: mechanism_7-2.jpg Graphic file (type jpg)
+<use mechanism_7-2.jpg>
+Package luatex.def Info: mechanism_7-2.jpg  used on input line 279.
+(luatex.def)             Requested size: 426.79134pt x 128.73251pt.
+
+Overfull \hbox (2.1079pt too wide) in paragraph at lines 311--321
+ [][][] 
+ []
+
+<IR_7-1.pdf, id=115, 597.5123pt x 845.04709pt>
 File: IR_7-1.pdf Graphic file (type pdf)
 <use IR_7-1.pdf>
-Package luatex.def Info: IR_7-1.pdf  used on input line 339.
+Package luatex.def Info: IR_7-1.pdf  used on input line 371.
 (luatex.def)             Requested size: 426.79134pt x 603.61095pt.
 
+LaTeX Warning: Float too large for page by 0.74986pt on input line 375.
 
-LaTeX Warning: Float too large for page by 0.74986pt on input line 343.
-
-<IR_7-2.pdf, id=101, 597.5123pt x 845.04709pt>
+<IR_7-2.pdf, id=116, 597.5123pt x 845.04709pt>
 File: IR_7-2.pdf Graphic file (type pdf)
 <use IR_7-2.pdf>
-Package luatex.def Info: IR_7-2.pdf  used on input line 347.
+Package luatex.def Info: IR_7-2.pdf  used on input line 379.
 (luatex.def)             Requested size: 426.79134pt x 603.61095pt.
 
-LaTeX Warning: Float too large for page by 0.74986pt on input line 351.
+LaTeX Warning: Float too large for page by 0.74986pt on input line 383.
 
-<NMR_attribution_7.png, id=102, 588.015pt x 381.279pt>
+<NMR_attribution_7.png, id=117, 588.015pt x 381.279pt>
 File: NMR_attribution_7.png Graphic file (type png)
 <use NMR_attribution_7.png>
-Package luatex.def Info: NMR_attribution_7.png  used on input line 355.
+Package luatex.def Info: NMR_attribution_7.png  used on input line 387.
 (luatex.def)             Requested size: 227.62204pt x 147.59282pt.
 (load cache: extra_lmroman7-italic.luc)
-<NMR_7-1.pdf, id=103, 845.1575pt x 597.23125pt>
+<NMR_7-1.pdf, id=118, 845.1575pt x 597.23125pt>
 File: NMR_7-1.pdf Graphic file (type pdf)
 <use NMR_7-1.pdf>
-Package luatex.def Info: NMR_7-1.pdf  used on input line 399.
+Package luatex.def Info: NMR_7-1.pdf  used on input line 431.
 (luatex.def)             Requested size: 426.79134pt x 301.59483pt.
-<NMR_7-2.pdf, id=104, 845.1575pt x 597.23125pt>
+<NMR_7-2.pdf, id=119, 845.1575pt x 597.23125pt>
 File: NMR_7-2.pdf Graphic file (type pdf)
 <use NMR_7-2.pdf>
-Package luatex.def Info: NMR_7-2.pdf  used on input line 408.
+Package luatex.def Info: NMR_7-2.pdf  used on input line 440.
 (luatex.def)             Requested size: 426.79134pt x 301.59483pt.
-[6] [7] [8<./IR_7-1.pdf>] [9<./IR_7-2.pdf>] [10<./NMR_attribution_7.png>] [11<./NMR_7-1.pdf>] [12<./NMR_7-2.pdf>] (/Users/kashi/report/out/7_KashwaiFumiya_unit7.aux)
-
-LaTeX Warning: There were undefined references.
-
+(load cache: extra_lmmono10-regular.luc) [6<./mechanism_7-2.jpg>] [7] [8<./IR_7-1.pdf>] [9<./IR_7-2.pdf>] [10<./NMR_attribution_7.png><./NMR_7-1.pdf>] [11<./NMR_7-2.pdf>] (/Users/kashi/report/out/7_KashwaiFumiya_unit7.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 26054 strings out of 477785
- 382259,1373583 words of node,token memory allocated
- 29240 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 410 kern, 1 glyph, 11085 attribute, 606 glue_spec, 584 attribute_list, 2 write, 144 user_defined nodes
-   avail lists: 1:48,2:103012,3:372,4:661,5:105,6:49,7:6764,8:59,9:2781,10:25,11:149
- 45599 multiletter control sequences out of 65536+600000
- 99 fonts using 62705791 bytes
- 114i,20n,115p,1813b,860s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on 7_KashwaiFumiya_unit7.pdf (12 pages, 1270270 bytes).
+ 26088 strings out of 477785
+ 382260,1373583 words of node,token memory allocated
+ 29373 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 405 kern, 1 glyph, 11101 attribute, 624 glue_spec, 586 attribute_list, 2 write, 152 user_defined nodes
+   avail lists: 1:49,2:118771,3:469,4:602,5:134,6:61,7:6179,8:86,9:2245,10:28,11:114
+ 45620 multiletter control sequences out of 65536+600000
+ 100 fonts using 62831879 bytes
+ 114i,20n,115p,1813b,862s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on 7_KashwaiFumiya_unit7.pdf (11 pages, 1807317 bytes).
 
-PDF statistics: 303 PDF objects out of 1000 (max. 8388607)
- 232 compressed objects within 3 object streams
- 70 named destinations out of 1000 (max. 131072)
- 104 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 318 PDF objects out of 1000 (max. 8388607)
+ 242 compressed objects within 3 object streams
+ 71 named destinations out of 1000 (max. 131072)
+ 88 words of extra memory for PDF output out of 10000 (max. 100000000)
 
