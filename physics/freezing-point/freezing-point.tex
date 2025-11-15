@@ -155,16 +155,115 @@
 %%ここまでタイトル
 
 \newpage
-\subsection{Purpose and Background}
+\section{Purpose and Background}
+希薄溶液の性質の一つである、凝固点降下を用いて溶質の分子量を求める。また、誤差の評価を通して、凝固点降下度の測定による、分子量の推定の精度を議論する。
 
 
-\subsection{Experimental}
 
-\subsection{Result and Discussion}
+\section{Experimental}
+\paragraph{溶媒精製}
+\begin{enumerate}
+    \item シクロヘキサン200 mL程度を三角フラスコにとり、氷-食塩浴(\ce{NaCl}10w\%)により冷却した。
+    \item 溶媒の厚い層が形成されたら、残る液体の溶媒を捨て、溶媒を融解した。
+    \item 上記の操作を3回繰り返した。
+\end{enumerate}
+
+\paragraph{Naphthaleneの分子量測定}
+\begin{enumerate}
+    \item 精製したシクロヘキサン30.94 gを測定容器に測りとった。
+    \item 撹拌棒を用いて撹拌しながら、氷-食塩浴(\ce{NaCl}10w\%)により冷却した。完全に凝固するまで10 sごとに温度を測定した。
+    \item 99.0 mg
+\end{enumerate}
+
+\paragraph{Azobenzeneの分子量測定}
+\begin{enumerate}
+    \item 
+\end{enumerate}
 
 
+\section{Result and Discussion}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{Naphthalene_all.png}
+\caption{Naphthaleneを加えたときの温度変化}
+\label{Naphthalene_all}
+\end{center}
+\end{figure}
+
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{Azobenzene_all.png}
+\caption{Azobenzeneを加えたときの温度変化}
+\label{Azobenzene_all}
+\end{center}
+\end{figure}
+
+
+\subsection{課題1}
+溶媒をA、溶質をBとする。さらに、固体は純粋なAであると仮定する。このとき、液体状態のAの化学ポテンシャル$\mu_A^{(l)}$と固体でのポテンシャル$\mu_A^{(s)}$は一致する。以下、$*$で純粋状態のポテンシャルを示す。また、考えている溶液における溶質Bのmol分率を$x_B \ll 1$とする。
+
+熱平衡状態において、次の式が従う。
+\begin{align}
+    \mu_A^{(s)} &= \mu_A^{(l)} \\
+    \mu_A^{(s)} &= \mu_A^{*(s)} \\
+    \mu_A^{(l)} &= \mu_A^{*(l)} + RT \ln{\lr{1-x_B}}
+\end{align}
+さらに、溶媒Aの固体から液体への相転移に伴うエンタルピー、エントロピー変化を$\Delta_t H, \Delta_t S$とする。このとき
+\begin{align}
+    \mu_A^{*(l)} - \mu_A^{*(s)} = \Delta_t H - T \Delta_t S
+\end{align}
+であるから
+\begin{align}
+    0 = \mu_A^{(l)} - \mu_A^{(s)} &= 
+    \mu_A^{*(l)} - \mu_A^{*(s)} + RT \ln{\lr{1-x_B}}  \\
+    &= \lr{\Delta_t H - T \Delta_t S} + RT \ln{\lr{1-x_B}}\\
+    \ln{\lr{1-x_B}} = - \frac{\Delta_t H - T \Delta_t S}{RT} &= -\frac{\Delta_t H}{R} \frac{1}{T} + \frac{\Delta_t S}{R}
+\end{align}
+ここで、$x_B \ll 1$により$\ln{\lr{1-x_B}} \simeq -x_B$とする。また、$x_B = 0$の時は、純溶媒Aの議論になるので
+\begin{align}
+    x_B = \frac{\Delta_t H}{R} \frac{1}{T} - \frac{\Delta_t S}{R}\\
+    0 = \frac{\Delta_t H}{R} \frac{1}{T_f} - \frac{\Delta_t S}{R}
+\end{align}
+ただし$T_f$は凝固点[K]。これより
+\begin{align}
+    x_B = \frac{\Delta_t H}{R} \lr{\frac{1}{T} - \frac{1}{T_f}} &\simeq \frac{\Delta_t H}{R}\frac{T_f-T}{T_f^2}\\
+    \Delta T &= \frac{RT_f^2}{\Delta_t H} x_B
+\end{align}
+が成立する。ここで、mol分率$x_B$について
+\begin{align}
+    x_B = \frac{n_B}{n_A + n_B } \sim \frac{n_B}{n_A} = \frac{w_B}{M_B}\frac{M_A}{w_A} = \frac{w_B}{M_B}\frac{M_A}{1000}
+\end{align}
+となる。ただし、$M$は分子量を表し、$w_B$は溶媒1 kg中の溶質Bの質量である。
+%M = K_f \frac{1000g}{G\Del ta T_f}
 \section{Appendix}
 
+\if0
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{Naphthalene_0.png}
+\includegraphics[width = 10 cm]{Naphthalene_1.png}
+\includegraphics[width = 10 cm]{Naphthalene_2.png}
+\includegraphics[width = 10 cm]{Naphthalene_3.png}
+\caption{Naphthaleneを加えたときの温度変化}
+\label{Naphthalene}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{Azobenzene_0.png}
+\includegraphics[width = 10 cm]{Azobenzene_1.png}
+\includegraphics[width = 10 cm]{Azobenzene_2.png}
+\includegraphics[width = 10 cm]{Azobenzene_3.png}
+\includegraphics[width = 10 cm]{Azobenzene_4.png}
+\includegraphics[width = 10 cm]{Azobenzene_5.png}
+\caption{Azobenzeneを加えたときの温度変化}
+\label{Azobenzene}
+\end{center}
+\end{figure}
+\fi
 
 %%参考文献
 \if0
@@ -184,3 +283,10 @@ J. Org. Chem. 1997, 62, 7512-7515
 \end{thebibliography}
 \fi
 \end{document}
+
+A_solvent
+B_solute
+\mu_{A}^l = \mu_{A}^s
+\mu_{A}^l-\mu_{A}^{l,*} = -RT\ln{1-x_B}
+\mu_{A}^s-\mu_{A}^{s,*} = 0
+\mu_{A}^{s,*}-\mu_{A}^{l,*} = -RT\ln{1-x_B}
