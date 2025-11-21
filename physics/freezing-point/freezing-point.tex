@@ -172,24 +172,29 @@
 \begin{enumerate}
     \item 精製したシクロヘキサン30.94 gを測定容器に測りとった。
     \item 撹拌棒を用いて撹拌しながら、氷-食塩浴(\ce{NaCl}10w\%)により冷却した。完全に凝固するまで10 sごとに温度を測定した。
-    \item 99.0 mg
+    \item 秤量したナフタレンを測定容器に加え、撹拌棒を用いて撹拌しながら、氷-食塩浴(\ce{NaCl}10w\%)により冷却した。完全に凝固するまで10 sごとに温度を測定した。加えたナフタレンの質量は表\ref{table_naphthalene}に示す。
+    \item 3種類の質量のナフタレンについて測定を行った。
 \end{enumerate}
 
 \paragraph{Azobenzeneの分子量測定}
 \begin{enumerate}
-    \item 
+    \item 精製したシクロヘキサン31.64 gを測定容器に測りとった。
+    \item 撹拌棒を用いて撹拌しながら、氷-食塩浴(\ce{NaCl}10w\%)により冷却した。完全に凝固するまで1 sごとに温度を測定した。
+    \item 秤量したアゾベンゼンを測定容器に加え、撹拌棒を用いて撹拌しながら、氷-食塩浴(\ce{NaCl}10w\%)により冷却した。完全に凝固するまで1 sごとに温度を測定した。加えたナフタレンの質量は表\ref{table_azobenzene}に示す。
+    \item 5種類の質量のアゾベンゼンについて測定を行った。
 \end{enumerate}
 
 
 \section{Result and Discussion}
+測定した温度変化をもとに、凝固点を決定した。ナフタレンを加えた時の温度変化は図\ref{Naphthelene_all.png}に、アゾベンゼンを加えた時の温度変化は図\ref{Azobenzene_all}に示した。なお、温度が概ね$9\D$になった時刻を$t = 0$とした。
+
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width = 10 cm]{Naphthalene_all.png}
+\includegraphics[width = 10 cm]{naphthalene_all.png}
 \caption{Naphthaleneを加えたときの温度変化}
 \label{Naphthalene_all}
 \end{center}
 \end{figure}
-
 
 
 \begin{figure}[htbp]
@@ -200,8 +205,46 @@
 \end{center}
 \end{figure}
 
+凝固前と凝固中の温度変化を、最小二乗法により線形近似し、それらの交点を求めることにより凝固点を決定した。その後、理論式\ref{eq_1}により溶質の分子量を計算した。決定した凝固点は下の表\ref{freezing_point_naphthalene}および表\ref{freezing_point_azobenzene}に示す。なお、アゾベンゼンの105.5 mgおよび201.0 mgについては凝固後の線形関係が見られなかったため除外した。
 
-\subsection{課題1}
+\begin{table}[htp]
+\caption{Naphthaleneの分子量の測定}
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Solute / mg & freezing point / $\D$ & $\Delta T$ / K & Moleculer weight \\
+\midrule
+0.0 & 6.475 &  0 & \\
+99.0 & 5.928 & -0.547 & 118.17\\
+209.8 & 5.355 & -1.120 & 122.25\\
+370.6 & 4.506 & -1.969 & 122.89\\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{freezing_point_naphthalene}
+\end{table}%
+
+\begin{table}[htp]
+\caption{Azobenezeの分子量の測定}
+\begin{center}
+\begin{tabular}{cccc}
+\toprule
+Solute / mg & freezing point / $\D$ & $\Delta T$ / K & Moleculer weight \\
+\midrule
+0.0 & 6.475 &  0 & \\
+105.5 & - & - & -\\
+201.0 & - & - & -\\
+306.1 & 5.448 & -1.002 & 194.97\\
+402.2 & 5.130 & -1.320 & 194.45\\
+507.8 & 4.799 & -1.652 & 196.26\\
+\bottomrule
+\end{tabular}
+\end{center}
+\label{freezing_point_azobenzene}
+\end{table}%
+
+
+\subsection{課題1 : 理論式の導出}
 溶媒をA、溶質をBとする。さらに、固体は純粋なAであると仮定する。このとき、液体状態のAの化学ポテンシャル$\mu_A^{(l)}$と固体でのポテンシャル$\mu_A^{(s)}$は一致する。以下、$*$で純粋状態のポテンシャルを示す。また、考えている溶液における溶質Bのmol分率を$x_B \ll 1$とする。
 
 熱平衡状態において、次の式が従う。
@@ -229,17 +272,42 @@
 ただし$T_f$は凝固点[K]。これより
 \begin{align}
     x_B = \frac{\Delta_t H}{R} \lr{\frac{1}{T} - \frac{1}{T_f}} &\simeq \frac{\Delta_t H}{R}\frac{T_f-T}{T_f^2}\\
-    \Delta T &= \frac{RT_f^2}{\Delta_t H} x_B
+    \Delta T &= \frac{RT_f^2}{\Delta_t H} x_B 
 \end{align}
 が成立する。ここで、mol分率$x_B$について
 \begin{align}
-    x_B = \frac{n_B}{n_A + n_B } \sim \frac{n_B}{n_A} = \frac{w_B}{M_B}\frac{M_A}{w_A} = \frac{w_B}{M_B}\frac{M_A}{1000}
+    x_B = \frac{n_B}{n_A + n_B } \sim \frac{n_B}{n_A} = \frac{w_B}{M_B}\frac{M_A}{w_A} = \frac{w_B}{M_B}\frac{M_A}{w_A}
 \end{align}
-となる。ただし、$M$は分子量を表し、$w_B$は溶媒1 kg中の溶質Bの質量である。
-%M = K_f \frac{1000g}{G\Del ta T_f}
+となる。ただし、$M$は分子量を表し、$w_B$は溶媒$w_A$[g]中の溶質Bの質量[g]である。
+これより
+\begin{align}
+    \frac{w_B}{M_B}\frac{M_A}{w_A} = \frac{\Delta_t H}{RT_f^2}\Delta T\\
+    M_B = \frac{w_B M_A}{w_A}\frac{RT_f^2}{\Delta_t H \Delta T}\\
+    M_B = \frac{w_B}{w_A} \frac{RT_f^2}{\frac{\Delta_t H}{M_A}\Delta T} 
+\end{align}
+$\displaystyle K_f = \frac{RT_f^2}{1000\frac{\Delta_t H}{M_A}} = \frac{RT_f^2}{1000Q}$とすると、
+\begin{equation}
+    M_B = K_f \frac{1000 w_B}{w_A\Delta T_f} = K_f \frac{1000 b}{G \Delta T_f} \label{eq_1}
+\end{equation}
+を得る。ここで、シクロヘキサンについて$K_f = 20.2 $が知られている。ただし、記号を$w_A = G, w_B = g$と置き直した。  
+
+\subsection{課題2 : 誤差の考察}
+今回の実験において生じる統計誤差としては、大きく4つが挙げられる。溶質および溶媒の質量の計測、温度変化の測定、凝固点の測定のための線形近似、およびである。
+
+このうち、一つ目の質量の計測における誤差については、溶媒は実験室の最小0.01 g、溶媒は最小0.1 mgの精密天秤を用いて測定を行ったため、この誤差は質量の$0.1\%$程度に収まっていると考えられ、この誤差は支配的ではない。
+
+温度変化の測定誤差については、温度計の校正による誤差と、溶媒の局所的な冷却による誤差の影響が挙げられる。前者についてはデジタル温度計であり、誤差については不明である。後者については、教科書に倣って空気層を隔てて氷冷したとともに、激しく撹拌を行ったが、温度計が計測している部分が溶液の最下部であったことから、局所的な冷却の影響がみられた。この影響について、定量的に評価することは難しいが、特に105.5 mgおよび201.0 mgのAzobezeneを溶解した場合については、凝固開始後に複数回の溶液温度の上昇が見られたことから、局所的な過冷却が生じていたと考えられる。理想的には、凝固前の直線領域および、凝固中の線形領域からなるはずである。これから逸脱している場合には、誤差が大きいと考えられる。
+
+凝固点降下の理論式\ref{eq_1}における近似において、$\ln{\lr{1-x_B}} = -x_B$などの、溶質のmol分率が非常に小さいことを仮定した近似式を複数用いている。しかしながら、推定される$x_B$は0.01以下であり、この近似による誤差は$1\%$以下と考えられる。
+
+\subsection{課題3 : シクロヘキサンに不純物が含まれた場合の影響}
+シクロヘキサンに不純物が溶けており、この不純物が溶質と相互作用しない場合には、不純物のmol分率を$x_{\text{impurity}}$とした時、溶質のmol分率が$x_{\text{impurity}}+x_{\text{solute}}$として振る舞う。今回の測定においては、溶質を加えていない場合についても、一定の凝固点が観測されなかったため、一定量の不純物が含まれていた可能性がある。この場合、課題4で考察する通り、見かけの分子量が、溶質濃度が小さい場合に小さくもとまることになる。
+
+\subsection{課題4 : 見かけの分子量の濃度に対する依存性}
+濃度が大きい場合、溶媒の化学ポテンシャルを、$\mu_A^{(l)} = \mu_A^{*(l)} + RT \ln{\lr{1-x_B}}$として近似することが正当ではなくなる。この近似においては、溶質同士の相互作用を加味していないため、溶媒分子間の相互作用が引力的であれば、見かけの分子量が大きく、斥力的であれば見かけの分子量が小さく見られると考えられる。
+
 \section{Appendix}
 
-\if0
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width = 10 cm]{Naphthalene_0.png}
@@ -256,6 +324,13 @@
 \includegraphics[width = 10 cm]{Azobenzene_0.png}
 \includegraphics[width = 10 cm]{Azobenzene_1.png}
 \includegraphics[width = 10 cm]{Azobenzene_2.png}
+\label{Azobenzene}
+\end{center}
+\end{figure}
+
+
+\begin{figure}[htbp]
+\begin{center}
 \includegraphics[width = 10 cm]{Azobenzene_3.png}
 \includegraphics[width = 10 cm]{Azobenzene_4.png}
 \includegraphics[width = 10 cm]{Azobenzene_5.png}
@@ -263,7 +338,6 @@
 \label{Azobenzene}
 \end{center}
 \end{figure}
-\fi
 
 %%参考文献
 \if0
