@@ -169,8 +169,7 @@
     \item フタル酸カリウムをそれぞれ300 mg, 30 mg程度精秤し、少量の煮沸した水に溶解したのち、フェノールフタレイン溶液(PP)を2滴滴下し、0.1 M、0.01 M\ce{NaOH}\textit{aq.}により滴定した。溶液のピンク色の呈色が、10 s程度振り混ぜても消失しなくなった点を当量点とした。
     \item フタル酸カリウム1001.5 mgを秤量し、煮沸した水で溶解して500 mLとした。
     \item この溶液を10 mLずつ分取し、PPを2滴加えて0.01 M\ce{NaOH}\textit{aq.}により滴定した。溶液のピンク色の呈色が、10 s程度振り混ぜても消失しなくなった点を当量点とした。
-    \item 安息香酸 hoge %%% 調べる
-    gをtolueneに溶かし、全量を500 mLとした。
+    \item 安息香酸 15.0030 gをtolueneに溶かし、全量を500 mLとした。
     \item すりつき300 mL三角フラスコに、表\ref{table_prop}に示した量の安息香酸溶液、煮沸した水、tolueneを加えた。
     \item ガラス栓で蓋をし、激しく撹拌した。
     \item 3 minごとに撹拌しながら$25\D$の恒温槽に30 min浸した。
@@ -301,7 +300,7 @@ ID & 始点/mL & 終点/mL & 滴下量/ mL & 濃度計算値 / mM\\
         & 12.50 & 23.29 & 10.79 & 8.709 \\
         & 2.55 & 13.39 & 10.84 & 8.750 \\ 
         \midrule
-        \multirow{3}{*}{h} & 1.78 & 15.76 & 13.98 & 11.27 \\
+        \multirow{3}{*}{h} & 2.71 & 15.76 & 13.05 & 10.53 \\
         & 7.71 & 20.61 & 12.90 & 10.41 \\
         & 2.02 & 15.17 & 13.15 & 10.61 \\
         \bottomrule
@@ -374,11 +373,145 @@ ID & 始点/mL & 終点/mL & 滴下量/ mL & 濃度計算値 / mM\\
     e & 6.135  & 0.016  & 53.96 & 0.97  \\
     f & 8.176  & 0.037  & 89.63 & 1.03  \\
     g & 8.687  & 0.069  & 111.0 & 1.1   \\
-    h & 10.76  & 0.46   & 158.4 & 1.6   \\
+    h & 10.51  & 0.10   & 158.4 & 1.6   \\
     \bottomrule
   \end{tabular}
 \label{extraction_data}
 \end{table}
+
+計算された$C_W$および$C_T$は下の図\ref{CtCw}に示した。$C_w$に関しては、単なる線形関係ではなく上に凸な結果を示した。単なる単量体ではなく、解離や多量体の形成などの機構が関連していると考えられる。
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{CtCw.png}
+\caption{$C_W$および$C_T$の一覧}
+\label{CtCw}
+\end{center}
+\end{figure}
+
+\subsection{課題1}
+\begin{align}
+    K_a = \frac{[\ce{H^+}][\ce{Bz^-}]}{[\ce{HBz}]} &= C_W \frac{\alpha^2}{1-\alpha}\\
+    C_W\alpha^2 + K_a \alpha - K_a &= 0\\
+    \alpha &= \frac{-K_a + \sqrt{K_a^2 + 4K_aC_W}}{2C_W}
+\end{align}
+と計算できる。これを元にそれぞれの溶液について計算したものが、下の表\ref{alpha}である。さらに、これを$C_W$に対してプロットすると図\ref{task1}のようになった。
+
+なお、解離度$\alpha$の誤差は、
+\begin{equation*}
+    \del{\alpha}{C_W} = -\frac{\alpha}{C_W} + \frac{K_a}{C_W}\frac{1}{\sqrt{K_a^2+4C_WK_A}}
+\end{equation*}
+を用いて、
+\begin{equation*}
+    \delta \alpha = \left|-\frac{\alpha}{C_W} + \frac{K_a}{C_W}\frac{1}{\sqrt{K_a^2+4C_WK_A}} \right| \delta C_W
+\end{equation*}
+として見積もった。
+
+\begin{table}[h]
+    \centering
+    \caption{Processed Data with Error Analysis}
+    \begin{tabular}{lccc}
+        \toprule
+        Label & Cw ($\times 10^{-3}$) & a & Error ($\sigma_a$) \\
+        \midrule
+        a & 0.8926 & 0.233  & 0.001 \\
+        b & 1.398  & 0.191  & 0.001 \\
+        c & 2.554  & 0.146  & 0.003 \\
+        d & 4.788  & 0.1086 & 0.0004 \\
+        e & 6.135  & 0.0966 & 0.0001 \\
+        f & 8.176  & 0.0843 & 0.0002 \\
+        g & 8.687  & 0.0819 & 0.0003 \\
+        h & 10.51  & 0.0747 & 0.0004 \\
+        \bottomrule
+    \end{tabular}
+    \label{alpha}
+\end{table}
+
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{task1.png}
+\caption{解離度$\alpha$の、$C_W$に対するプロット。エラーバーはs.d.を示す。}
+\label{task1}
+\end{center}
+\end{figure}
+
+\subsubsection{課題2}
+\begin{equation}
+    \ln{C_T} \simeq \ln{C_W(1-\alpha)} + \ln{K_D}
+\end{equation}
+となるが、$\ln{C_T}$を$\ln{C_W(1-\alpha)}$に対してプロットすると、図\ref{task2}のようになり、$R^2 = 0.997$で直線関係が認められた。傾きは$a = 1.61$であった。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{task2.png}
+\caption{$\ln{C_T}$の$\ln{C_W(1-\alpha)}$に対するプロット}
+\label{task2}
+\end{center}
+\end{figure}
+
+$y = x + b$としてプロットを行う。その際、誤差の総和を最小化する$b$を求めると、$y = x + 2.055$となった。
+
+\begin{equation*}
+    K_D = \exp{(2.055)} = 7.807
+\end{equation*}
+
+\subsection{課題3}
+$y = 2x + b$としてプロットを行う。その際、誤差の総和を最小化する$b$を求めると、$y = 2x + 7.706$となった。
+
+\begin{equation*}
+    K_{\text{puseudo}} = \exp{(7.706)}/2 = 1111
+\end{equation*}
+と計算された。傾きは1.61であり、整数値$n = 2$と推定される。
+
+全てが単量体であると仮定するCaseAでは誤差が大きく、
+Case Bの方がより合致していると考えられる。
+
+\subsection{課題4}
+フィッティング結果を\ref{task4}に示した。
+ここで、最小二乗法による傾きと切片の誤差を見積もると、傾き$a =  (1.41 \pm 0.15 ) \times 10^3$、切片$b = 2.15 \pm 0.33$となった。また、これらから$K_D = b = 2.15 \pm 0.33$、$K_M = \frac{a}{2b^2} = 153 \pm 38$となった。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{task4.png}
+\caption{会合平衡のプロット}
+\label{task4}
+\end{center}
+\end{figure}
+
+\subsection{課題5}
+
+\begin{table}[htbp]
+    \centering
+    \caption{Concentration Data and Calculated Parameters} % 表が横に長いためフォントを少し小さく設定
+    \begin{tabular}{lccccccccc}
+        \toprule
+        Label & $C_\mathrm{w}$ ($\times 10^{-3}$) & $a$ & $[\mathrm{HBz}]_\mathrm{w}$ & $[\mathrm{Bz}^-]$ & $C_\mathrm{t}$ & $b$ & $[\mathrm{HBz}]_\mathrm{T}$ & $[(\mathrm{HBz})_2]$ 
+        hoge\\
+        \midrule
+        a & 0.8926 & 0.233 & $6.84 \times 10^{-4}$ & $2.08 \times 10^{-4}$ & 0.00199 & 0.299 & $1.39 \times 10^{-3}$ & $2.97 \times 10^{-4}$ \\
+        b & 1.398  & 0.191 & $1.13 \times 10^{-3}$ & $2.68 \times 10^{-4}$ & 0.00483 & 0.449 & $2.66 \times 10^{-3}$ & $1.08 \times 10^{-3}$ \\
+        c & 2.554  & 0.146 & $2.18 \times 10^{-3}$ & $3.72 \times 10^{-4}$ & 0.0119  & 0.595 & $4.80 \times 10^{-3}$ & $3.53 \times 10^{-3}$ \\
+        d & 4.788  & 0.109 & $4.27 \times 10^{-3}$ & $5.20 \times 10^{-4}$ & 0.0331  & 0.731 & $8.89 \times 10^{-3}$ & $1.21 \times 10^{-2}$ \\
+        e & 6.135  & 0.0966& $5.54 \times 10^{-3}$ & $5.93 \times 10^{-4}$ & 0.0540  & 0.782 & $1.17 \times 10^{-2}$ & $2.11 \times 10^{-2}$ \\
+        f & 8.176  & 0.0843& $7.49 \times 10^{-3}$ & $6.89 \times 10^{-4}$ & 0.0896  & 0.826 & $1.56 \times 10^{-2}$ & $3.70 \times 10^{-2}$ \\
+        g & 8.687  & 0.0819& $7.98 \times 10^{-3}$ & $7.11 \times 10^{-4}$ & 0.111   & 0.843 & $1.75 \times 10^{-2}$ & $4.68 \times 10^{-2}$ \\
+        h & 10.51  & 0.0747& $9.73 \times 10^{-3}$ & $7.85 \times 10^{-4}$ & 0.158   & 0.866 & $2.11 \times 10^{-2}$ & $6.86 \times 10^{-2}$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{課題6}
+課題4で議論した通り、$K_D = b = 2.15 \pm 0.33$、$K_M = \frac{a}{2b^2} = 153 \pm 38$
+の程度である。誤差はかなり大きく、これは一つ一つの滴定データのばらつきよりも、フィッティングの際の誤差範囲が大きいことに起因する。
+
+
+\subsection{課題7}
+IRスペクトルを取得する。カルボン酸が水素結合を形成することにより、二量体を形成していると考えられる。
+IRスペクトルで、カルボニルに対応する波数が、二量体と単量体で異なると予測されるため、これらを区別することができる。
+
+また、UV-Visでの吸収波長が異なる可能性があり、これにより存在を確認できる可能性がある。
+
 
 
 

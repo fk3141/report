@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  22 NOV 2025 15:17
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  23 NOV 2025 01:42
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/kashi/report/physics/distribution/distribution.tex
@@ -1021,28 +1021,60 @@ LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 9.24713pt on input line 166.
  [2]
 
-LaTeX Warning: Reference `concentration' on page 3 undefined on input line 263.
+LaTeX Warning: Reference `concentration' on page 3 undefined on input line 262.
 
-[3] [4] [5] [6] (/Users/kashi/report/out/distribution.aux)
+[3]
+<CtCw.png, id=59, 495.816pt x 272.874pt>
+File: CtCw.png Graphic file (type png)
+<use CtCw.png>
+Package luatex.def Info: CtCw.png  used on input line 385.
+(luatex.def)             Requested size: 426.79134pt x 234.88354pt.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 391.
+ [4] [5] [6<./CtCw.png>]
+<task1.png, id=88, 363.321pt x 220.752pt>
+File: task1.png Graphic file (type png)
+<use task1.png>
+Package luatex.def Info: task1.png  used on input line 433.
+(luatex.def)             Requested size: 426.79134pt x 259.31963pt.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 439.
+(load cache: extra_lmsans10-regular.luc) [7<./task1.png>]
+<task2.png, id=97, 421.575pt x 219.657pt>
+File: task2.png Graphic file (type png)
+<use task2.png>
+Package luatex.def Info: task2.png  used on input line 447.
+(luatex.def)             Requested size: 426.79134pt x 222.37804pt.
+<task4.png, id=99, 361.35pt x 224.694pt>
+File: task4.png Graphic file (type png)
+<use task4.png>
+Package luatex.def Info: task4.png  used on input line 476.
+(luatex.def)             Requested size: 426.79134pt x 265.39032pt.
+ [8<./task2.png>]
+Overfull \hbox (28.01363pt too wide) in paragraph at lines 487--502
+ [][][][] 
+ []
+
+[9<./task4.png>] [10] (/Users/kashi/report/out/distribution.aux)
 
 LaTeX Warning: There were undefined references.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 25973 strings out of 477785
- 305789,1144653 words of node,token memory allocated
- 23869 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 368 kern, 1 glyph, 9154 attribute, 439 glue_spec, 478 attribute_list, 2 write, 81 user_defined nodes
-   avail lists: 1:44,2:94279,3:348,4:615,5:42,6:43,7:5480,8:41,9:1574,10:23,11:31
- 45576 multiletter control sequences out of 65536+600000
- 95 fonts using 62178399 bytes
- 114i,10n,115p,1811b,763s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on distribution.pdf (6 pages, 124167 bytes).
+ 26056 strings out of 477785
+ 305782,1144653 words of node,token memory allocated
+ 27845 words of node memory still in use:
+   11 hlist, 2 vlist, 5 rule, 2 glue, 375 kern, 1 glyph, 10330 attribute, 691 glue_spec, 544 attribute_list, 2 write, 128 user_defined nodes
+   avail lists: 1:44,2:106259,3:348,4:660,5:56,6:43,7:6161,8:41,9:1573,10:23,11:31
+ 45622 multiletter control sequences out of 65536+600000
+ 97 fonts using 62441775 bytes
+ 114i,16n,115p,1811b,763s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on distribution.pdf (10 pages, 439447 bytes).
 
-PDF statistics: 138 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 131072)
- 40 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 241 PDF objects out of 1000 (max. 8388607)
+ 184 compressed objects within 2 object streams
+ 52 named destinations out of 1000 (max. 131072)
+ 88 words of extra memory for PDF output out of 10000 (max. 100000000)
 
