@@ -1,5 +1,5 @@
 # Fdb version 3
-["lualatex"] 1763829740 "/Users/kashi/report/physics/distribution/distribution.tex" "/Users/kashi/report/out/distribution.pdf" "distribution" 1763829743
+["lualatex"] 1764595733 "/Users/kashi/report/physics/distribution/distribution.tex" "/Users/kashi/report/out/distribution.pdf" "distribution" 1764595735
   "/Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/haranoajigothic-medium.luc" 1754553821 1875292 410c3324c1fe22623b9898970742fdb2 ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/haranoajimincho-regular.luc" 1754553819 1961805 a4e8ee39345c1319a0076bad6921f9ae ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/lmmono9-regular.luc" 1754553819 81875 9e8265965c5b4584efdeff727dbbed59 ""
@@ -30,8 +30,8 @@
   "/Users/kashi/Library/texlive/2022/texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc" 1754553817 1643631 91cfe6be2985e96c1aa98a60c52fbe03 ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatexja/ltj-jisx0208.luc" 1754553819 93919 1f6dc76354e6e3b148c06f9f9254f22e ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatexja/ltj-kinsoku_default.luc" 1754553817 17710 2bc89a84ede82dabd46ec677aef5f865 ""
-  "/Users/kashi/report/out/distribution.aux" 1763829743 7893 6574853680c3d3232f95eb2580c15103 "lualatex"
-  "/Users/kashi/report/physics/distribution/distribution.tex" 1763829736 21142 01f71fd628248bcf819c088c7d6c7da2 ""
+  "/Users/kashi/report/out/distribution.aux" 1764595735 7955 595454fe89d95c77e2bff02789b32993 "lualatex"
+  "/Users/kashi/report/physics/distribution/distribution.tex" 1764595729 22407 650ffda6403cb36451d3b6635c994605 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf" 1645391598 4689988 4bd9bbfdb9c60b058a20001e71194cb6 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf" 1645391598 6355800 6b1b8c908756db366b95140471b25bc0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -319,7 +319,7 @@
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/luahbtex/lualatex.fmt" 1678257777 4558587 838f6d4fc2e50e2840c760e642192066 ""
   "CtCw.png" 1763816704 156927 1a49dbfa8b45c1584824d3189bfea09c ""
-  "distribution.tex" 1763829736 21142 01f71fd628248bcf819c088c7d6c7da2 ""
+  "distribution.tex" 1764595729 22407 650ffda6403cb36451d3b6635c994605 ""
   "task1.png" 1763816704 84646 a63c3b7261dfd882f0cd693a7bdd5c7e ""
   "task2.png" 1763816704 84689 0cc20ce1e789f25502810a5fcca17130 ""
   "task4.png" 1763816704 86886 680e09cdd37ca8cb5bc2cf1317a71920 ""

@@ -150,7 +150,8 @@
 \pagestyle{myheadings}
 \title{XRD}
 \date{\today}
-\author{報告者: No.7 05253011 Fumiya Kashiwai / 柏井史哉}
+\author{報告者: No.7 05253011 Fumiya Kashiwai / 柏井史哉\\
+共同実験者: No.10 小川、No.27 直井}
 \begin{document}
 \maketitle
 \markboth{Physics experiment No.7 05253011 Fumiya Kashiwai / 柏井史哉} {Physics experiment No.7 05253011 Fumiya Kashiwai / 柏井史哉}
@@ -162,24 +163,285 @@
 
 \section{Experimental}
 
+\begin{enumerate}
+    \item \ce{NaCl}の粉末をメノウ乳鉢で砕いた。
+    \item ガラス板に乗せ、pXRD測定を行った。($\theta = 10 - 140^{\circ}$、ステップ$0.02^{\circ}$、スピード$10^{\circ}$/min)
+    \item スピードを$5^{\circ}$/minとして再度測定を行った。
+    \item 測定器からサンプルを取り出すと、X線を照射した部分が白色から黄色に変化していた。その後、20 min程度経過後に、黄色い着色は薄くなっていた。
+    \item 同様に、\ce{KBr}の粉末をメノウ乳鉢で砕き、ガラス板に乗せ、pXRD測定を行った。($\theta = 10 - 140^{\circ}$、ステップ$0.02^{\circ}$、スピード$10^{\circ}$/min)
+    \item 測定器からサンプルを取り出すと、X線を照射した部分が薄く、白色から青色に変化していた。
+\end{enumerate}
+
 \section{Results and Discussion}
+自分たちの測定したデータは、エクスポートのミスにより、最初に行った\ce{NaCl}の、$10^{\circ}$/minのデータのみしか取得できていなかった。そのため、他の日に実験を行った実験者のデータを合わせて用いて解析を行った。
 
+用いたデータは、\ce{NaCl}を5分、10分間乳鉢ですりつぶした試料、および\ce{KBr}を10分間乳鉢ですりつぶした試料を測定したものである。
 
+\subsection{消滅則}
+\ce{NaCl}が立方晶に属することを仮定する。
 
-\if0
+立方晶の$(hkl)$面での構造因子は
+\begin{equation}
+F(hkl) = \sum_{n=1}^N f_n(hkl) \exp{\left[2\pi i \lr{hx_n + ky_n + kz_n}\right]}
+\end{equation}
+である。立方晶に属する4つの空間群に対して、それぞれの消滅則はない。
+\subsubsection{単純立方格子}
+単純立方格子についてはこれ以上の対称性はないので、消滅則はない。
+\subsubsection{体心立方格子}
+$\lr{x_n, y_n,z_n}$ と $\lr{x_n+\frac{1}{2}, y_n +\frac{1}{2} ,z_n +\frac{1}{2}}$ が等価であることから、
+\begin{align}
+F(hkl) &= \sum_{n=1}^{N/2} f_n(hkl) \left[ \exp{\left[2\pi i \lr{hx_n + ky_n + kz_n}\right] + \exp{\left[2\pi i \lr{hx_n + ky_n + kz_n} + \pi i \lr{h + k + l}\right]}} \right]\\
+ &= \left[ 1 + \exp{\left[\pi i \lr{h + k + l}\right]} \right]\sum_{n=1}^{N/2} f_n(hkl) \exp{\left[2\pi i \lr{hx_n + ky_n + kz_n}\right]}
+\end{align}
+となる。
+これは、$h + k + l$が奇数の時に0となる。これが消滅則となる。
+\subsubsection{面心立方格子}
+$\lr{x_n, y_n,z_n}$ と $\lr{x_n+\frac{1}{2}, y_n +\frac{1}{2} ,z_n}$、$\lr{x_n+\frac{1}{2}, y_n, z_n+\frac{1}{2}}$、$\lr{x_n, y_n +\frac{1}{2} ,z_n+\frac{1}{2}}$ が等価であることから、
+\begin{equation}
+F(hkl) = \left[1 +  \exp{\left[\pi i \lr{h + k}\right]} + \exp{\left[\pi i \lr{k + l}\right]} + \exp{\left[\pi i \lr{l + h}\right]}\right]
+\sum_{n=1}^{N/4} f_n(hkl) \left[ \exp{\left[2\pi i \lr{hx_n + ky_n + kz_n}\right]}
+\right]
+\end{equation}
+となる。これより、$h+k, k+l, l+h$のうちちょうど1つが偶数、他2つが奇数の場合に消滅する。
+
+\subsubsection{ダイヤモンド格子}
+$\lr{x_n, y_n,z_n}$ と $\lr{x_n+\frac{1}{4}, y_n +\frac{1}{4} ,z_n+\frac{1}{4}}$が等価であることから、
+\begin{equation}
+F(hkl) = \left[1 + \exp{\left[\frac{\pi i}{2} \lr{h + k + l}\right]} \right]
+\sum_{n=1}^{N/4} f_n(hkl) \left[ \exp{\left[2\pi i \lr{hx_n + ky_n + kz_n}\right]}
+\right]
+\end{equation}
+となる。これより、$h+k+l = 4n + 2$($n$は整数)である時に消滅する。
+
+\subsection{測定結果および格子定数の決定}
+測定結果のスペクトルはAppendixに添付した。
+ピーク位置(position) および強度(Intensity) を表\ref{NaCl}に示した。面指数は、$27.6^{\circ}$のものを$m$とすると、他のピークは表のように帰属された。
+
+\begin{table}[h!]
+\centering
+\resizebox{\textwidth}{!}{
+\begin{tabular}{|r|r|r|r||r|r|r|r|}
+\hline
+\multicolumn{4}{|c||}{10 min} & \multicolumn{4}{|c|}{5 min} \\ \hline
+\multicolumn{1}{|c|}{position ($2\theta$)} & \multicolumn{1}{c|}{Intensity} & \multicolumn{1}{c|}{$\sin^2(\theta)$} & \multicolumn{1}{c||}{$m$} & \multicolumn{1}{c|}{position ($2\theta$)} & \multicolumn{1}{c|}{Intensity} & \multicolumn{1}{c|}{$\sin^2(\theta)$} & \multicolumn{1}{c|}{$m$} \\ \hline
+27.26 & 3496.14 & 0.06 & & 24.98 & 2976.77 & 0.05 & \\ \hline
+27.62 & 16683.82 & 0.06 & 3 & 27.60 & 12775.86 & 0.06 & 3 \\ \hline
+31.97 & 1869738.35 & 0.08 & 4 & 31.95 & 1513794.75 & 0.08 & 4 \\ \hline
+45.68 & 113917.12 & 0.15 & 8 & 45.67 & 115759.39 & 0.15 & 8 \\ \hline
+54.09 & 4317.64 & 0.21 & 11 & 54.06 & 4310.79 & 0.21 & 11 \\ \hline
+56.69 & 21750.62 & 0.23 & 12 & 56.66 & 16691.87 & 0.23 & 12 \\ \hline
+65.30 & 1306.51 & 0.29 & 15 & 66.42 & 85372.79 & 0.30 & 16 \\ \hline
+66.43 & 85532.71 & 0.30 & 16 & 67.51 & 1370.58 & 0.31 & 16 \\ \hline
+73.23 & 1966.53 & 0.36 & 19 & 73.23 & 2048.96 & 0.36 & 19 \\ \hline
+75.47 & 28460.73 & 0.37 & 20 & 75.45 & 24860.99 & 0.37 & 20 \\ \hline
+84.14 & 13871.36 & 0.45 & 24 & 84.14 & 15422.03 & 0.45 & 24 \\ \hline
+90.57 & 1997.74 & 0.50 & 27 & 90.57 & 2107.88 & 0.50 & 27 \\ \hline
+101.28 & 3895.29 & 0.60 & 32 & 101.27 & 3683.49 & 0.60 & 32 \\ \hline
+107.92 & 1710.76 & 0.65 & 34 & 107.89 & 1787.00 & 0.65 & 34 \\ \hline
+110.17 & 13938.53 & 0.67 & 35 & 110.16 & 15439.77 & 0.67 & 35 \\ \hline
+119.57 & 8987.08 & 0.75 & 40 & 119.55 & 7007.55 & 0.75 & 39 \\ \hline
+127.23 & 1279.18 & 0.80 & 42 & 127.20 & 1195.46 & 0.80 & 42 \\ \hline
+129.95 & 3890.75 & 0.82 & 43 & 129.95 & 4966.72 & 0.82 & 43 \\ \hline
+\end{tabular}%
+}
+\caption{XRD Data Comparison}
+\label{NaCl}
+\end{table}
+
+また、面指数$(hkl)$については、次のように決められた。なお、いくつかの面指数については帰属できていないが、これらのピークは小さいため、無視することにする。
+
+\begin{table}[h]
+\centering
+\begin{tabular}{|r|r|l|}
+\hline
+\multicolumn{1}{|l|}{Intensity} & \multicolumn{1}{l|}{m} & (h,k,l) \\ \hline
+16684 & 3 & 1,1,1 \\ \hline
+1869738 & 4 & 2,0,0 \\ \hline
+113917 & 8 & 2,2,0 \\ \hline
+4318 & 11 & 3,1,1 \\ \hline
+21751 & 12 & 2,2,2 \\ \hline
+1307 & 15 & ? \\ \hline
+85533 & 16 & 4,0,0 \\ \hline
+1967 & 19 & 3,3,1 \\ \hline
+28461 & 20 & 4,2,0 \\ \hline
+13871 & 24 & 4,2,2 \\ \hline
+1998 & 27 & (3,3,3) or (5,1,1) \\ \hline
+3895 & 32 & 4,4,0 \\ \hline
+1711 & 34 & ? \\ \hline
+13939 & 35 & 5,3,1 \\ \hline
+8987 & 40 & 6,2,0 \\ \hline
+1279 & 42 & ? \\ \hline
+3891 & 43 & 5,3,3 \\ \hline
+\end{tabular}
+\caption{面指数の決定}
+\end{table}
+
+この中で、(1,1,1)など、和が奇数になる組がある。そのため、体心立方格子ではない。
+
+また、この中で面心立方格子の消滅則$h+k, k+l, l+h$のうちちょうど1つが偶数、他2つが奇数が存在しない。そのため、面心立方格子と考えられる。
+
+面指数の帰属ができたものに対して、それぞれ次の式を用いて格子定数$a$を求め、その平均および誤差範囲を求めた。
+\begin{equation}
+    a_0 = \frac{\lambda}{2\sin{\theta}}\sqrt{m} 
+\end{equation}
+5 min粉砕した\ce{NaCl}については、$5.61 \pm 0.03$ \AA、10 min粉砕した\ce{NaCl}については、$5.62 \pm 0.02$ 
+\AA の格子定数が得られた。理論的な格子定数は5.64 \AA であり、誤差の範囲で一致する。
+
+\subsection{構造因子}
+与えられた構造因子を多項式補完し、内挿することにより構造因子を求めた。
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{構造因子.png}
+\caption{構造因子の補完}
+\label{structure}
+\end{center}
+\end{figure}
+
+実際のデータの強度比と比較した。ただし、与えられたデータから十分の精度で保管できる、$0<\sin{\theta} < 0.8$の範囲のデータを用いた。
+
+これより、期待される比率と比較して、$m=4$すなわち (200)面の吸収が強いことがわかる。これは測定試料の優先配向によるものと考えられる。
+
+(200)面への集中は、10 minよりも 5 minで顕著であり、丁寧な粉砕により優先配向の影響が小さくなると考えられる。
+
+\begin{table}[h!]
+\caption{10 min}
+\centering
+\resizebox{\textwidth}{!}{% 幅が広いため、ページ幅に合わせる設定
+\begin{tabular}{|r|r|r|r|r|r|}
+\hline
+position ($2\theta$) & Intensity & normalize & $\sin(\theta)$ & Cl & Na \\ \hline
+27.26 & 3496.14 & 0.0019 & 0.2356298 & 11.28526676 & 7.881159225 \\ \hline
+27.62 & 16683.82 & 0.0089 & 0.23872413 & 11.19094018 & 7.836309178 \\ \hline
+31.97 & 1869738.35 & 1.0000 & 0.27536472 & 10.14219438 & 7.297871797 \\ \hline
+45.68 & 113917.12 & 0.0609 & 0.38815907 & 7.8967106 & 5.672888765 \\ \hline
+54.09 & 4317.64 & 0.0023 & 0.45470959 & 7.299716424 & 4.826112432 \\ \hline
+56.69 & 21750.62 & 0.0116 & 0.47476039 & 7.206545942 & 4.595013921 \\ \hline
+65.30 & 1306.51 & 0.0007 & 0.53948739 & 7.070711827 & 3.932144394 \\ \hline
+66.43 & 85532.71 & 0.0457 & 0.54778227 & 7.061522843 & 3.856401583 \\ \hline
+73.23 & 1966.53 & 0.0011 & 0.59641752 & 6.971828194 & 3.452076151 \\ \hline
+75.47 & 28460.73 & 0.0152 & 0.61197575 & 6.911590135 & 3.336074581 \\ \hline
+84.14 & 13871.36 & 0.0074 & 0.67003803 & 6.39773059 & 2.949473218 \\ \hline
+90.57 & 1997.74 & 0.0011 & 0.7105846 & 5.612621621 & 2.709557199 \\ \hline
+101.28 & 3895.29 & 0.0021 & 0.77319035 & 3.303449847 & 2.347939685 \\ \hline
+107.92 & 1710.76 & 0.0009 & 0.80859361 & 1.192491049 & 2.124967064 \\ \hline
+110.17 & 13938.53 & 0.0075 & 0.81997709 & 0.361501068 & 2.047171973 \\ \hline
+\end{tabular}%
+}
+\end{table}
+\begin{table}[h!]
+\caption{5 min}
+\centering
+\resizebox{\textwidth}{!}{% 幅が広いため、ページ幅に合わせる設定
+\begin{tabular}{|r|r|r|r|r|r|}
+\hline
+position ($2\theta$) & Intensity & normalize & $\sin(\theta)$ & Cl & Na \\ \hline
+24.9825 & 2976.7651 & 0.0020 & 0.21629052 & 11.8919238 & 8.15787271 \\ \hline
+27.595 & 12775.8573 & 0.0084 & 0.23849108 & 11.1980161 & 7.83969176 \\ \hline
+31.945 & 1513794.75 & 1.0000 & 0.27517595 & 10.1472457 & 7.30066644 \\ \hline
+45.6675 & 115759.395 & 0.0765 & 0.38805854 & 7.897998 & 5.67425103 \\ \hline
+54.0625 & 4310.7941 & 0.0028 & 0.4544764 & 7.30100259 & 4.82886958 \\ \hline
+56.655 & 16691.8702 & 0.0110 & 0.47451075 & 7.20750721 & 4.59781758 \\ \hline
+66.42 & 85372.7879 & 0.0564 & 0.54770926 & 7.06160451 & 3.85705933 \\ \hline
+67.51 & 1370.582 & 0.0009 & 0.55564279 & 7.05242067 & 3.78650633 \\ \hline
+73.2325 & 2048.964 & 0.0014 & 0.59645254 & 6.97171701 & 3.45180821 \\ \hline
+75.45 & 24860.9892 & 0.0164 & 0.61187222 & 6.91207003 & 3.33682694 \\ \hline
+84.14 & 15422.0274 & 0.0102 & 0.67003803 & 6.39773059 & 2.94947322 \\ \hline
+90.5675 & 2107.8771 & 0.0014 & 0.71059995 & 5.61223502 & 2.70946891 \\ \hline
+101.27 & 3683.4934 & 0.0024 & 0.77312116 & 3.30693206 & 2.3483541 \\ \hline
+107.89 & 1787.0008 & 0.0012 & 0.80845239 & 1.20230511 & 2.12591003 \\ \hline
+110.1625 & 15439.7655 & 0.0102 & 0.8199646 & 0.36245675 & 2.04725935 \\ \hline
+\end{tabular}%
+}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\resizebox{\textwidth}{!}{% 幅が広いため、ページ幅に合わせる設定
+\begin{tabular}{|r|r|r||r|r|r|}
+\hline
+\multicolumn{3}{|c|}{10 min} & \multicolumn{3}{|c|}{5 min} \\ \hline
+\multicolumn{1}{|c|}{position ($2\theta$)} & \multicolumn{1}{c|}{Intensity} & \multicolumn{1}{c||}{normalize} & \multicolumn{1}{c|}{position ($2\theta$)} & \multicolumn{1}{c|}{Intensity} & \multicolumn{1}{c|}{normalize} \\ \hline
+27.26 & 3496.14 & 0.0019 & 24.9825 & 2976.7651 & 0.0020 \\ \hline
+27.62 & 16683.82 & 0.0089 & 27.595 & 12775.8573 & 0.0084 \\ \hline
+31.97 & 1869738.35 & 1.0000 & 31.945 & 1513794.749 & 1.0000 \\ \hline
+45.68 & 113917.12 & 0.0609 & 45.6675 & 115759.3945 & 0.0765 \\ \hline
+54.09 & 4317.64 & 0.0023 & 54.0625 & 4310.7941 & 0.0028 \\ \hline
+56.69 & 21750.62 & 0.0116 & 56.655 & 16691.8702 & 0.0110 \\ \hline
+65.30 & 1306.51 & 0.0007 & 66.42 & 85372.7879 & 0.0564 \\ \hline
+66.43 & 85532.71 & 0.0457 & 67.51 & 1370.582 & 0.0009 \\ \hline
+73.23 & 1966.53 & 0.0011 & 73.2325 & 2048.964 & 0.0014 \\ \hline
+75.47 & 28460.73 & 0.0152 & 75.45 & 24860.9892 & 0.0164 \\ \hline
+84.14 & 13871.36 & 0.0074 & 84.14 & 15422.0274 & 0.0102 \\ \hline
+90.57 & 1997.74 & 0.0011 & 90.5675 & 2107.8771 & 0.0014 \\ \hline
+101.28 & 3895.29 & 0.0021 & 101.27 & 3683.4934 & 0.0024 \\ \hline
+107.92 & 1710.76 & 0.0009 & 107.89 & 1787.0008 & 0.0012 \\ \hline
+110.17 & 13938.53 & 0.0075 & 110.1625 & 15439.7655 & 0.0102 \\ \hline
+119.57 & 8987.08 & 0.0048 & 119.55 & 7007.5485 & 0.0046 \\ \hline
+127.23 & 1279.18 & 0.0007 & 127.1975 & 1195.4629 & 0.0008 \\ \hline
+129.95 & 3890.75 & 0.0021 & 129.9525 & 4966.7235 & 0.0033 \\ \hline
+\end{tabular}%
+}
+\caption{XRD Data Comparison (10 min vs 5 min)}
+\end{table}
+
+\subsection{誤差について}
+シグナル強度の理論との誤差については、優先配向による影響が大きいと考えられる。この誤差は、5 min粉砕した時よりも10 min粉砕した時の方が小さく、均一になるまで粉砕することが重要であると考えられる。
+
+\subsection{\ce{Cu} $K\alpha$線について}
+これらは\ce{Cu}の2p→1sへの遷移に由来する。2p軌道は微細構造により、$p_{3/2}$と$p_{1/2}$に分裂するが、順位の縮退度は2:1である。これは強度比2:1を説明する。
+
+\subsection{Niフィルターの役割}
+\ce{Cu}からは、L殻→K殻の遷移に対応する$K\alpha$線のほか、M殻→K殻に対応する$K\beta$線が放出される。そのため、
+$K\beta$線を捕捉することにより、ほぼ単一波長の$K\alpha$線のみを用いて測定を行う。
+
+Niはよりエネルギーの高い$K\beta$線により励起されるため$K\beta$線を吸収するが、$K\alpha$線は吸収しない。そのため、フィルターとして機能する\cite{Ni}。
+
+\subsection{帰属されないピーク}
+不純物として含まれる結晶、あるいはNiフィルターを透過した$K\beta$線に由来する可能性がある。
+
+\subsection{色中心}
+X線により、$\ce{Cl-} → \ce{Cl} + \ce{e-}$となる。生じた\ce{Cl}原子は格子間位置などに残り、電子が空孔に残ることによりF中心が生じると考えられる\cite{west}。
+
+\section{\ce{KBr}}
+\ce{KBr}についても、同様のパターンを示した。このことから、\ce{KBr}も面心立方格子であると考えられる。
+
+格子定数は、
+$6.61 \pm 0.05$ \AA と計算された。\ce{NaCl}よりも高周期の元素からなり、格子定数もそれを反映して大きくなっていると考えられる。
+
 \begin{thebibliography}{99}
-\bibitem{nmr_solvent}
-Hugo E. Gottlieb, Vadim Kotlyar, and
-Abraham Nudelman, 
-NMR Chemical Shifts of Common
-Laboratory Solvents as Trace Impurities
-J. Org. Chem. 1997, 62, 7512-7515
-\bibitem{Wurtz}
-\url{https://www.chem-station.com/odos/2009/07/wurtz-wurtz-reaction.html}
-\bibitem{biphenyl}
-\url{https://www.rsc.org/suppdata/cc/c3/c3cc45132a/c3cc45132a.pdf}
-\bibitem{o}
-\url{https://www.chemspider.com/Chemical-Structure.15646.html}
+\bibitem{atk}
+アトキンス物理化学 第10版
+\bibitem{Ni}
+X線分析の基礎知識【X線の性質編】
+\url{https://www.chem-station.com/blog/2020/06/xray1.html}
+\bibitem{west}
+ウェスト固体化学
 \end{thebibliography}
-\fi
+
+\section{Appendix}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{NaCl10minKa2.jpg}
+\caption{\ce{NaCl}, 10 min}
+\label{task1}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{NaCl5min.jpg}
+\caption{\ce{NaCl}, 5 min}
+\label{task1}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{KBr10minKa2.PNG}
+\caption{\ce{KBr}, 10 min}
+\label{task1}
+\end{center}
+\end{figure}
+
+
 \end{document}
