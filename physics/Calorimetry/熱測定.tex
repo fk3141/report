@@ -165,11 +165,13 @@ gravimetry: TG)により、\ce{CuSO4*5H2O}の脱水過程を追跡する。
 
 \section{Experimental}
 \begin{enumerate}
-    \item \ce{CuS04*5H2O}をメノウ乳鉢で粉砕した。
-    \item 空のアルミパンを用いて測定器の質量系を0補正したのち、粉砕した\ce{CuS04*5H2O}をアルミパンに入れ、測定器にセットした。質量は14.20 mgであった。
-    \item 同様に、\ce{KNO3}を粉砕、測定器にセットした。質量は hogehoge%%
+    \item \ce{CuSO4*5H2O}をメノウ乳鉢で粉砕した。
+    \item 空のアルミパンを用いて測定器の質量系を0補正したのち、粉砕した\ce{CuS04*5H2O}をアルミパンに入れ、測定器にセットした。質量は13.20 mgであった。
+    \item 同様に、\ce{KNO3}を粉砕、測定器にセットした。質量は 14.57 mgであった。
     \item 昇温速度2 K/minとして、室温($19\D$)から$300\D$まで上昇させながらTG-DTAの測定を行った。
 \end{enumerate}
+
+
 \section{Results and Discussion}
 \begin{figure}[htbp]
 \begin{center}
@@ -180,4 +182,116 @@ gravimetry: TG)により、\ce{CuSO4*5H2O}の脱水過程を追跡する。
 \end{figure}
 測定結果を図\ref{screenshot}に示す。質量(TG)について、三段階の現象が見られる。DTAについては、質量の減少が見られた3つの温度に加え、$130\D$程度でベースラインからのズレが観測された。
 
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{relative_mass.png}
+\caption{質量変化}
+\label{screenshot}
+\end{center}
+\end{figure}
+
+図に示した通り、$35-65\D$で14.5\%、$80-95\D$で14.2\%、$210-240\D$で7.4\%の質量の減少が観測された。これより、$35-60\D$で2分子、$80-95\D$で2分子、$210-240\D$で1分子の水が脱離したと考えられる。
+
+熱測定による測定では、$60-65\D$で2分子、$95\D$で次の2分子、$220\D$で1分子が脱離すると報告されている\cite{Cu}。
+今回測定した値の上限と一致しているが、脱離が文献値よりも低温から生じていることが観測された。
+
+エンタルピー変化を求めるため、DTA-time曲線における山/谷の面積がエンタルピー変化と比例していると仮定する。山/谷の前後の直線領域について、前後それぞれ3 minをとり、最小二乗法による近似直線をベースラインとして用いた。この際、求められたピーク面積、および計算されるエンタルピー変化は表\ref{area}の通りである。ただし、標準物質として用いた\ce{KNO3}の相転移エンタルピーは文献値\cite{KNO3} 5.065 kJ/mol を用いた。
+この際、ピーク面積はエンタルピー変化、すなわちモルエンタルピー変化と、各試料の分子量の積に比例することを用いた。
+
+\begin{table}[h!]
+\centering
+\caption{各転移でのピーク面積およびエントロピー変化}
+\label{area}
+\begin{tabular}{c c c}
+\toprule
+& S & $\Delta H$ / kJ mol$^{-1}$ \\ \midrule
+\ce{CuSO4}-1 & 220.4 & 84.6 \\ 
+\ce{CuSO4}-2 & 217.9 & 83.7 \\ 
+\ce{KNO3} & -29.6 & -5.065 \\ 
+\ce{CuSO4}-3 & 126.8 & 48.7 \\ 
+\bottomrule
+\end{tabular}
+\end{table}
+
+文献値については、直接的なデータは見つからなかったが、各化学種に関する熱力学データ\cite{thermo}から計算した値は、1段階目の2分子の脱水(\ce{CuSO4*5H2O}→\ce{CuSO4*3H2O})は + 117.7 kJ/mol、\ce{CuSO4*3H2O}→\ce{CuSO4*H2O}は+114.8 kJ/mol、\ce{CuSO4*H2O}→\ce{CuSO4}は+72.7 kJ/molと計算された。この値は、表\ref{area}とは大きく異なる。しかしながら、これら3つの比は、ピーク面積の比と概ね一致している。
+
+同一試料における相対的なピーク面積の比較については意味があるが、異なる試料の間での比較では意味をなさない可能性がある。
+
+\ce{CuSO4*5H2O}に関しては、脱水、すなわち気体の水が系外に放出されるため体積の減少を伴う。そのため、熱抵抗$R$が異なったり、特に最後の考察に示したように、熱容量が異なったりすることによってより詳細な補正が必要になると考えられる。これらの補正のためには、各状態での熱容量や熱抵抗の値が必要である。
+
+\subsection{示差熱曲線（DTA曲線）のベースラインが変動する要因}
+2)の式に示したが、参照試料と試料の熱容量が異なっている場合 (よって、試料間の温度差が大きくなっている場合) 場合に、ベースラインの0からのズレが生じる。熱容量の差は、比熱が同程度であれば試料間の質量の差が大きかったり、形状や試料の詰め方が異なっていることによって差が生じる可能性がある。
+
+\subsection{示差熱曲線のピーク面積とエンタルピー変化の関係式}
+
+試料（S）と参照物質（R）は、周囲$T_w$から熱抵抗 $R$ を介して熱を受け取ることを考える。この際、熱抵抗 $R$ は両側で等しく、温度によらず一定とする。
+
+この時、それぞれでの熱収支は
+\begin{enumerate}
+    \item 参照側 (R):
+    \begin{equation}
+    C_R \frac{dT_R}{dt} = \frac{T_w - T_R}{R} 
+    \end{equation}
+    \item 試料側 (S): (反応熱 $\frac{dH}{dt}$ を含む)
+    \begin{equation}
+    C_S \frac{dT_S}{dt} = \frac{T_w - T_S}{R} + \frac{dH}{dt}
+    \end{equation} 
+\end{enumerate}
+と書くことができる。
+
+\begin{align}
+    C_S \frac{dT_S}{dt} - C_R \frac{dT_R}{dt} &= \frac{T_R - T_S}{R} + \frac{dH}{dt}\\
+    C_S \frac{dT_S}{dt} - C_R \frac{dT_R}{dt} &= -\frac{\Delta T}{R} + \frac{dH}{dt}
+\end{align}
+
+$\Delta T$ について整理する。
+$$\Delta T = R \frac{dH}{dt} - R \left(C_S \frac{dT_S}{dt} - C_R \frac{dT_R}{dt}\right)$$
+
+反応の開始 ($t_1$) から終了 ($t_2$) までのピーク面積 $A$ は、時間に対する $\Delta T$ の積分である。
+\begin{align}
+    \int_{t_1}^{t_2} \dx{t} \Delta T &= R \int_{t_1}^{t_2} \dydx{H}{t} - R \int_{t_1}^{t_2}\dx{t} \left(C_S \frac{dT_S}{dt} - C_R \frac{dT_R}{dt}\right)\\
+    &= \Delta H - R \int_{t_1}^{t_2}\dx{t} \left(C_S \frac{dT_S}{dt} - C_R \frac{dT_R}{dt}\right)
+\end{align}
+よって、
+\begin{equation}
+\int_{t_1}^{t_2}\dx{t} \left(C_S \frac{dT_S}{dt} - C_R \frac{dT_R}{dt}\right) = 0
+\end{equation}
+である時、比例関係を得ることができる。
+
+
+\begin{thebibliography}{99}
+\bibitem{Cu}
+S. El-Houte, M. El-Sayed Ali, O.Toft $\phi$rensen, Dehydration of {CuSO4*5H2O} studied by conventional and advanced thermal analysis techniques, Thermochimica ActaVolume 138, Issue 1, 8 February 1989, Pages 107-114
+%\url{https://www-sciencedirect-com.utokyo.idm.oclc.org/science/article/pii/0040603189872454}
+\bibitem{KNO3}
+M. J. Westphal;  J. W. Wood;  R. D. Redin;  T. Ashworth, Calorimetric and photoacoustic investigation of KNO3 phase transitions,
+Journal of Applied Physics 73, 7302 (1993)
+\bibitem{thermo}
+Wagman, D. D., Evans, W. H., Parker, V. B., Schumm, R. H., Halow, I., Bailey, S. M., Churney, K. L., \& Nuttall, R. L. (1982). The NBS tables of chemical thermodynamic properties: Selected values for inorganic and C1 and C2 organic substances in SI units. Journal of Physical and Chemical Reference Data, 11(Suppl. 2), 1-392. \url{https://srd.nist.gov/jpcrdreprint/1.555666.pdf}
+\bibitem{hoge}
+齋藤安俊, 示差熱分析および示差走査熱量測定の基本原理と問題点. Inorganic Materials, Vol. 3, Jul. 271-283 (1996) \url{https://www.jstage.jst.go.jp/article/mukimate1994/3/263/3_263_271/_pdf}
+\end{thebibliography}
+
 \end{document}
+
+
+\section{示差熱曲線（DTA曲線）に関する考察}
+
+\subsection{1) 示差熱曲線（DTA曲線）のベースラインが変動する要因}
+
+\begin{itemize}
+    \item \textbf{熱容量（$C_p$）の不均衡とその温度依存性}
+    \begin{itemize}
+        \item 初期要因: 試料 ($C_S$) と参照物質 ($C_R$) の熱容量が一致していない場合、一定の温度差が生じる（オフセット）。
+        \item 変動要因: $C_p$ の温度依存性が試料と参照物質で異なる場合、昇温に伴いベースラインが傾斜（ドリフト）する。
+    \end{itemize}
+    \item \textbf{熱伝導性と充填状態の変化}
+    \begin{itemize}
+        \item 物理的変化: 試料の融解、焼結、収縮などにより、試料容器との接触面積や熱抵抗 ($R$) が変化し、ベースラインが段差状に変化する。
+        \item 試料の密度: 充填密度の不均一は熱伝導率に影響を与える。
+    \end{itemize}
+    \item \textbf{装置・幾何学的要因}
+    \begin{itemize}
+        \item 非対称性: 試料側と参照側の加熱炉内での位置、センサーの位置、または容器の質量や形状にわずかな非対称性がある。
+    \end{itemize}
+\end{itemize}

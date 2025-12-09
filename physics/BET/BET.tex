@@ -148,19 +148,139 @@
 
 
 \pagestyle{myheadings}
-\title{熱測定}
-\date{実験日:2025/12/1}
+\title{BET法による吸着表面積の決定}
+\date{実験日:2025/12/2}
 \author{報告者: No.7 05253011 Fumiya Kashiwai / 柏井史哉\\
-共同実験者:No.4 石田、No.48 吉田}
+共同実験者:No.5 伊藤}
 \begin{document}
 \maketitle
 \markboth{Physics experiment No.7 05253011 Fumiya Kashiwai / 柏井史哉} {Physics experiment No.7 05253011 Fumiya Kashiwai / 柏井史哉}
 %%ここまでタイトル
 
 \section{Introduction}
+BET法により、活性炭の吸着表面積を測定する。
+
+BET法では、固体表面への多層の吸着を仮定する。この過程のもとで、次の理論式が導かれる。
+窒素分圧$x=P_{N2}/P_0$の時の吸着した気体の体積$v$の間に、
+\begin{equation}
+\frac{1}{v(1-x)} = \frac{1}{v_m}+\frac{1}{v_m c} \lr{\frac{1-x}{x}}
+\end{equation}
+ただし、$v_m, c$は物質に固有の定数である。この式へのフィッティングにより、定数を求める。
+
+ただし、BET法の適用範囲は$0.05 < x < 0.35$とされていることに注意してプロットを行った。
 
 \section{Experimental}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{moshikizu.png}
+\caption{実験装置の模式図、テキストより引用}
+\label{moshikizu}
+\end{center}
+\end{figure}
+
+模式図に示したような真空ラインを用いて実験を行った。トラップは常に十分量の液体窒素で冷却した。
+\begin{enumerate}
+    \item 吸着管を取り付け、ガス球以外の真空ライン内部を10 min程度空引きした。内部圧力は36 Paまで低下した。以下、ゼロ点での圧力としてこの値を用いる。
+    \item 空間V (C7、C8、C9 と圧力計の間) に窒素を導入したのち、平衡状態となった時の圧力を$P_1$として記録した。
+    \item コックC9を開け、吸着管に窒素を導入した。平衡状態となった時の圧力を$P_2$として記録した。
+    \item この測定を4回繰り返し、測定結果を表\ref{dead}にまとめた。
+    \item 吸着管を大気圧に開放したのち、82.6 mgの活性炭を吸着管に入れた。
+    \item 吸着管を取り付け、真空引きしたのちに液体窒素で冷却した。ガス球以外の真空ライン内部を10 min程度空引きした。
+    \item 空間Vに窒素を導入し、平衡状態となった時の圧力を$P_{10}$とした。
+    \item コックC9を開け、吸着管に窒素を導入した。平衡状態となった時の圧力を$P_1$として記録した。
+    \item この測定を20回繰り返し、$n$回目の測定圧力を$P_{n0}$および$P_n$として記録し、測定結果を表\ref{active}にまとめた。
+\end{enumerate}
+
 
 \section{Results and Discussion}
+\begin{table}[h]
+\centering
+\caption{$P-V$ Data}
+\begin{tabular}{rrrrr}
+\toprule
+$P_1$ ($\mathrm{Pa}$) & $P_2$ ($\mathrm{Pa}$) & $P_1 - P_0$ ($\mathrm{Pa}$) & $P_2 - P_0$ ($\mathrm{Pa}$) & $V_A$ ($\mathrm{cm^3}$) \\
+\midrule
+12500 & 4260 & 12500 & 4230 & 82.9 \\
+7130  & 2450 & 7090  & 2410 & 82.7 \\
+4070  & 1410 & 4030  & 1370 & 82.8 \\
+2340  & 820  & 2300  & 784  & 82.3 \\
+\bottomrule
+\end{tabular}
+\end{table}
 
+\subsection{死体積の決定}
+テキストの式により、4回の測定結果から、$V_A = 82.7 \pm 0.3$cm$^3$と決定された。テキストに従い、活性炭の体積は無視して、これを死体積として扱う。
+
+
+
+
+\subsection{BETへのプロット}
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{plot1.png}
+\caption{実験結果のプロット}
+\label{result}
+\end{center}
+\end{figure}
+測定結果は図\ref{result}に記した。吸着した窒素の体積$v$、平衡圧$P$は測定結果をもとに、テキストの処理に従い求めた。その際、圧力のゼロ点として36 Paを引いた値を用いた。
+
+BET法を適用するにあたり、$x$に対して$v(1-x)$をプロットした。この時、短調増加(傾きが正)の領域に限ってBET法は適用可能である\cite{shimadzu}が、この条件を満たしているのは、プロット\ref{Rouquerol}より、$x<0.06$の範囲である。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{Rouquerol.png}
+\caption{Rouquerol plot}
+\label{Rouquerol}
+\end{center}
+\end{figure}
+
+
+そこで、$0.01 < x < 0.06$の範囲の5点を用いてプロットを行い、傾きおよび切片を最小二乗法により決定した。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{BET.png}
+\caption{BET plot}
+\label{BET}
+\end{center}
+\end{figure}
+
+傾き$7.28 \times 10^{-5}$、切片$5.40 \times 10^{-2}$と決定され、これより$v_m = 18.5$[cm$^3$], $c = 741$と計算された。($c$は無単位)
+
+\subsection{窒素分子の吸着表面積}
+分子一個が占める体積$v$は
+\begin{equation}
+v = \frac{28.013 \text{g/mol}}{\rho N_A} = 5.76 \times 10^{-23} \text{[cm$^3$]} 
+\end{equation}
+FCC構造を作っていると仮定すると、分子の直径を$d$として、$v = \frac{d^3}{\sqrt{2}}$となる。
+
+故に、窒素1分子が占める面積$\sigma$は、
+\begin{equation}
+    \sigma = \frac{\sqrt{3}}{2}d^2 = 0.163 \text{nm$^2$}
+\end{equation}
+
+\subsection{活性炭の吸着表面積}
+単分子吸着量$V_m = 18.53$cm$^3$/g より、まず吸着分子数は$\frac{V_m}{22414}$によって決まり、表面積は先ほどの$\sigma$を用いて
+\begin{equation}
+    S=\frac{V_m}{22414}\times N_A \times \sigma = 81.1 \text{m$^2$/g}
+\end{equation}
+と決定される。
+
+また、$E_1$については式(9)の係数を1として計算し、
+
+\begin{equation}
+    E_1 - E_L =  + RT\ln{c} = 4.23 \text{kJ/mol}
+\end{equation}
+と決定される。文献値$E_L = 5.6 \text{kJ/mol}$を用いると、$E_1 = 9.8 \text{kJ/mol}$となる。
+
+$c$の値については、文献によりばらつきが見られるが、一般に50~300をとり、500を超える場合にはマイクロポアが疑われる\cite{shimadzu2}。実際、今回の解析ではマイクロポアあるとして、Rouquerol plotを用いる必要があったため、通常の多層の吸着と比較して、マイクロポアが存在し、$c$が大きいするのが合理的である。
+
+\begin{thebibliography}{99}
+\bibitem{shimadzu}
+\url{https://www.an.shimadzu.co.jp/service-support/technical-support/analysis-basics/powder/lecture/practice/p02/lesson16/index.html}
+\bibitem{shimadzu2}
+\url{https://www.an.shimadzu.co.jp/service-support/technical-support/analysis-basics/powder/lecture/practice/p02/lesson15/index.html}
+\end{thebibliography}
 \end{document}
