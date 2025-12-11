@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  11 DEC 2025 11:49
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  11 DEC 2025 09:17
  restricted system commands enabled.
  file:line:error style messages enabled.
-**/Users/kashi/report/physics/python/python.tex
-(/Users/kashi/report/physics/python/python.tex
+**/Users/kashi/report/organic/unit4/7_KashiwaiFumiya_unit4.tex
+(/Users/kashi/report/organic/unit4/7_KashiwaiFumiya_unit4.tex
 LaTeX2e <2021-11-15> patch level 1
 Lua module: luaotfload 2022-03-18 3.21 Lua based OpenType font support
 Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
@@ -869,57 +869,53 @@ Package: amsthm 2020/05/29 v2.20.6
 \c@lem=\count327
 \c@prf=\count328
 \c@boxeddefcounter=\count329
- (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
-\c@subfigure=\count330
-\c@subtable=\count331
-) (/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-tascmac.sty
+ (/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-tascmac.sty
 Package: lltjp-tascmac 2020/12/24 Patch to (t)ascmac for LuaTeX-ja
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 warning  (map file): entry for 'ascgrp' already exists, duplicates ignored
-) (/Users/kashi/report/out/python.aux)
-\openout1 = python.aux
+) (/Users/kashi/report/out/7_KashiwaiFumiya_unit4.aux)
+\openout1 = 7_KashiwaiFumiya_unit4.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 148.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 148.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 148.
+LaTeX Font Info:    ... okay on input line 148.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
+\scratchcounter=\count330
 \scratchdimen=\dimen313
 \scratchbox=\box98
-\nofMPsegments=\count333
-\nofMParguments=\count334
+\nofMPsegments=\count331
+\nofMParguments=\count332
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count335
+\MPscratchCnt=\count333
 \MPscratchDim=\dimen314
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
+\MPnumerator=\count334
+\makeMPintoPDFobject=\count335
 \everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -930,7 +926,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 152.
+Package hyperref Info: Link coloring OFF on input line 148.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -938,183 +934,211 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count338
+\c@section@level=\count336
 )
-LaTeX Info: Redefining \ref on input line 152.
-LaTeX Info: Redefining \pageref on input line 152.
-LaTeX Info: Redefining \nameref on input line 152.
+LaTeX Info: Redefining \ref on input line 148.
+LaTeX Info: Redefining \pageref on input line 148.
+LaTeX Info: Redefining \nameref on input line 148.
 
-Package chemgreek Info: Activating mapping `default' on line 152.
+Package chemgreek Info: Activating mapping `default' on line 148.
 
 (load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 154.
+(Font)              scaled to size 15.97903pt on input line 153.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 154.
+(Font)              scaled to size 15.97903pt on input line 153.
 (load cache: extra_lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 153.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 153.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 154.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 154.
+(Font)              scaled to size 5.54828pt on input line 153.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 153.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 154.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 153.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 153.
 (load cache: extra_haranoajigothic-medium.luc)
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 154.
+(Font)              scaled to size 7.3977pt on input line 153.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 154.
+(Font)              scaled to size 5.54828pt on input line 153.
 (load cache: extra_lmroman10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 157.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 156.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 157.
+(Font)              scaled to size 9.24713pt on input line 156.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 157.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 156.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 157.
+(Font)              scaled to size 9.24713pt on input line 156.
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 158.
+(Font)              scaled to size 13.31586pt on input line 157.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 158.
+(Font)              scaled to size 13.31586pt on input line 157.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 158.
+(Font)              scaled to size 13.31586pt on input line 157.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 158.
-(load cache: extra_lmsans12-regular.luc)(load cache: extra_lmsans17-regular.luc)
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 158.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 158.
+(Font)              scaled to size 13.31586pt on input line 157.
+(load cache: extra_lmsans12-regular.luc)
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 164.
+(Font)              scaled to size 6.47299pt on input line 158.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 164.
+(Font)              scaled to size 4.62357pt on input line 158.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 164.
+(Font)              scaled to size 6.47299pt on input line 158.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 164.
+(Font)              scaled to size 4.62357pt on input line 158.
 (load cache: extra_lmroman7-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 164.
+(Font)              scaled to size 6.47299pt on input line 158.
 (load cache: extra_lmroman5-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 164.
-<ODE3_normal.png, id=16, 409.7709pt x 312.2064pt>
-File: ODE3_normal.png Graphic file (type png)
-<use ODE3_normal.png>
-Package luatex.def Info: ODE3_normal.png  used on input line 167.
-(luatex.def)             Requested size: 284.52756pt x 216.78989pt.
-(load cache: extra_lmroman9-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 168.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 168.
-(load cache: extra_lmroman9-bold.luc)
-LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <9> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 168.
+(Font)              scaled to size 4.62357pt on input line 158.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 168.
-LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <9> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 168.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 168.
-<ODE3_HBrO2_0.png, id=17, 409.7709pt x 312.2064pt>
-File: ODE3_HBrO2_0.png Graphic file (type png)
-<use ODE3_HBrO2_0.png>
-Package luatex.def Info: ODE3_HBrO2_0.png  used on input line 180.
-(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-(load cache: extra_lmroman8-bold.luc)
-LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <8> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 181.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 181.
-LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <8> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 181.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 181.
-<ODE3_HBrO2_3.png, id=18, 409.7709pt x 312.2064pt>
-File: ODE3_HBrO2_3.png Graphic file (type png)
-<use ODE3_HBrO2_3.png>
-Package luatex.def Info: ODE3_HBrO2_3.png  used on input line 185.
-(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_HBrO2_6.png, id=19, 409.7709pt x 312.2064pt>
-File: ODE3_HBrO2_6.png Graphic file (type png)
-<use ODE3_HBrO2_6.png>
-Package luatex.def Info: ODE3_HBrO2_6.png  used on input line 190.
-(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+(Font)              scaled to size 11.09656pt on input line 161.
+
+
+LaTeX Warning: Reference `mix_4-2' on page 2 undefined on input line 163.
+
 (load cache: extra_lmroman6-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 193.
-<ODE3_Br_0.png, id=20, 409.7709pt x 312.2064pt>
-File: ODE3_Br_0.png Graphic file (type png)
-<use ODE3_Br_0.png>
-Package luatex.def Info: ODE3_Br_0.png  used on input line 201.
-(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_Br_3.png, id=21, 409.7709pt x 312.2064pt>
-File: ODE3_Br_3.png Graphic file (type png)
-<use ODE3_Br_3.png>
-Package luatex.def Info: ODE3_Br_3.png  used on input line 206.
-(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_Br_6.png, id=22, 409.7709pt x 312.2064pt>
-File: ODE3_Br_6.png Graphic file (type png)
-<use ODE3_Br_6.png>
-Package luatex.def Info: ODE3_Br_6.png  used on input line 211.
-(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_Ce_0.png, id=23, 409.7709pt x 312.2064pt>
-File: ODE3_Ce_0.png Graphic file (type png)
-<use ODE3_Ce_0.png>
-Package luatex.def Info: ODE3_Ce_0.png  used on input line 226.
-(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_Ce_3.png, id=24, 409.7709pt x 312.2064pt>
-File: ODE3_Ce_3.png Graphic file (type png)
-<use ODE3_Ce_3.png>
-Package luatex.def Info: ODE3_Ce_3.png  used on input line 231.
-(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_Ce_6.png, id=25, 409.7709pt x 312.2064pt>
-File: ODE3_Ce_6.png Graphic file (type png)
-<use ODE3_Ce_6.png>
-Package luatex.def Info: ODE3_Ce_6.png  used on input line 236.
-(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_compare.png, id=26, 409.7709pt x 312.2064pt>
-File: ODE3_compare.png Graphic file (type png)
-<use ODE3_compare.png>
-Package luatex.def Info: ODE3_compare.png  used on input line 255.
-(luatex.def)             Requested size: 284.52756pt x 216.78989pt.
- [2<./ODE3_normal.png>]
-<ODE3_relative_error.png, id=52, 408.3255pt x 323.7696pt>
-File: ODE3_relative_error.png Graphic file (type png)
-<use ODE3_relative_error.png>
-Package luatex.def Info: ODE3_relative_error.png  used on input line 263.
-(luatex.def)             Requested size: 284.52756pt x 225.60959pt.
- [3<./ODE3_HBrO2_0.png><./ODE3_HBrO2_3.png><./ODE3_HBrO2_6.png><./ODE3_Br_0.png><./ODE3_Br_3.png><./ODE3_Br_6.png><./ODE3_Ce_0.png><./ODE3_Ce_3.png><./ODE3_Ce_6.png>] [4<./ODE3_compare.png><./ODE3_relative_error.png>] (/Users/kashi/report/out/python.aux))
+(Font)              scaled to size 5.54828pt on input line 202.
+[2]
+
+LaTeX Warning: Reference `mix_4-3' on page 3 undefined on input line 210.
+
+[3]
+
+LaTeX Warning: Reference `mix_gel' on page 4 undefined on input line 218.
+
+
+LaTeX Warning: Reference `APS' on page 4 undefined on input line 281.
+
+[4]
+
+LaTeX Warning: Reference `fig_nanodrop' on page 5 undefined on input line 283.
+
+
+LaTeX Warning: Reference `table_nanodrop' on page 5 undefined on input line 283.
+
+
+LaTeX Warning: Citation `thermo' on page 5 undefined on input line 283.
+
+<250711_A,B.JPG, id=95, 642.4pt x 481.8pt>
+File: 250711_A,B.JPG Graphic file (type jpg)
+<use 250711_A,B.JPG>
+Package luatex.def Info: 250711_A,B.JPG  used on input line 287.
+(luatex.def)             Requested size: 284.52756pt x 213.39682pt.
+<B_Hairpin_UV-vis.png, id=96, 722.7pt x 722.7pt>
+File: B_Hairpin_UV-vis.png Graphic file (type png)
+<use B_Hairpin_UV-vis.png>
+Package luatex.def Info: B_Hairpin_UV-vis.png  used on input line 310.
+(luatex.def)             Requested size: 216.81166pt x 216.81166pt.
+/Users/kashi/report/organic/unit4/7_KashiwaiFumiya_unit4.tex:311: Undefined control sequence.
+l.311   \subcaption
+                 {Hairpin RNA}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<B_Substrate_UV-vis.png, id=97, 722.7pt x 722.7pt>
+File: B_Substrate_UV-vis.png Graphic file (type png)
+<use B_Substrate_UV-vis.png>
+Package luatex.def Info: B_Substrate_UV-vis.png  used on input line 316.
+(luatex.def)             Requested size: 216.81166pt x 216.81166pt.
+/Users/kashi/report/organic/unit4/7_KashiwaiFumiya_unit4.tex:317: Undefined control sequence.
+l.317   \subcaption
+                 {Substrate RNA}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (2.22pt too wide) in paragraph at lines 307--319
+[][] [] 
+ []
+
+<structure.png, id=98, 859.21pt x 392.46625pt>
+File: structure.png Graphic file (type png)
+<use structure.png>
+Package luatex.def Info: structure.png  used on input line 325.
+(luatex.def)             Requested size: 284.52756pt x 129.9634pt.
+[5] [6<./250711_A,B.JPG><./B_Hairpin_UV-vis.png><./B_Substrate_UV-vis.png>]
+
+LaTeX Warning: Reference `mix_4-4' on page 7 undefined on input line 336.
+
+
+LaTeX Warning: Reference `mix_4-4' on page 7 undefined on input line 339.
+
+
+Overfull \hbox (23.07361pt too wide) in paragraph at lines 351--362
+ [][][] 
+ []
+
+[7<./structure.png>]
+
+LaTeX Warning: Reference `incubation' on page 8 undefined on input line 370.
+
+<incubation.png, id=136, 330.033pt x 310.104pt>
+File: incubation.png Graphic file (type png)
+<use incubation.png>
+Package luatex.def Info: incubation.png  used on input line 378.
+(luatex.def)             Requested size: 284.52756pt x 267.3467pt.
+
+LaTeX Warning: Reference `mechanism' on page 8 undefined on input line 384.
+
+
+LaTeX Warning: Citation `mechanism' on page 8 undefined on input line 384.
+
+
+LaTeX Warning: Citation `mechanism' on page 8 undefined on input line 384.
+
+[8<./incubation.png>]
+<mechanism.png, id=145, 351.3125pt x 304.13625pt>
+File: mechanism.png Graphic file (type png)
+<use mechanism.png>
+Package luatex.def Info: mechanism.png  used on input line 388.
+(luatex.def)             Requested size: 284.52756pt x 246.33972pt.
+(load cache: extra_lmmono10-regular.luc)
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 406.
+ [9<./mechanism.png>] (/Users/kashi/report/out/7_KashiwaiFumiya_unit4.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+)
 
 Here is how much of LuaTeX's memory you used:
- 26163 strings out of 477785
- 195698,1144653 words of node,token memory allocated
- 27490 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 455 kern, 1 glyph, 11150 attribute, 231 glue_spec, 579 attribute_list, 2 write, 89 user_defined nodes
-   avail lists: 1:46,2:62901,3:373,4:436,5:48,6:86,7:2988,8:41,9:1419,10:13,11:16
- 45731 multiletter control sequences out of 65536+600000
- 111 fonts using 74613487 bytes
- 114i,13n,115p,1799b,864s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman8-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on python.pdf (4 pages, 443186 bytes).
+ 26050 strings out of 477785
+ 382229,1144653 words of node,token memory allocated
+ 28915 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 12 glue, 365 kern, 1 glyph, 10711 attribute, 704 glue_spec, 568 attribute_list, 2 write, 171 user_defined, 2 pdf_action nodes
+   avail lists: 1:49,2:110248,3:289,4:490,5:157,6:66,7:7777,8:104,9:591,10:14,11:419
+ 45578 multiletter control sequences out of 65536+600000
+ 97 fonts using 62435855 bytes
+ 114i,17n,115p,1814b,688s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on 7_KashiwaiFumiya_unit4.pdf (9 pages, 3718136 bytes).
 
-PDF statistics: 211 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 131072)
- 72 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 271 PDF objects out of 1000 (max. 8388607)
+ 213 compressed objects within 3 object streams
+ 91 named destinations out of 1000 (max. 131072)
+ 96 words of extra memory for PDF output out of 10000 (max. 100000000)
 

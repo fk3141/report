@@ -136,10 +136,10 @@
 {\refstepcounter{boxeddefcounter}\begin{itembox}[l]{問\theboxeddefcounter}}
 {\end{itembox}}
 
-%\usepackage[hang,small,bf]{caption}
-%\usepackage[subrefformat=parens]{subcaption}
-\captionsetup{compatibility=false}
 
+\usepackage{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{format=hang, font=small, labelfont=bf, compatibility=false}
 
 \newcommand{\D}{^\circ\text{C}}
 \newcommand{\ka}{\textasciitilde}
@@ -155,15 +155,119 @@
 %%ここまでタイトル
 
 \newpage
-\subsection{Purpose and Background}
-Pythonプログラミングを用いて、複雑な反応速度式を有するベローゾフ・ジャボチンスキー (BZ) 反応における、各化学種の濃度変化を数値的に解く。
+\part{ODE-3 : Belousov-Zhabotinsky Reaction}
+\section{Purpose and Background}
+Pythonプログラミングを用いて、複雑な反応速度式を有するBelousov-Zhabotinsky (BZ) 反応における、各化学種の濃度変化を数値的に解く。
 
-BZ反応の反応速度式は、
-\subsection{Experimental}
 
-\subsection{Result and Discussion}
+\section{基本の条件}
+まず、テキストに記載された速度定数、初期濃度を用いて計算を行った。[\ce{HBrO2}], [\ce{Br-}], [\ce{Ce^{4+}}]の初期濃度を$[0, 0.0015, 0.0015]$ (M) とした(条件1)。
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{ODE3_normal.png}
+\caption{初濃度$[0, 0.0015, 0.0015]$、$\Delta t = 0.001$ s}
+\label{Naphthalene_all}
+\end{center}
+\end{figure}
+
+条件1では、100 s程度の周期での振動が見られた。
+
+\section{初期濃度の変更}
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE3_HBrO2_0.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE3_HBrO2_3.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE3_HBrO2_6.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{[\ce{HBrO2}]を変化させた時の挙動}
+ \label{ODE3_HBrO2}
+\end{figure}
+
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE3_Br_0.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE3_Br_3.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE3_Br_6.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{[\ce{Br-}]を変化させた時の挙動}
+ \label{ODE3_Br}
+\end{figure}
+
+[\ce{HBrO2}], [\ce{Br-}]の初期濃度を変化させた時、初期の挙動には違いが見られものの、振動周期はほぼ変化しなかった。これは、\ce{Br}種のうち、\ce{BrO3-}の濃度が非常に大きいため、[\ce{HBrO2}], [\ce{Br-}]の変化はほぼ影響しないためと考えられる。
+
+対して、\ce{Ce^{4+}}の初期濃度を大きくすると、振動周期の増大が確認された。これは、(定性的には)\ce{Ce^{4+}}を消費するのに時間をより要することから説明される。
+
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE3_Ce_0.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE3_Ce_3.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE3_Ce_6.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{[\ce{Ce^{4+}}]を変化させた時の挙動}
+ \label{ODE3_Ce}
+\end{figure}
+
+このモデルでは、簡略化に伴い\ce{Ce4+}の初期濃度が0の時にも、$\dydx{[\ce{Ce4+}]}{t} \neq 0$となってしまう。そのため、本来振動しないはずの状況でも、振動している計算結果が出力されることが確認された。
+
+
+\section{反応速度定数の変更}
+
+
+
+\section{Runge-Kutta法とEuler法の比較}
+ともに$\Delta t = 0.0001$ sとして、Runge-Kutta法とEuler法それぞれで計算をした。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{ODE3_compare.png}
+\caption{Runge-Kutta法とEuler法の計算値}
+\label{compare}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{ODE3_relative_error.png}
+\caption{Runge-Kutta法とEuler法の計算値の差}
+\label{error}
+\end{center}
+\end{figure}
 
 \section{Appendix}
+
 
 
 %%参考文献
