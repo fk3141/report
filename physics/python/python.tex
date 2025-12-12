@@ -145,6 +145,7 @@
 \newcommand{\ka}{\textasciitilde}
 
 
+
 \pagestyle{myheadings}
 \title{計算機課題/Pythonプログラミング}
 \date{\today}
@@ -155,18 +156,105 @@
 %%ここまでタイトル
 
 \newpage
+\part{FD-1 : 調和振動子の波動関数}
+\section{Purpose and Background}
+有限差分法を用い、調和振動子の波動関数を計算する。
+
+\section{計算}
+$\delta \xi = 0.01$として、$n =0,1, ..., 10$に対する波動関数$\Phi_n(\xi)$を計算した。プロットしたものを\ref{FD1}に示した。
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{FD-1.png}
+\caption{$\Delta \xi = 0.01$}
+\label{FD1}
+\end{center}
+\end{figure}
+
+節の数が$n$と一致することが確認できる。また、$\Phi_n$を縦軸$n+\frac{1}{2}$、すなわち振動のエネルギーにとったところ、粒子の広がりが調和ポテンシャル内部に収まっている様子が確認できた。
+
+\part{FD-2 : 非調和振動子の波動関数}
+\section{Purpose and Background}
+FD-1で計算した調和振動子に対して、非調和項$g\xi^4$を加えて議論する。この時の調和振動子の固有エネルギーを計算し、一次摂動により得られたエネルギーと比較した。
+
+\section{Result}
+
+\begin{table}[h]
+\centering
+\caption{計算結果の相対誤差}
+\begin{tabular}{rrrrr}
+\toprule
+$g$ & $n=0$ & $n=1$ & $n=2$ & $n=3$ \\
+\midrule
+0    & $6.25 \times 10^{-6}$ & $1.04 \times 10^{-5}$ & $1.63 \times 10^{-5}$ & $2.20 \times 10^{-5}$ \\
+0.01 & 0.000487              & 0.00122               & 0.00258               & 0.00447 \\
+0.05 & 0.00904               & 0.0202                & 0.0380                & 0.0589 \\
+0.1  & 0.0276                & 0.0563                & 0.097                 & 0.139 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+$g=0$は、非調和項が0の、調和振動子の場合に相当し、誤差は極めて小さい。
+非調和性が大きく、また$n$が大きくなるのにしたがって誤差は大きくなり、特に$g=0.1$では基底状態でも3\%程度の誤差が生じている。
+
+計算されたポテンシャルの形状を示す。$g$が大きくなるのに従って、振動の範囲が狭まっている(ポテンシャルが急峻になっている)ことが確認できた。
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{FD2_g0.01.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{FD2_g0.05.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{FD2_g0.1.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{非調和項$g\xi^4$を含む波動関数}
+ \label{FD2}
+\end{figure}
+
+\part{FD-4 : 非調和振動子の波動関数-2}
+非対称な非調和項$f\xi^3$を含むポテンシャルの場合の、波動関数を計算し、示す。
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{FD4_f0.01.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{FD4_f0.02.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{FD4_f0.03.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{非調和項$f\xi^3$を含む波動関数}
+ \label{FD4}
+\end{figure}
+
 \part{ODE-3 : Belousov-Zhabotinsky Reaction}
 \section{Purpose and Background}
-Pythonプログラミングを用いて、複雑な反応速度式を有するBelousov-Zhabotinsky (BZ) 反応における、各化学種の濃度変化を数値的に解く。
+Pythonプログラミングにより、Runge-Kutta法によって複雑な反応速度式を有するBelousov-Zhabotinsky (BZ) 反応における、各化学種の濃度変化を数値的に解く。また、Runge-Kutta法とEuler法の計算結果を比較する。
 
 
 \section{基本の条件}
-まず、テキストに記載された速度定数、初期濃度を用いて計算を行った。[\ce{HBrO2}], [\ce{Br-}], [\ce{Ce^{4+}}]の初期濃度を$[0, 0.0015, 0.0015]$ (M) とした(条件1)。
+まず、テキストに記載された速度定数、初期濃度を用いて計算を行った。4次のRunge-Kutta法を用いた。
+
+[\ce{HBrO2}], [\ce{Br-}], [\ce{Ce^{4+}}]の初期濃度を$[0, 0.0015, 0.0015]$ (M) とした(条件1)。
 \begin{figure}[htbp]
 \begin{center}
 \includegraphics[width = 10 cm]{ODE3_normal.png}
 \caption{初濃度$[0, 0.0015, 0.0015]$、$\Delta t = 0.001$ s}
-\label{Naphthalene_all}
+\label{normal}
 \end{center}
 \end{figure}
 
@@ -244,29 +332,237 @@ Pythonプログラミングを用いて、複雑な反応速度式を有するBe
 
 
 \section{反応速度定数の変更}
+\subsection{$k_1$}
+[\ce{HBrO2}], [\ce{Br-}]に対する正のフィードバックを与える速度定数であり、$k_1$が大きくなることにより振動周期が短くなることが予測される。実際、反応の全体の速度は向上しており、しかしながら10倍した場合には300 sの間に明らかに減衰振動している。また、0.1倍した場合には、$k_1$は[\ce{Ce^{4+}}]には関わらないため、[\ce{Ce^{4+}}]が早く消費されてしまい振動が見られないと考えられる。
 
 
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k1_0.1.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k1_1.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k1_10.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{$k_1$を変化させた時の挙動}
+ \label{ODE3_k1}
+\end{figure}
 
+\subsection{$k_2$}
+$k_2$は[\ce{HBrO2}], [\ce{Br-}]に対して負のフィードバックを与える
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k2_0.1.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k2_1.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k2_10.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{$k_2$を変化させた時の挙動}
+ \label{ODE3_k2}
+\end{figure}
+
+\subsection{$k_3$}
+$k_3$が小さくなった場合には、[\ce{Ce^{4+}}]に対する正のフィードバックが小さくなり、[\ce{Ce^{4+}}]の挙動はほぼ指数減衰となると考えられるが、実際0.1倍にした時には振動が確認できなかった。
+
+対して、$k_3$を10倍にした場合には、[\ce{Ce^{4+}}]が非常に小さくなった時には急激な増加が生じていた。しかしながら、この計算結果では\ce{Ce}種の総濃度 (=[\ce{Ce^{4+}}]の初濃度)よりも大きくなってしまっており、モデルの適用範囲外であると考えられる。
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k3_0.1.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k3_1.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k3_10.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{$k_3$を変化させた時の挙動}
+ \label{ODE3_k3}
+\end{figure}
+
+
+\subsection{$k_4$}
+$k_4$は[\ce{HBrO2}]の濃度にのみ影響するが、2次で効いているため大きな支配をしているようである。10倍にした場合には、振動はしているものの、濃度の変化は非常に小さくなった。[\ce{HBrO2}]に対しての負のフィードバックが大きくなり、濃度変化は相対的に小さくなっていると考えられる。
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k4_0.1.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k4_1.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k4_10.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{$k_4$を変化させた時の挙動}
+ \label{ODE3_k4}
+\end{figure}
+
+
+\subsection{$k_5$}
+$k_5$を10倍にした場合には、振動をせず定常状態に至った。
+より詳細に検討(図\ref{ODE3_k5_detail})したところ、$k_5$を2倍以上にすると、振動せずに定常状態に至った。また、1倍以下の場合には、$k_5$が小さいほど振動周期は長く、各振動における化学種の濃度変化も大きかった。
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_0.1.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_1.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_10.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{$k_5$を変化させた時の挙動}
+ \label{ODE3_k5}
+\end{figure}
+
+
+\newpage
 \section{Runge-Kutta法とEuler法の比較}
 ともに$\Delta t = 0.0001$ sとして、Runge-Kutta法とEuler法それぞれで計算をした。
 
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width = 10 cm]{ODE3_compare.png}
-\caption{Runge-Kutta法とEuler法の計算値}
+\includegraphics[width = 8 cm]{ODE3_compare.png}
+\caption{Runge-Kutta法とEuler法の計算値、$\Delta t = 0.0001$ s}
 \label{compare}
 \end{center}
 \end{figure}
 
+概ね一致しているが、詳細な比較のため両方の計算値の差を求め、図\ref{error}にプロットを示した。
+この際、最初の部分に関しては他の時刻と比べて差が大きいが、周期などの情報と比較して化学的な意味合いは薄いと考えられる。そのため、最初の0.1 sの部分はのぞいてプロットを行った。
+
+差の計算では、図\ref{normal}と比較し、値の変化が急激である点において差が大きくなっていた。
+
 \begin{figure}[htbp]
 \begin{center}
-\includegraphics[width = 10 cm]{ODE3_relative_error.png}
-\caption{Runge-Kutta法とEuler法の計算値の差}
+\includegraphics[width = 8 cm]{ODE3_relative_error.png}
+\caption{Runge-Kutta法とEuler法の計算値の差、条件1}
 \label{error}
 \end{center}
 \end{figure}
 
+
+
 \section{Appendix}
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_0.2.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_0.3.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_0.4.png}
+  \subcaption{}
+ \end{minipage}
+% \label{ODE3_k5}
+% \end{figure}
+
+% \begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_0.5.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_0.6.png}
+  \subcaption{}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_0.7.png}
+  \subcaption{}
+ \end{minipage}
+% \label{ODE3_k5}
+%\end{figure}
+
+%\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_0.8.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_0.9.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_1.png}
+  \subcaption{}
+ \end{minipage}
+
+
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_2.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_3.png}
+  \subcaption{}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_4.png}
+  \subcaption{}
+ \end{minipage}
+
+ 
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{ODE_k5_5.png}
+  \subcaption{}
+ \end{minipage}
+ \caption{$k_5$を詳細に変化させた時の挙動 $\Delta t$ = 0.0001 s}
+ \label{ODE3_k5_detail}
+\end{figure}
 
 
 

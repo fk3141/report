@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  11 DEC 2025 11:49
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  12 DEC 2025 22:37
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/kashi/report/physics/python/python.tex
@@ -880,34 +880,34 @@ warning  (map file): entry for 'ascgrp' already exists, duplicates ignored
 ) (/Users/kashi/report/out/python.aux)
 \openout1 = python.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 153.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 153.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 153.
+LaTeX Font Info:    ... okay on input line 153.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count332
@@ -930,7 +930,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 152.
+Package hyperref Info: Link coloring OFF on input line 153.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -940,64 +940,64 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count338
 )
-LaTeX Info: Redefining \ref on input line 152.
-LaTeX Info: Redefining \pageref on input line 152.
-LaTeX Info: Redefining \nameref on input line 152.
+LaTeX Info: Redefining \ref on input line 153.
+LaTeX Info: Redefining \pageref on input line 153.
+LaTeX Info: Redefining \nameref on input line 153.
 
-Package chemgreek Info: Activating mapping `default' on line 152.
+Package chemgreek Info: Activating mapping `default' on line 153.
 
 (load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 154.
+(Font)              scaled to size 15.97903pt on input line 155.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 154.
+(Font)              scaled to size 15.97903pt on input line 155.
 (load cache: extra_lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 155.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 155.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 154.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 154.
+(Font)              scaled to size 5.54828pt on input line 155.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 155.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 154.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 155.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 155.
 (load cache: extra_haranoajigothic-medium.luc)
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 154.
+(Font)              scaled to size 7.3977pt on input line 155.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 154.
+(Font)              scaled to size 5.54828pt on input line 155.
 (load cache: extra_lmroman10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 157.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 158.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 157.
+(Font)              scaled to size 9.24713pt on input line 158.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 157.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 158.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 157.
+(Font)              scaled to size 9.24713pt on input line 158.
  [1
 
 ]
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 158.
+(Font)              scaled to size 13.31586pt on input line 159.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 158.
+(Font)              scaled to size 13.31586pt on input line 159.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 158.
+(Font)              scaled to size 13.31586pt on input line 159.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 158.
+(Font)              scaled to size 13.31586pt on input line 159.
 (load cache: extra_lmsans12-regular.luc)(load cache: extra_lmsans17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 158.
+(Font)              scaled to size 19.17854pt on input line 159.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 158.
+(Font)              scaled to size 19.17854pt on input line 159.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 6.47299pt on input line 164.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
@@ -1006,17 +1006,11 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 6.47299pt on input line 164.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 4.62357pt on input line 164.
-(load cache: extra_lmroman7-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 164.
-(load cache: extra_lmroman5-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 164.
-<ODE3_normal.png, id=16, 409.7709pt x 312.2064pt>
-File: ODE3_normal.png Graphic file (type png)
-<use ODE3_normal.png>
-Package luatex.def Info: ODE3_normal.png  used on input line 167.
-(luatex.def)             Requested size: 284.52756pt x 216.78989pt.
+<FD-1.png, id=17, 409.0482pt x 331.7193pt>
+File: FD-1.png Graphic file (type png)
+<use FD-1.png>
+Package luatex.def Info: FD-1.png  used on input line 167.
+(luatex.def)             Requested size: 284.52756pt x 230.74417pt.
 (load cache: extra_lmroman9-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
 (Font)              scaled to size 8.32242pt on input line 168.
@@ -1031,90 +1025,337 @@ LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <9> not available
 (Font)              Font shape `JY3/gt/m/n' tried instead on input line 168.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 8.32242pt on input line 168.
-<ODE3_HBrO2_0.png, id=17, 409.7709pt x 312.2064pt>
-File: ODE3_HBrO2_0.png Graphic file (type png)
-<use ODE3_HBrO2_0.png>
-Package luatex.def Info: ODE3_HBrO2_0.png  used on input line 180.
-(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+ [2<./FD-1.png>]
+<FD2_g0.01.png, id=41, 409.0482pt x 331.7193pt>
+File: FD2_g0.01.png Graphic file (type png)
+<use FD2_g0.01.png>
+Package luatex.def Info: FD2_g0.01.png  used on input line 204.
+(luatex.def)             Requested size: 122.7154pt x 99.51654pt.
 (load cache: extra_lmroman8-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <8> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 181.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 205.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 181.
+(Font)              scaled to size 7.3977pt on input line 205.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <8> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 181.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 205.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 181.
-<ODE3_HBrO2_3.png, id=18, 409.7709pt x 312.2064pt>
+(Font)              scaled to size 7.3977pt on input line 205.
+<FD2_g0.05.png, id=42, 409.0482pt x 331.7193pt>
+File: FD2_g0.05.png Graphic file (type png)
+<use FD2_g0.05.png>
+Package luatex.def Info: FD2_g0.05.png  used on input line 209.
+(luatex.def)             Requested size: 122.7154pt x 99.51654pt.
+<FD2_g0.1.png, id=43, 409.0482pt x 331.7193pt>
+File: FD2_g0.1.png Graphic file (type png)
+<use FD2_g0.1.png>
+Package luatex.def Info: FD2_g0.1.png  used on input line 214.
+(luatex.def)             Requested size: 122.7154pt x 99.51654pt.
+<FD4_f0.01.png, id=44, 409.0482pt x 331.7193pt>
+File: FD4_f0.01.png Graphic file (type png)
+<use FD4_f0.01.png>
+Package luatex.def Info: FD4_f0.01.png  used on input line 227.
+(luatex.def)             Requested size: 122.7154pt x 99.51654pt.
+<FD4_f0.02.png, id=45, 409.0482pt x 331.7193pt>
+File: FD4_f0.02.png Graphic file (type png)
+<use FD4_f0.02.png>
+Package luatex.def Info: FD4_f0.02.png  used on input line 232.
+(luatex.def)             Requested size: 122.7154pt x 99.51654pt.
+<FD4_f0.03.png, id=46, 409.0482pt x 331.7193pt>
+File: FD4_f0.03.png Graphic file (type png)
+<use FD4_f0.03.png>
+Package luatex.def Info: FD4_f0.03.png  used on input line 237.
+(luatex.def)             Requested size: 122.7154pt x 99.51654pt.
+ [3<./FD2_g0.01.png><./FD2_g0.05.png><./FD2_g0.1.png>](load cache: extra_lmroman7-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 252.
+(load cache: extra_lmroman5-regular.luc)
+LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 252.
+<ODE3_normal.png, id=63, 409.7709pt x 312.2064pt>
+File: ODE3_normal.png Graphic file (type png)
+<use ODE3_normal.png>
+Package luatex.def Info: ODE3_normal.png  used on input line 255.
+(luatex.def)             Requested size: 284.52756pt x 216.78989pt.
+ [4<./FD4_f0.01.png><./FD4_f0.02.png><./FD4_f0.03.png><./ODE3_normal.png>]
+<ODE3_HBrO2_0.png, id=78, 409.7709pt x 312.2064pt>
+File: ODE3_HBrO2_0.png Graphic file (type png)
+<use ODE3_HBrO2_0.png>
+Package luatex.def Info: ODE3_HBrO2_0.png  used on input line 268.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE3_HBrO2_3.png, id=79, 409.7709pt x 312.2064pt>
 File: ODE3_HBrO2_3.png Graphic file (type png)
 <use ODE3_HBrO2_3.png>
-Package luatex.def Info: ODE3_HBrO2_3.png  used on input line 185.
+Package luatex.def Info: ODE3_HBrO2_3.png  used on input line 273.
 (luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_HBrO2_6.png, id=19, 409.7709pt x 312.2064pt>
+<ODE3_HBrO2_6.png, id=80, 409.7709pt x 312.2064pt>
 File: ODE3_HBrO2_6.png Graphic file (type png)
 <use ODE3_HBrO2_6.png>
-Package luatex.def Info: ODE3_HBrO2_6.png  used on input line 190.
+Package luatex.def Info: ODE3_HBrO2_6.png  used on input line 278.
 (luatex.def)             Requested size: 122.9322pt x 93.66264pt.
 (load cache: extra_lmroman6-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 193.
-<ODE3_Br_0.png, id=20, 409.7709pt x 312.2064pt>
+(Font)              scaled to size 5.54828pt on input line 281.
+<ODE3_Br_0.png, id=81, 409.7709pt x 312.2064pt>
 File: ODE3_Br_0.png Graphic file (type png)
 <use ODE3_Br_0.png>
-Package luatex.def Info: ODE3_Br_0.png  used on input line 201.
+Package luatex.def Info: ODE3_Br_0.png  used on input line 289.
 (luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_Br_3.png, id=21, 409.7709pt x 312.2064pt>
+<ODE3_Br_3.png, id=82, 409.7709pt x 312.2064pt>
 File: ODE3_Br_3.png Graphic file (type png)
 <use ODE3_Br_3.png>
-Package luatex.def Info: ODE3_Br_3.png  used on input line 206.
+Package luatex.def Info: ODE3_Br_3.png  used on input line 294.
 (luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_Br_6.png, id=22, 409.7709pt x 312.2064pt>
+<ODE3_Br_6.png, id=83, 409.7709pt x 312.2064pt>
 File: ODE3_Br_6.png Graphic file (type png)
 <use ODE3_Br_6.png>
-Package luatex.def Info: ODE3_Br_6.png  used on input line 211.
+Package luatex.def Info: ODE3_Br_6.png  used on input line 299.
 (luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_Ce_0.png, id=23, 409.7709pt x 312.2064pt>
+<ODE3_Ce_0.png, id=84, 409.7709pt x 312.2064pt>
 File: ODE3_Ce_0.png Graphic file (type png)
 <use ODE3_Ce_0.png>
-Package luatex.def Info: ODE3_Ce_0.png  used on input line 226.
+Package luatex.def Info: ODE3_Ce_0.png  used on input line 314.
 (luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_Ce_3.png, id=24, 409.7709pt x 312.2064pt>
+<ODE3_Ce_3.png, id=85, 409.7709pt x 312.2064pt>
 File: ODE3_Ce_3.png Graphic file (type png)
 <use ODE3_Ce_3.png>
-Package luatex.def Info: ODE3_Ce_3.png  used on input line 231.
+Package luatex.def Info: ODE3_Ce_3.png  used on input line 319.
 (luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_Ce_6.png, id=25, 409.7709pt x 312.2064pt>
+<ODE3_Ce_6.png, id=86, 409.7709pt x 312.2064pt>
 File: ODE3_Ce_6.png Graphic file (type png)
 <use ODE3_Ce_6.png>
-Package luatex.def Info: ODE3_Ce_6.png  used on input line 236.
+Package luatex.def Info: ODE3_Ce_6.png  used on input line 324.
 (luatex.def)             Requested size: 122.9322pt x 93.66264pt.
-<ODE3_compare.png, id=26, 409.7709pt x 312.2064pt>
+ [5<./ODE3_HBrO2_0.png><./ODE3_HBrO2_3.png><./ODE3_HBrO2_6.png><./ODE3_Br_0.png><./ODE3_Br_3.png><./ODE3_Br_6.png><./ODE3_Ce_0.png><./ODE3_Ce_3.png><./ODE3_Ce_6.png>]
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 335.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 335.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 335.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 335.
+
+<ODE_k1_0.1.png, id=106, 416.2752pt x 312.2064pt>
+File: ODE_k1_0.1.png Graphic file (type png)
+<use ODE_k1_0.1.png>
+Package luatex.def Info: ODE_k1_0.1.png  used on input line 342.
+(luatex.def)             Requested size: 124.88351pt x 93.66264pt.
+<ODE_k1_1.png, id=107, 409.7709pt x 312.2064pt>
+File: ODE_k1_1.png Graphic file (type png)
+<use ODE_k1_1.png>
+Package luatex.def Info: ODE_k1_1.png  used on input line 347.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k1_10.png, id=108, 409.7709pt x 312.2064pt>
+File: ODE_k1_10.png Graphic file (type png)
+<use ODE_k1_10.png>
+Package luatex.def Info: ODE_k1_10.png  used on input line 352.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 359.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 359.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 359.
+
+<ODE_k2_0.1.png, id=109, 409.7709pt x 312.2064pt>
+File: ODE_k2_0.1.png Graphic file (type png)
+<use ODE_k2_0.1.png>
+Package luatex.def Info: ODE_k2_0.1.png  used on input line 364.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k2_1.png, id=110, 409.7709pt x 312.2064pt>
+File: ODE_k2_1.png Graphic file (type png)
+<use ODE_k2_1.png>
+Package luatex.def Info: ODE_k2_1.png  used on input line 369.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k2_10.png, id=111, 409.7709pt x 312.2064pt>
+File: ODE_k2_10.png Graphic file (type png)
+<use ODE_k2_10.png>
+Package luatex.def Info: ODE_k2_10.png  used on input line 374.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 381.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 381.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 381.
+
+<ODE_k3_0.1.png, id=112, 409.7709pt x 312.2064pt>
+File: ODE_k3_0.1.png Graphic file (type png)
+<use ODE_k3_0.1.png>
+Package luatex.def Info: ODE_k3_0.1.png  used on input line 389.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k3_1.png, id=113, 409.7709pt x 312.2064pt>
+File: ODE_k3_1.png Graphic file (type png)
+<use ODE_k3_1.png>
+Package luatex.def Info: ODE_k3_1.png  used on input line 394.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k3_10.png, id=114, 406.1574pt x 312.2064pt>
+File: ODE_k3_10.png Graphic file (type png)
+<use ODE_k3_10.png>
+Package luatex.def Info: ODE_k3_10.png  used on input line 399.
+(luatex.def)             Requested size: 121.84816pt x 93.66264pt.
+[6<./ODE_k1_0.1.png><./ODE_k1_1.png><./ODE_k1_10.png><./ODE_k2_0.1.png><./ODE_k2_1.png><./ODE_k2_10.png>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 407.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 407.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 407.
+
+<ODE_k4_0.1.png, id=133, 409.7709pt x 312.2064pt>
+File: ODE_k4_0.1.png Graphic file (type png)
+<use ODE_k4_0.1.png>
+Package luatex.def Info: ODE_k4_0.1.png  used on input line 413.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k4_1.png, id=134, 409.7709pt x 312.2064pt>
+File: ODE_k4_1.png Graphic file (type png)
+<use ODE_k4_1.png>
+Package luatex.def Info: ODE_k4_1.png  used on input line 418.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k4_10.png, id=135, 409.7709pt x 312.2064pt>
+File: ODE_k4_10.png Graphic file (type png)
+<use ODE_k4_10.png>
+Package luatex.def Info: ODE_k4_10.png  used on input line 423.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 431.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 431.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 431.
+
+<ODE_k5_0.1.png, id=137, 409.7709pt x 312.2064pt>
+File: ODE_k5_0.1.png Graphic file (type png)
+<use ODE_k5_0.1.png>
+Package luatex.def Info: ODE_k5_0.1.png  used on input line 438.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_1.png, id=138, 409.7709pt x 312.2064pt>
+File: ODE_k5_1.png Graphic file (type png)
+<use ODE_k5_1.png>
+Package luatex.def Info: ODE_k5_1.png  used on input line 443.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_10.png, id=139, 416.2752pt x 312.2064pt>
+File: ODE_k5_10.png Graphic file (type png)
+<use ODE_k5_10.png>
+Package luatex.def Info: ODE_k5_10.png  used on input line 448.
+(luatex.def)             Requested size: 124.88351pt x 93.66264pt.
+[7<./ODE_k3_0.1.png><./ODE_k3_1.png><./ODE_k3_10.png><./ODE_k4_0.1.png><./ODE_k4_1.png><./ODE_k4_10.png>]
+<ODE3_compare.png, id=156, 409.7709pt x 312.2064pt>
 File: ODE3_compare.png Graphic file (type png)
 <use ODE3_compare.png>
-Package luatex.def Info: ODE3_compare.png  used on input line 255.
-(luatex.def)             Requested size: 284.52756pt x 216.78989pt.
- [2<./ODE3_normal.png>]
-<ODE3_relative_error.png, id=52, 408.3255pt x 323.7696pt>
+Package luatex.def Info: ODE3_compare.png  used on input line 462.
+(luatex.def)             Requested size: 227.62204pt x 173.42429pt.
+<ODE3_relative_error.png, id=159, 408.3255pt x 323.7696pt>
 File: ODE3_relative_error.png Graphic file (type png)
 <use ODE3_relative_error.png>
-Package luatex.def Info: ODE3_relative_error.png  used on input line 263.
-(luatex.def)             Requested size: 284.52756pt x 225.60959pt.
- [3<./ODE3_HBrO2_0.png><./ODE3_HBrO2_3.png><./ODE3_HBrO2_6.png><./ODE3_Br_0.png><./ODE3_Br_3.png><./ODE3_Br_6.png><./ODE3_Ce_0.png><./ODE3_Ce_3.png><./ODE3_Ce_6.png>] [4<./ODE3_compare.png><./ODE3_relative_error.png>] (/Users/kashi/report/out/python.aux))
+Package luatex.def Info: ODE3_relative_error.png  used on input line 475.
+(luatex.def)             Requested size: 227.62204pt x 180.48964pt.
+<ODE_k5_0.2.png, id=160, 409.7709pt x 312.2064pt>
+File: ODE_k5_0.2.png Graphic file (type png)
+<use ODE_k5_0.2.png>
+Package luatex.def Info: ODE_k5_0.2.png  used on input line 488.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_0.3.png, id=161, 409.7709pt x 312.2064pt>
+File: ODE_k5_0.3.png Graphic file (type png)
+<use ODE_k5_0.3.png>
+Package luatex.def Info: ODE_k5_0.3.png  used on input line 493.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_0.4.png, id=162, 409.7709pt x 312.2064pt>
+File: ODE_k5_0.4.png Graphic file (type png)
+<use ODE_k5_0.4.png>
+Package luatex.def Info: ODE_k5_0.4.png  used on input line 498.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_0.5.png, id=163, 409.7709pt x 312.2064pt>
+File: ODE_k5_0.5.png Graphic file (type png)
+<use ODE_k5_0.5.png>
+Package luatex.def Info: ODE_k5_0.5.png  used on input line 507.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_0.6.png, id=164, 409.7709pt x 312.2064pt>
+File: ODE_k5_0.6.png Graphic file (type png)
+<use ODE_k5_0.6.png>
+Package luatex.def Info: ODE_k5_0.6.png  used on input line 512.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_0.7.png, id=165, 409.7709pt x 312.2064pt>
+File: ODE_k5_0.7.png Graphic file (type png)
+<use ODE_k5_0.7.png>
+Package luatex.def Info: ODE_k5_0.7.png  used on input line 517.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_0.8.png, id=166, 409.7709pt x 312.2064pt>
+File: ODE_k5_0.8.png Graphic file (type png)
+<use ODE_k5_0.8.png>
+Package luatex.def Info: ODE_k5_0.8.png  used on input line 526.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_0.9.png, id=167, 409.7709pt x 312.2064pt>
+File: ODE_k5_0.9.png Graphic file (type png)
+<use ODE_k5_0.9.png>
+Package luatex.def Info: ODE_k5_0.9.png  used on input line 531.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+File: ODE_k5_1.png Graphic file (type png)
+<use ODE_k5_1.png>
+Package luatex.def Info: ODE_k5_1.png  used on input line 536.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_2.png, id=168, 409.7709pt x 312.2064pt>
+File: ODE_k5_2.png Graphic file (type png)
+<use ODE_k5_2.png>
+Package luatex.def Info: ODE_k5_2.png  used on input line 543.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_3.png, id=169, 409.7709pt x 312.2064pt>
+File: ODE_k5_3.png Graphic file (type png)
+<use ODE_k5_3.png>
+Package luatex.def Info: ODE_k5_3.png  used on input line 548.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_4.png, id=170, 409.7709pt x 312.2064pt>
+File: ODE_k5_4.png Graphic file (type png)
+<use ODE_k5_4.png>
+Package luatex.def Info: ODE_k5_4.png  used on input line 553.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+<ODE_k5_5.png, id=171, 409.7709pt x 312.2064pt>
+File: ODE_k5_5.png Graphic file (type png)
+<use ODE_k5_5.png>
+Package luatex.def Info: ODE_k5_5.png  used on input line 560.
+(luatex.def)             Requested size: 122.9322pt x 93.66264pt.
+ [8<./ODE_k5_0.1.png><./ODE_k5_1.png><./ODE_k5_10.png><./ODE3_compare.png>] [9<./ODE3_relative_error.png>] [10<./ODE_k5_0.2.png><./ODE_k5_0.3.png><./ODE_k5_0.4.png><./ODE_k5_0.5.png><./ODE_k5_0.6.png><./ODE_k5_0.7.png><./ODE_k5_0.8.png><./ODE_k5_0.9.png><./ODE_k5_2.png><./ODE_k5_3.png><./ODE_k5_4.png><./ODE_k5_5.png>] (/Users/kashi/report/out/python.aux))
 
 Here is how much of LuaTeX's memory you used:
- 26163 strings out of 477785
- 195698,1144653 words of node,token memory allocated
- 27490 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 455 kern, 1 glyph, 11150 attribute, 231 glue_spec, 579 attribute_list, 2 write, 89 user_defined nodes
-   avail lists: 1:46,2:62901,3:373,4:436,5:48,6:86,7:2988,8:41,9:1419,10:13,11:16
- 45731 multiletter control sequences out of 65536+600000
- 111 fonts using 74613487 bytes
- 114i,13n,115p,1799b,864s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman8-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on python.pdf (4 pages, 443186 bytes).
+ 26561 strings out of 477785
+ 195698,1373583 words of node,token memory allocated
+ 36016 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 455 kern, 1 glyph, 13987 attribute, 607 glue_spec, 745 attribute_list, 2 write, 249 user_defined nodes
+   avail lists: 1:46,2:49236,3:353,4:432,5:56,6:92,7:2653,8:37,9:1415,10:18,11:18
+ 45961 multiletter control sequences out of 65536+600000
+ 112 fonts using 74745239 bytes
+ 114i,13n,115p,1799b,863s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman8-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on python.pdf (10 pages, 1486534 bytes).
 
-PDF statistics: 211 PDF objects out of 1000 (max. 8388607)
- 132 compressed objects within 2 object streams
- 18 named destinations out of 1000 (max. 131072)
- 72 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 387 PDF objects out of 1000 (max. 8388607)
+ 229 compressed objects within 3 object streams
+ 46 named destinations out of 1000 (max. 131072)
+ 168 words of extra memory for PDF output out of 10000 (max. 100000000)
 
