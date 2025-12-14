@@ -1,0 +1,220 @@
+\documentclass{ltjsarticle}
+%%%package読み込み
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{bm}
+% \usepackage{tikz} % ★消去: 代わりに graphicx 追加
+% \usetikzlibrary{cd}
+\usepackage{url}
+\usepackage{graphicx} % ★追加: 図を挿入するため
+\usepackage{float} % ★追加: 図の位置を制御するため
+\usepackage{caption} % ★追加: 図のキャプションを柔軟に扱うため
+%\usepackage{xcolor}
+\usepackage{ascmac}
+\usepackage{tcolorbox}
+%\usepackage[dvipdfmx, setpagesize=false, bookmarks=true, bookmarksdepth=tocdepth, bookmarksnumbered=true, colorlinks=true, linkcolor=red]
+\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+\usepackage{braket} % 追加した
+\usepackage{booktabs}
+\usepackage{bookmark}
+%\usepackage[textwidth=45zw,lines=44]{geometry}
+%\usepackage{pxjahyper}
+%%%黒板太字
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+%%%約物
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lr}[1]{\left(#1\right)}
+\newcommand{\st}{\; \mathrm{s.t.}\; }
+\newcommand{\Ae}{\textrm{-a.e.}} 
+%%%繰り返し
+\newcommand{\pluss}[3]{#1_{#2}+\cdots+#1_{#3}}
+\newcommand{\minuss}[3]{#1_{#2}-\cdots-#1_{#3}}
+\newcommand{\timess}[3]{#1_{#2}\times\cdots\times #1_{#3}}
+\newcommand{\leqs}[3]{#1_{#2}\leq\cdots\leq #1_{#3}}
+\newcommand{\geqs}[3]{#1_{#2}\geq\cdots\geq #1_{#3}}
+\newcommand{\opluss}[3]{#1_{#2}\oplus\cdots\oplus #1_{#3}}
+\newcommand{\otimess}[3]{#1_{#2}\otimes\cdots\otimes #1_{#3}}
+\newcommand{\commas}[3]{#1_{#2},\ldots,#1_{#3}}
+%%%微分
+\newcommand{\dx}[1]{\mathrm{d}#1}
+\newcommand{\ddx}[1]{\frac{\mathrm{d}}{\mathrm{d}#1}}
+\newcommand{\dydx}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\dydxn}[3]{\frac{\mathrm{d}^{#3}#1}{\mathrm{d}#2^{#3}}}
+\newcommand{\del}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\dell}[2]{\frac{\partial^2#1}{{\partial#2}^2}}
+\newcommand{\deln}[3]{\frac{\partial^{#3}#1}{{\partial#2}^{#3}}}
+%%%
+%%%演算子
+%log type
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Det}{Det}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\corank}{corank}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\Coker}{Coker}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\arcsech}{arcsech}
+\DeclareMathOperator{\arccsch}{arccsch}
+\DeclareMathOperator{\arccoth}{arccoth}
+\DeclareMathOperator{\grad}{grad}
+\let\div\relax
+\DeclareMathOperator{\div}{div}
+\DeclareMathOperator{\rot}{rot}
+%\DeclareMathOperator{\GL}{GL} % ★消去 : ここから↓
+%\DeclareMathOperator{\SL}{SL}
+%\DeclareMathOperator{\Sym}{Sym}
+%\DeclareMathOperator{\Aut}{Aut}
+%\DeclareMathOperator{\Inn}{Inn}
+%\DeclareMathOperator{\Out}{Out}
+%\DeclareMathOperator{\id}{id}
+%\DeclareMathOperator{\pr}{pr}
+%\DeclareMathOperator{\supp}{supp}
+%\DeclareMathOperator{\diam}{diam}
+%\DeclareMathOperator{\End}{End}
+%\DeclareMathOperator{\Cl}{Cl}
+%\DeclareMathOperator{\Hom}{Hom} % ★消去 : ここまで↑
+%limit type
+\DeclareMathOperator*{\argmin}{arg~min}
+\DeclareMathOperator*{\argmax}{arg~max}
+%%%
+%%%定理
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{lem}{補題}
+\newtheorem*{lem*}{補題}
+\newtheorem{prf}{証明}
+\newtheorem*{prf*}{証明}
+\newtheorem*{ex*}{Example}
+\newtheorem*{rem*}{Remark}
+\newenvironment{prb}[1]%
+{\begin{itembox}[l]{\textbf{問題 #1}}}%
+{\end{itembox}}
+\newenvironment{sol}[2]%
+{\setcounter{lem}{0}
+\setcounter{prf}{0}
+\par\noindent\textbf{解答 #1} (#2)\par}%
+{\par\normalfont}
+
+\renewcommand{\refname}{Reference}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{boxeddefcounter}
+\newenvironment{problem}
+{\refstepcounter{boxeddefcounter}\begin{itembox}[l]{問\theboxeddefcounter}}
+{\end{itembox}}
+
+
+\usepackage{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{format=hang, font=small, labelfont=bf, compatibility=false}
+
+\newcommand{\D}{^\circ\text{C}}
+\newcommand{\ka}{\textasciitilde}
+
+
+\pagestyle{myheadings}
+\title{生物物理学レポート(K1)}
+\date{\today}
+\author{理学部化学科 3年 05253011 Fumiya Kashiwai / 柏井史哉}
+\begin{document}
+\maketitle
+\markboth{生物物理学レポート 理学部化学科3年 05253011 Fumiya Kashiwai / 柏井史哉} {生物物理学レポート 理学部化学科3年 05253011 Fumiya Kashiwai / 柏井史哉}
+%%ここまでタイトル
+
+\section{タンパク質ナノポアと、グラフェンを利用した固体ナノポアの比較}
+ナノポアは、膜に開いた細孔をDNAの一本鎖が通過する際のイオン電流の変化から、塩基配列を特定する技術である。膜の材質により、タンパク質ナノポアと固体ナノポアに大別される。
+
+タンパク質ナノポアは、タンパク質表面に開いた細孔 ($\beta$-バレル構造のタンパク) をDNAに通過させることによりシーケンシングを行う。細孔の大きさはタンパク質の構造に依存するが、DNA改変により
+孔の大きさを改変する技術が存在しており、電流値を大きくするtuningが行われている\cite{protein}。
+
+膜の厚さは5-10 nm程度であり、複数の塩基が膜内に存在することになる。検出される電流はその塩基たちの平均値となるため、信号分離するアルゴリズムにより延期配列が決定されている。タンパク質では、表面構造やポアの構造が均一であるため、ベースラインが安定している利点がある。また、DNAの通過速度は、何もしないと早すぎて検出が追いつかないと考えられるが、モータータンパク質を付加することで、ラチェットのようにDNAを移動させ、移動速度を低減することでSN比を大きくし、測定精度を上げている。
+
+細胞膜からなっているため、機械的安定性が弱いこと、平均化された情報が得られることが課題である。
+
+対して、グラフェンのような固体ナノポアでは、化学的に合成されたグラフェンや\ce{SiN},\ce{BN}など、絶縁体の薄膜にあいた微小なポアを透過させることで測定を行っている。前述のタンパク質の場合同様にイオン電流阻害による検出に加え、非常に膜が薄いことからトンネル電流の利用が研究されている。
+
+タンパク質と比較して、単原子の暑さとなるため平均化されていない、一塩基単位での情報を得ることができると期待されている。しかしながら、表面電荷の影響が大きくノイズが大きいこと、およびグラフェンでは疎水性が高いためにイオン電流が不安定になることが報告されている\cite{solid_sim}。加えて、モータータンパク質のように減速機構を持たない場合には通過速度が早すぎ、信号が埋もれてしまう\cite{solid_nanopore}。
+
+\section{提案: Metal-Organic Framework (MOF)の薄膜を用いたナノポア}
+以上の、既存手法の長所および短所を踏まえた上で、MOFの薄膜を用いたナノポアを提案する。
+
+UiO-68-\ce{NH2}と呼ばれる、\ce{Zr-O}クラスターを金属中心に用いたMOFを用いることで、理想的な性質を持ったナノポアの薄膜が得られると考える。
+
+MOFは金属中心に有機分子の配位子(リガンド)が配位することにより構成される構造体であり、内部に規則正しく配列した空孔を有する。この空孔のサイズ、形状はリガンドを変更することで自由に設計することが可能である。ガス吸着の高い性能を誇るのみならず、分子サイズに選択的に取り込むことで"分子ふるい"として機能する。ここではこの特徴に着目し、緻密に制御された空孔をナノポアとして活用することを考える。
+
+MOFの一種である、UiO-66は\ce{Zr6(OH)4O4}クラスターを中心核に持ち、高い熱安定性、化学的安定性を誇る。また、水中での高い安定性が報告されている\cite{UiO66}。しかしながら、UiO-66の孔の大きさは、ベンゼンが通る程度であり、DNAはおそらく通過できない。そのため、よりリガンドが長く、DNAが通過できると考えられるUiO-68を母構造として用いることを考える。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{Screenshot-227.png.png}
+\caption{UiO-66の構造。\cite{UiO66}より引用。}
+\label{normal}
+\end{center}
+\end{figure}
+
+単純なUiO-68においては、リガンドは3つのベンゼンが連なった構造であり、疎水性が大きく、グラフェンと同様にイオン透過性が落ちるという問題が懸念される。そのため、リガンドの一部で、ベンゼン環上にアミノ基 (-\ce{NH2}) を生やすことにより、この問題を解決することを考えた。親水性の官能基のうち、ナノポアとして用いる際の中性付近で中性、かつ十分な親水性があるものとしてのファーストチョイスがアミノ基\ce{-HH2}であり、具体的なアミノ基の配合率についてはチューニングが必要になるであろう。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{Screenshot-221.png}
+\caption{UiO-66, 68の構造。\cite{UiO66}より引用。}
+\label{normal}
+\end{center}
+\end{figure}
+
+通常のMOFの合成においては、三次元的な結晶が得られる。しかしながら、ナノポアとして用いるためには薄層が必要である。
+MOFの薄層を作る技術としては、Vapor-Assisted Conversion(VAC)と呼ばれる手法が開発されており\cite{surface}、実際に提唱したUiO-68-\ce{NH2}についてもこの手法により単層膜を作成できていることが報告されている。この手法を用いることで、数層の均一なUiO-68-\ce{NH2}薄膜を構成できる可能性がある。一層が3 nm程度であり、1-3層で構成することにより、機械的安定性と解像能をあげることができる。膜の薄さに関しては、原理上の最薄である、単原子であるグラフェンを超えることはできないが、タンパク質よりは薄く制御することが可能であると考えられる。
+
+問題点として挙げられるのは、MOF全体に対して挙げられる構造欠陥である。ナノポアにおいては、1箇所でも構造の乱れがありイオンのリークがあると、機能しなくなってしまうと考えられる。そのため、特に薄層の場合にはどこまで緻密な合成が可能かが問題となる。前述のVACなどの緻密な技術が報告されているが、実際の素材に対する条件検討を行なってみる必要がある。
+
+
+
+\begin{thebibliography}{99}
+    \bibitem{review_nanopore}
+    Nanopores: A journey towards DNA sequencing
+    \bibitem{solid_nanopore}
+    Solid-state nanopore systems: from materials to applications
+    \bibitem{protein}
+    \url{https://web.tuat.ac.jp/~rjkawano/common/pdf/「生物工学会誌」101-8号特集<最終版pdf>.pdf}
+    \bibitem{solid_sim}
+    https://seisan.server-shared.com/744/744-37.pdf
+    \bibitem{UiO66}
+    \url{https://www.chem-station.com/chemglossary/2022/01/uio-66.html}
+    \bibitem{surface}
+    On-Surface Synthesis of Highly Oriented Thin Metal-Organic Framework Films through Vapor-Assisted Conversion
+\end{thebibliography}
+
+\end{document}
