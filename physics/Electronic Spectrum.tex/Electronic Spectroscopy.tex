@@ -5,7 +5,6 @@
 \usepackage{amsfonts}
 \usepackage{mathtools}
 \usepackage{bm}
-\usepackage{booktabs}
 % \usepackage{tikz} % ★消去: 代わりに graphicx 追加
 % \usetikzlibrary{cd}
 \usepackage{url}
@@ -21,7 +20,6 @@
 \usepackage{braket} % 追加した
 \usepackage{booktabs}
 \usepackage{bookmark}
-\usepackage{multirow}
 %\usepackage[textwidth=45zw,lines=44]{geometry}
 %\usepackage{pxjahyper}
 %%%黒板太字
@@ -138,10 +136,10 @@
 {\refstepcounter{boxeddefcounter}\begin{itembox}[l]{問\theboxeddefcounter}}
 {\end{itembox}}
 
-%\usepackage[hang,small,bf]{caption}
-%\usepackage[subrefformat=parens]{subcaption}
-\captionsetup{compatibility=false}
 
+\usepackage{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{format=hang, font=small, labelfont=bf, compatibility=false}
 
 \newcommand{\D}{^\circ\text{C}}
 \newcommand{\ka}{\textasciitilde}
@@ -149,17 +147,223 @@
 
 \pagestyle{myheadings}
 \title{Electronic Spectroscopy}
-\date{\today}
-\author{報告者: No.7 05253011 Fumiya Kashiwai / 柏井史哉}
+\date{2025/11/19}
+\author{Author: No.7 05253011 Fumiya Kashiwai / 柏井史哉}
 \begin{document}
 \maketitle
 \markboth{Physics experiment No.7 05253011 Fumiya Kashiwai / 柏井史哉} {Physics experiment No.7 05253011 Fumiya Kashiwai / 柏井史哉}
 %%ここまでタイトル
 
 \section{Introduction}
+By measuring the absorption spctra of a benzoic acid solution using an UV-Vis spectrometer, and deterpmine the pKa of the solution. 
 
-\section{Experimental}
+\section{Experiment}
 
-\section{Results and Discussion}
+\subsection{Preparation of Solutions}
+
+    \begin{enumerate}
+        \item 0.05 mol/L \ce{H2SO4} (pH 1.28) solution: Prepared by diluting 50 mL of 0.500 mol/L standard sulfuric acid to 500 mL with distilled water.
+        \item 0.1 M \ce{NaOH} (pH 12.95) solution: Prepared by dissolving 2.00 g of NaOH in distilled water to make 500 mL of solution.
+        \item Acetate Buffer solution (pH 4.05) Prepared by mixing 10 mL of \ce{CH3COOH} and 6.80 g of \ce{CH3COONa*3H2O}, and diluting with distilled water to 500 mL.
+        \item pH of each solution were measured by using pH meter.
+        \item Benzoic acid samples were weighed and dissolved into 100 mL of each solvent using an ultrasonic bath. (the masses of benzoic acid used were: Acidic solution: 10.5 mg, Basic solution: 10.5 mg, Buffer solution: 14.2 mg)
+    \end{enumerate}
+
+\subsection{Measurement}
+    \begin{enumerate}
+        \item The measurement range was set from 300 nm to 200 nm with a scan speed of 400 nm/min and a data interval of 1.0 nm.
+        \item Baseline correction was performed using ion-exchange water in both the sample and reference cells.
+        \item The absorption spectra were measured for the blank solvents and the benzoic acid solutions corresponding to the three conditions (acidic, basic, and buffer).
+        \item The quartz cells were washed with the target solution before each measurement at least twice before to prevent contamination.
+    \end{enumerate}
+
+
+\section{Results}
+
+
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.33\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.33]{Acid.png}
+  \subcaption{Acidic solution}
+ \end{minipage}
+ \begin{minipage}[b]{0.33\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.33]{buffer.png}
+  \subcaption{buffer (pH 4.05)}
+ \end{minipage}
+  \begin{minipage}[b]{0.33\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.33]{base.png}
+  \subcaption{Basic solution}
+ \end{minipage}
+ \caption{Absorption Spectrum. Blue lines show the blank sample and the orange lines show the benzoic acid solution.}
+ \label{ODE3_Ce}
+\end{figure}
+
+\section{Analysis}
+
+\subsection{Derivation of Equation (1)}
+The relationship between the absorbance and the concentration is derived from the differential decrease in light intensity as it passes through a sample. Consider a monochromatic light beam with intensity I passing through a thin layer of solution with thickness dx and molar concentration c. The decrease in light intensity -dI is proportional to the current intensity I, the concentration c, and the thickness dx.
+
+The differential equation is:
+\begin{equation}
+-\dx{I} = \epsilon c I \dx{x}
+\end{equation}
+where \epsilon is the molar absorbance coefficient.
+
+Separating the variables I and x gives:
+\begin{equation}
+\frac{\dx{I}}{I} = -\epsilon c \dx{x}
+\end{equation}
+
+Integrating both sides over the path length of the cell, from $x = 0$ (where incident intensity is $I_0$) to $x = l$ (where transmitted intensity is I):
+\begin{equation}
+\int_{I_0}^{I} \frac{1}{I} \dx{I} = -\int_{0}^{l} \epsilon c \dx{x}
+\end{equation}
+
+Solving the definite integral yields:
+\begin{equation}
+\ln(I) - \ln(I_0) = -\epsilon c l
+\end{equation}
+
+This can be rewritten using logarithmic properties results in equation (1):
+\begin{equation}
+\epsilon c l = \ln\left(\frac{I_0}{I}\right)
+\end{equation}
+
+\subsection{Derivation of Equation (2)}
+This derivation determines the concentration ratio of the ionic form to the molecular form in the buffer solution. Let $\epsilon_1$ be the molar absorbance of the molecule (measured in acidic solution), $\epsilon_2$ be the molar absorbance of the ion (measured in basic solution), and $\epsilon_3$ be the apparent molar absorbance of the buffer solution.
+
+Let $C_{\text{total}}$ be the total molar concentration of benzoic acid, $[\ce{HA}]$ be the concentration of molecular benzoic acid, and $[\ce{A^-}]$ be the concentration of the benzoate ion.
+
+Based on mass balance, the total concentration in the buffer is the sum of the molecular and ionic forms:
+\begin{equation}
+C_{\text{total}} = [\ce{HA}] + [\ce{A^-}]
+\end{equation}
+
+The total absorbance of the buffer mixture $A_{\text{buffer}}$ is the sum of the absorbances of the individual species. Using the Lambert-Beer law for path length $l$:
+\begin{equation}
+\frac{A_{\text{buffer}}}{l} = \epsilon_1 [\ce{HA}] + \epsilon_2 [\ce{A^-}]
+\end{equation}
+
+The apparent molar absorbance $\epsilon_3$ is defined for the buffer assuming the total concentration $C_{\text{total}}$:
+\begin{equation}
+\frac{A_{\text{buffer}}}{l} = \epsilon_3 C_{\text{total}}
+\end{equation}
+
+Equating the two expressions for absorbance:
+\begin{equation}
+\epsilon_3 C_{\text{total}} = \epsilon_1 [\ce{HA}] + \epsilon_2 [\ce{A^-}]
+\end{equation}
+
+Substituting the mass balance equation into the absorbance equation:
+\begin{equation}
+\epsilon_3 ([\ce{HA}] + [\ce{A^-}]) = \epsilon_1 [\ce{HA}] + \epsilon_2 [\ce{A^-}]
+\end{equation}
+
+Expanding the left side:
+\begin{equation}
+\epsilon_3 [\ce{HA}] + \epsilon_3 [\ce{A^-}] = \epsilon_1 [\ce{HA}] + \epsilon_2 [\ce{A^-}]
+\end{equation}
+
+Rearranging the terms to group $[\ce{HA}]$ and $[\ce{A^-}]$ on opposite sides:
+\begin{equation}
+\epsilon_3 [\ce{A^-}] - \epsilon_2 [\ce{A^-}] = \epsilon_1 [\ce{HA}] - \epsilon_3 [\ce{HA}]
+\end{equation}
+
+Factoring out the concentrations:
+\begin{equation}
+(\epsilon_3 - \epsilon_2) [\ce{A^-}] = (\epsilon_1 - \epsilon_3) [\ce{HA}]
+\end{equation}
+
+Dividing by [HA] and $(\epsilon_3 - \epsilon_2)$ gives the final ratio, which corresponds to equation (2):
+\begin{equation}
+\frac{[\ce{A^-}]}{[\ce{HA}]} = \frac{\epsilon_1 - \epsilon_3}{\epsilon_3 - \epsilon_2}
+\end{equation}
+
+
+\subsection{Molar Absorbance Coefficients}
+The molar absorbance coefficients ($\epsilon$) for the molecular form ($\epsilon_{\text{acid}}$), ionic form ($\epsilon_{\text{ion}}$), and the mixture ($\epsilon_{\text{buffer}}$) were calculated from the measured absorbance ($A$) using the Lambert-Beer law ($A = \epsilon c l$), where $l = 1.0$ cm.
+
+The concentrations ($c$) were calculated based on the weighed masses:
+\begin{itemize}
+    \item $c_{\text{acid}} = 8.60 \times 10^{-4}$ mol/L
+    \item $c_{\text{buffer}} = 1.16 \times 10^{-3}$ mol/L
+    \item $c_{\text{ion}} = 8.60 \times 10^{-4}$ mol/L
+\end{itemize}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{Unknown-260.png}
+\caption{Determination of $\epsilon$}
+\label{normal}
+\end{center}
+\end{figure}
+
+\subsection{Determination of pK$_a$}
+The dissociation constant (pK$_a$) was determined using the Henderson-Hasselbalch equation:
+\begin{equation}
+    pK_a = \text{pH} - \log \left( \frac{[\ce{A^-}]}{[HA]} \right) = \text{pH} - \log \left( \frac{\epsilon_{\text{buffer}} - \epsilon_{\text{acid}}}{\epsilon_{\text{ion}} - \epsilon_{\text{buffer}}} \right)
+\end{equation}
+Using the buffer solution pH of 4.05, the pK$_a$ values calculated at wavelengths near the absorption peak (228--232 nm) are summarized in Table 1.
+
+\begin{table}[h]
+    \centering
+    \caption{Calculated Molar Absorbance Coefficients and pK$_a$ values.}
+    \label{tab:results}
+    \begin{tabular}{cccccc}
+        \toprule
+        Wavelength (nm) & $\epsilon_{\text{acid}}$ & $\epsilon_{\text{buffer}}$ & $\epsilon_{\text{ion}}$ & $[A^-]/[HA]$ & pK$_a$ \\
+        \midrule
+        228 & 148 & 1467 & 3239 & 0.744 & 4.18 \\
+        229 & 149 & 1408 & 3134 & 0.729 & 4.19 \\
+        230 & 150 & 1339 & 2964 & 0.732 & 4.19 \\
+        231 & 148 & 1262 & 2741 & 0.753 & 4.17 \\
+        232 & 146 & 1183 & 2506 & 0.784 & 4.16 \\
+        \midrule
+        Average & & & & & 4.18 $\pm$ 0.01 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+The experimentally determined pK$_a$ of benzoic acid is \underline{4.18 $\pm$ 0.01}.
+
+\section{Discussion}
+
+\subsection{Analysis of Experimental Data Anomalies}
+During the data analysis, a significant anomaly was observed in the measurement of the basic solution's reference sample (base-blank). The absorbance of the base-blank was recorded as approximately 1.87 at 230 nm, which is abnormally high for a solvent blank and exceeded the absorbance of the buffer sample. 
+
+This high value is attributed to \underline{contamination of the quartz cell or the blank solution}, possibly due to insufficient washing or residues in \ce{NaOH} standard solution from previous experiments\footnote{I've already shared the plobability of contamination with Hanzawa-san, for the other student who would take this experiment.}. 
+Using this erroneous blank value would result in a mathematically impossible concentration ratio (negative denominator). Therefore, the raw absorbance data of the basic benzoic acid sample (base-benzoic) was used directly as the absorbance of the ionic form for the calculation, assuming that the true solvent absorbance is negligible compared to the sample's strong absorption. The consistency of the resulting pK$_a$ value (4.18) with literature data supports the validity of this correction.
+
+\subsection{Assignment of Electronic Transitions}
+The absorption spectrum of benzoic acid exhibits bands characteristic of the benzene ring and the carbonyl group.
+\begin{itemize}
+    \item \textbf{$\pi \to \pi^*$ Transition:} The intense absorption observed around 230 nm corresponds to the $\pi \to \pi^*$ transition of the conjugated benzene ring system. The conjugation with the carboxyl group (-\ce{COOH}) causes a bathochromic shift compared to benzene.
+    \item \textbf{$n \to \pi^*$ Transition:} A weaker transition involving the lone pair electrons of the carbonyl oxygen ($n \to \pi^*$) is typically expected but is often obscured by the intense $\pi \to \pi^*$ bands or appears as a shoulder.
+\end{itemize}
+
+\subsection{Comparison with Benzene: Particle in a Box Model}
+The absorption peak of benzoic acid is shifted to a longer wavelength compared to benzene ($\lambda_{\text{max}} \approx 254$ nm). This can be explained by the free particle in a box model.
+\begin{equation}
+    \Delta E = \frac{h^2}{8mL^2}(n_{\text{LUMO}}^2 - n_{\text{HOMO}}^2)
+\end{equation}
+The conjugation of the benzene ring with the carboxyl group effectively increases the length of the box ($L$) in which the $\pi$-electrons are delocalized. According to the equation, an increase in $L$ leads to a decrease in the energy gap ($\Delta E$), resulting in an absorption at a longer wavelength ($\lambda = hc / \Delta E$).
+
+\subsection{Absorption Intensity and Symmetry}
+Benzoic acid shows a much stronger absorption intensity than benzene.
+\begin{itemize}
+    \item \textbf{Benzene ($D_{6h}$):} The transition near 260 nm ($A_{1g} \to B_{2u}$) is symmetry-forbidden due to the high symmetry of the molecule. It becomes weakly allowed only through vibronic coupling.
+    \item \textbf{Benzoic Acid ($C_{2v}$):} The introduction of the carboxyl group lowers the molecular symmetry from $D_{6h}$ to $C_{2v}$ (or $C_s$). This reduction in symmetry relaxes the selection rules, making the $\pi \to \pi^*$ transition symmetry-allowed. Consequently, the transition probability increases significantly, leading to a larger molar absorbance coefficient.
+\end{itemize}
+
+\begin{thebibliography}{99}
+\bibitem{1}
+Karimova, N. V., Luo, M., Grassian, V. H., \& Gerber, R. B. (2020). Absorption spectra of benzoic acid in water at different pH and in the presence of salts: Insights from the integration of experimental data and theoretical cluster models. Physical Chemistry Chemical Physics, 22(9), 5046-5056. \url{https://doi.org/10.1039/c9cp06728k}
+\bibitem{2}
+Hosoya, H., Tanaka, J., \& Nagakura, S. (1958). Ansokukosan no kinshigaibu kyushu supekutoru [Ultraviolet absorption spectra of benzoic acid]. Nippon Kagaku Zasshi, 79(11), 1379-1384. \url{https://doi.org/10.1246/nikkashi1948.79.1379}
+\end{thebibliography}
 
 \end{document}
