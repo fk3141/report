@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  15 DEC 2025 10:49
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  16 DEC 2025 22:01
  restricted system commands enabled.
  file:line:error style messages enabled.
-**/Users/kashi/report/biophysics/nanopore.tex
-(/Users/kashi/report/biophysics/nanopore.tex
+**/Users/kashi/report/physics/BZ/BZ.tex
+(/Users/kashi/report/physics/BZ/BZ.tex
 LaTeX2e <2021-11-15> patch level 1
 Lua module: luaotfload 2022-03-18 3.21 Lua based OpenType font support
 Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
@@ -470,6 +470,25 @@ Package bm Info: No bold for \OMX/cmex/m/n, using \pmb.
 Package bm Info: No bold for \U/msa/m/n, using \pmb.
 Package bm Info: No bold for \U/msb/m/n, using \pmb.
 LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 149.
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen181
+\lightrulewidth=\dimen182
+\cmidrulewidth=\dimen183
+\belowrulesep=\dimen184
+\belowbottomsep=\dimen185
+\aboverulesep=\dimen186
+\abovetopsep=\dimen187
+\cmidrulesep=\dimen188
+\cmidrulekern=\dimen189
+\defaultaddspace=\dimen190
+\@cmidla=\count289
+\@cmidlb=\count290
+\@aboverulesep=\dimen191
+\@belowrulesep=\dimen192
+\@thisruleclass=\count291
+\@lastruleclass=\count292
+\@thisrulewidth=\dimen193
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -486,11 +505,11 @@ Package graphics Info: Driver file: luatex.def on input line 107.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/graphics-def/luatex.def
 File: luatex.def 2021/06/01 v1.2c Graphics/color driver for luatex
 ))
-\Gin@req@height=\dimen181
-\Gin@req@width=\dimen182
+\Gin@req@height=\dimen194
+\Gin@req@width=\dimen195
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count289
+\c@float@type=\count293
 \float@exts=\toks31
 \float@box=\box72
 \@float@everytoks=\toks32
@@ -499,14 +518,14 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 Package: caption 2022/03/01 v3.6b Customizing captions (AR)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2022/03/17 v2.3b caption3 kernel (AR)
-\caption@tempdima=\dimen183
-\captionmargin=\dimen184
-\caption@leftmargin=\dimen185
-\caption@rightmargin=\dimen186
-\caption@width=\dimen187
-\caption@indent=\dimen188
-\caption@parindent=\dimen189
-\caption@hangindent=\dimen190
+\caption@tempdima=\dimen196
+\captionmargin=\dimen197
+\caption@leftmargin=\dimen198
+\caption@rightmargin=\dimen199
+\caption@width=\dimen256
+\caption@indent=\dimen257
+\caption@parindent=\dimen258
+\caption@hangindent=\dimen259
 Package caption Info: Unknown document class (or package),
 (caption)             standard defaults will be used.
 Package caption Info: \@makecaption = \long macro:#1#2->{\small \advance \leftskip .0628\linewidth \advance \rightskip .0628\linewidth \vskip \abovecaptionskip \sbox \@tempboxa {#1{\hskip 1\zw }#2}\ifdim \wd \@tempboxa <\hsize \centering \fi #1{\hskip 1\zw }#2\par \vskip \belowcaptionskip } on input line 1176.
@@ -516,37 +535,37 @@ Package caption Warning: Unknown document class (or package),
 (caption)                standard defaults will be used.
 See the caption package documentation for explanation.
 
-\c@caption@flags=\count290
-\c@continuedfloat=\count291
+\c@caption@flags=\count294
+\c@continuedfloat=\count295
 Package caption Info: float package is loaded.
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/ascmac/ascmac.sty
 Package: ascmac 2020/01/15 v2.1 ascmac wrapper (community edition) 
  (/usr/local/texlive/2022/texmf-dist/tex/latex/ascmac/tascmac.sty
 Package: tascmac 2020/01/15 v2.1 ascmac package (community edition) 
 Package tascmac Info: Patch from LuaTeX-ja will be applied on input line 44.
-\@savetbaselineshift=\dimen191
-\@saveybaselineshift=\dimen192
+\@savetbaselineshift=\dimen260
+\@saveybaselineshift=\dimen261
 \scb@x=\box74
 \scscb@x=\box75
-\@bw=\dimen193
+\@bw=\dimen262
 \@nbox=\box76
 \@nbody=\box77
-\@scw=\dimen194
+\@scw=\dimen263
 \ascmac@hoboxa=\box78
 \ascmac@hoboxb=\box79
-\@itemh=\dimen195
+\@itemh=\dimen264
 \@iboxpos=\toks33
 \@iboxstr=\box80
 \@bwsp=\box81
 \@@bwsp=\box82
-\@bcal=\count292
-\shaderule=\dimen196
+\@bcal=\count296
+\shaderule=\dimen265
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
 Package: tcolorbox 2022/01/07 version 5.0.2 text color boxes
  (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
 \pgfutil@everybye=\toks34
-\pgfutil@tempdima=\dimen197
-\pgfutil@tempdimb=\dimen198
+\pgfutil@tempdima=\dimen266
+\pgfutil@tempdimb=\dimen267
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
 \pgfutil@abb=\box83
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/pgf.revision.tex)
@@ -561,26 +580,26 @@ Package: pgfsys 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
 \pgfkeys@tmptoks=\toks37
 ))
-\pgf@x=\dimen199
-\pgf@y=\dimen256
-\pgf@xa=\dimen257
-\pgf@ya=\dimen258
-\pgf@xb=\dimen259
-\pgf@yb=\dimen260
-\pgf@xc=\dimen261
-\pgf@yc=\dimen262
-\pgf@xd=\dimen263
-\pgf@yd=\dimen264
+\pgf@x=\dimen268
+\pgf@y=\dimen269
+\pgf@xa=\dimen270
+\pgf@ya=\dimen271
+\pgf@xb=\dimen272
+\pgf@yb=\dimen273
+\pgf@xc=\dimen274
+\pgf@yc=\dimen275
+\pgf@xd=\dimen276
+\pgf@yd=\dimen277
 \w@pgf@writea=\write3
 \r@pgf@reada=\read2
-\c@pgf@counta=\count293
-\c@pgf@countb=\count294
-\c@pgf@countc=\count295
-\c@pgf@countd=\count296
+\c@pgf@counta=\count297
+\c@pgf@countb=\count298
+\c@pgf@countc=\count299
+\c@pgf@countd=\count300
 \t@pgf@toka=\toks38
 \t@pgf@tokb=\toks39
 \t@pgf@tokc=\toks40
-\pgf@sys@id@count=\count297
+\pgf@sys@id@count=\count301
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2021/05/15 v3.1.9a (3.1.9a)
 )
@@ -591,8 +610,8 @@ File: pgfsys-luatex.def 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfsys-common-pdf.def 2021/05/15 v3.1.9a (3.1.9a)
 ))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
 File: pgfsyssoftpath.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfsyssoftpath@smallbuffer@items=\count298
-\pgfsyssoftpath@bigbuffer@items=\count299
+\pgfsyssoftpath@smallbuffer@items=\count302
+\pgfsyssoftpath@bigbuffer@items=\count303
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
 File: pgfsysprotocol.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/xcolor/xcolor.sty
@@ -613,52 +632,52 @@ Package xcolor Info: Model `wave' substituted by `hsb' on input line 1375.
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
 Package: pgfcore 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen265
-\pgfmath@count=\count300
+\pgfmath@dimen=\dimen278
+\pgfmath@count=\count304
 \pgfmath@box=\box84
 \pgfmath@toks=\toks41
 \pgfmath@stack@operand=\toks42
 \pgfmath@stack@operation=\toks43
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count301
+\c@pgfmathroundto@lastzeros=\count305
 )) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
 File: pgfcorepoints.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@picminx=\dimen266
-\pgf@picmaxx=\dimen267
-\pgf@picminy=\dimen268
-\pgf@picmaxy=\dimen269
-\pgf@pathminx=\dimen270
-\pgf@pathmaxx=\dimen271
-\pgf@pathminy=\dimen272
-\pgf@pathmaxy=\dimen273
-\pgf@xx=\dimen274
-\pgf@xy=\dimen275
-\pgf@yx=\dimen276
-\pgf@yy=\dimen277
-\pgf@zx=\dimen278
-\pgf@zy=\dimen279
+\pgf@picminx=\dimen279
+\pgf@picmaxx=\dimen280
+\pgf@picminy=\dimen281
+\pgf@picmaxy=\dimen282
+\pgf@pathminx=\dimen283
+\pgf@pathmaxx=\dimen284
+\pgf@pathminy=\dimen285
+\pgf@pathmaxy=\dimen286
+\pgf@xx=\dimen287
+\pgf@xy=\dimen288
+\pgf@yx=\dimen289
+\pgf@yy=\dimen290
+\pgf@zx=\dimen291
+\pgf@zy=\dimen292
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@path@lastx=\dimen280
-\pgf@path@lasty=\dimen281
+\pgf@path@lastx=\dimen293
+\pgf@path@lasty=\dimen294
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
 File: pgfcorepathusage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@shorten@end@additional=\dimen282
-\pgf@shorten@start@additional=\dimen283
+\pgf@shorten@end@additional=\dimen295
+\pgf@shorten@start@additional=\dimen296
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
 File: pgfcorescopes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfpic=\box85
 \pgf@hbox=\box86
 \pgf@layerbox@main=\box87
-\pgf@picture@serial@count=\count302
+\pgf@picture@serial@count=\count306
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgflinewidth=\dimen284
+\pgflinewidth=\dimen297
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
 File: pgfcoretransformations.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@pt@x=\dimen285
-\pgf@pt@y=\dimen286
-\pgf@pt@temp=\dimen287
+\pgf@pt@x=\dimen298
+\pgf@pt@y=\dimen299
+\pgf@pt@temp=\dimen300
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
 File: pgfcorequick.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
@@ -667,12 +686,12 @@ File: pgfcoreobjects.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfcorepathprocessing.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
 File: pgfcorearrows.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgfarrowsep=\dimen288
+\pgfarrowsep=\dimen301
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
 File: pgfcoreshade.code.tex 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@max=\dimen289
-\pgf@sys@shading@range@num=\count303
-\pgf@shadingcount=\count304
+\pgf@max=\dimen302
+\pgf@sys@shading@range@num=\count307
+\pgf@shadingcount=\count308
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
 File: pgfcoreimage.code.tex 2021/05/15 v3.1.9a (3.1.9a)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
@@ -693,8 +712,8 @@ File: pgfmoduleshapes.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 File: pgfmoduleplot.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
 Package: pgfcomp-version-0-65 2021/05/15 v3.1.9a (3.1.9a)
-\pgf@nodesepstart=\dimen290
-\pgf@nodesepend=\dimen291
+\pgf@nodesepstart=\dimen303
+\pgf@nodesepend=\dimen304
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
 Package: pgfcomp-version-1-18 2021/05/15 v3.1.9a (3.1.9a)
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/verbatim.sty
@@ -711,9 +730,9 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \tcb@upperbox=\box91
 \tcb@lowerbox=\box92
 \tcb@phantombox=\box93
-\c@tcbbreakpart=\count305
-\c@tcblayer=\count306
-\c@tcolorbox@number=\count307
+\c@tcbbreakpart=\count309
+\c@tcblayer=\count310
+\c@tcolorbox@number=\count311
 \tcb@temp=\box94
 \tcb@temp=\box95
 \tcb@temp=\box96
@@ -735,9 +754,9 @@ Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen292
-\Hy@linkcounter=\count308
-\Hy@pagecounter=\count309
+\@linkdim=\dimen305
+\Hy@linkcounter=\count312
+\Hy@pagecounter=\count313
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2022-02-21 v7.00n Hyperref: PDFDocEncoding definition (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/intcalc/intcalc.sty
@@ -745,7 +764,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count310
+\Hy@SavedSpaceFactor=\count314
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2022-02-21 v7.00n Hyperref: PDF Unicode definition (HO)
 )
@@ -756,17 +775,17 @@ Package hyperref Info: Plain pages OFF on input line 4152.
 Package hyperref Info: Backreferencing OFF on input line 4157.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4390.
-\c@Hy@tempcnt=\count311
+\c@Hy@tempcnt=\count315
 LaTeX Info: Redefining \url on input line 4749.
-\XeTeXLinkMargin=\dimen293
+\XeTeXLinkMargin=\dimen306
  (/usr/local/texlive/2022/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count312
-\Field@Width=\dimen294
-\Fld@charsize=\dimen295
+\Fld@menulength=\count316
+\Field@Width=\dimen307
+\Fld@charsize=\dimen308
 Package hyperref Info: Hyper figures OFF on input line 6027.
 Package hyperref Info: Link nesting OFF on input line 6032.
 Package hyperref Info: Hyper index ON on input line 6035.
@@ -780,9 +799,9 @@ LaTeX Info: Redefining \pageref on input line 6101.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count313
-\c@Item=\count314
-\c@Hfootnote=\count315
+\Hy@abspage=\count317
+\c@Item=\count318
+\c@Hfootnote=\count319
 )
 Package hyperref Info: Driver (autodetected): hluatex.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/hluatex.def
@@ -793,8 +812,8 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
 )
-\Fld@listcount=\count316
-\c@bookmark@seq@number=\count317
+\Fld@listcount=\count320
+\c@bookmark@seq@number=\count321
  (/usr/local/texlive/2022/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
  (/usr/local/texlive/2022/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
@@ -811,10 +830,10 @@ Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
 Package: xparse 2022-01-12 L3 Experimental document command parser
 )
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
-\l__chemgreek_tmpa_int=\count318
-\g__chemgreek_tmpa_int=\count319
+\l__chemgreek_tmpa_int=\count322
+\g__chemgreek_tmpa_int=\count323
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count320
+\l__mhchem_ce_distanceFromLastComma_int=\count324
 \__mhchem_arrow_extPgfLength_skip=\skip58
 \mhchem@minispace@tmp=\skip59
 \mhchem@minibackspace@tmp=\skip60
@@ -825,105 +844,88 @@ Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use 
 \mhchem@smallbondwidth=\skip65
 \mhchem@bondtmp@minussidebearingleft=\skip66
 \mhchem@bondtmp@minussidebearingright=\skip67
-\l__mhchem_option_version_int=\count321
-\mhchem@option@minusmathsidebearingleft=\dimen296
-\mhchem@option@minusmathsidebearingright=\dimen297
-\mhchem@option@minustextsidebearingleft=\dimen298
-\mhchem@option@minustextsidebearingright=\dimen299
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen300
-\lightrulewidth=\dimen301
-\cmidrulewidth=\dimen302
-\belowrulesep=\dimen303
-\belowbottomsep=\dimen304
-\aboverulesep=\dimen305
-\abovetopsep=\dimen306
-\cmidrulesep=\dimen307
-\cmidrulekern=\dimen308
-\defaultaddspace=\dimen309
-\@cmidla=\count322
-\@cmidlb=\count323
-\@aboverulesep=\dimen310
-\@belowrulesep=\dimen311
-\@thisruleclass=\count324
-\@lastruleclass=\count325
-\@thisrulewidth=\dimen312
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bookmark.sty
+\l__mhchem_option_version_int=\count325
+\mhchem@option@minusmathsidebearingleft=\dimen309
+\mhchem@option@minusmathsidebearingright=\dimen310
+\mhchem@option@minustextsidebearingleft=\dimen311
+\mhchem@option@minustextsidebearingright=\dimen312
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
 \BKM@id=\count326
-)) (/usr/local/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
+)) (/usr/local/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip68
+\multirow@cntb=\count327
+\multirow@dima=\skip69
+\bigstrutjot=\dimen313
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
 \thm@style=\toks46
 \thm@bodyfont=\toks47
 \thm@headfont=\toks48
 \thm@notefont=\toks49
 \thm@headpunct=\toks50
-\thm@preskip=\skip68
-\thm@postskip=\skip69
-\thm@headsep=\skip70
+\thm@preskip=\skip70
+\thm@postskip=\skip71
+\thm@headsep=\skip72
 \dth@everypar=\toks51
 )
-\c@lem=\count327
-\c@prf=\count328
-\c@boxeddefcounter=\count329
- (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
-\c@subfigure=\count330
-\c@subtable=\count331
-) (/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-tascmac.sty
+\c@lem=\count328
+\c@prf=\count329
+\c@boxeddefcounter=\count330
+ (/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-tascmac.sty
 Package: lltjp-tascmac 2020/12/24 Patch to (t)ascmac for LuaTeX-ja
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 warning  (map file): entry for 'ascgrp' already exists, duplicates ignored
-) (/Users/kashi/report/out/nanopore.aux
+) (/Users/kashi/report/out/BZ.aux
 
-LaTeX Warning: Label `normal' multiply defined.
+LaTeX Warning: Label `detail' multiply defined.
 
 )
-\openout1 = nanopore.aux
+\openout1 = BZ.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 157.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 157.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
-\scratchdimen=\dimen313
+\scratchcounter=\count331
+\scratchdimen=\dimen314
 \scratchbox=\box98
-\nofMPsegments=\count333
-\nofMParguments=\count334
+\nofMPsegments=\count332
+\nofMParguments=\count333
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count335
-\MPscratchDim=\dimen314
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
+\MPscratchCnt=\count334
+\MPscratchDim=\dimen315
+\MPnumerator=\count335
+\makeMPintoPDFobject=\count336
 \everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -934,7 +936,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 152.
+Package hyperref Info: Link coloring OFF on input line 157.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -942,134 +944,202 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count338
+\c@section@level=\count337
 )
-LaTeX Info: Redefining \ref on input line 152.
-LaTeX Info: Redefining \pageref on input line 152.
-LaTeX Info: Redefining \nameref on input line 152.
+LaTeX Info: Redefining \ref on input line 157.
+LaTeX Info: Redefining \pageref on input line 157.
+LaTeX Info: Redefining \nameref on input line 157.
 
-Package chemgreek Info: Activating mapping `default' on line 152.
+Package chemgreek Info: Activating mapping `default' on line 157.
 
 (load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 154.
+(Font)              scaled to size 15.97903pt on input line 159.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 154.
+(Font)              scaled to size 15.97903pt on input line 159.
 (load cache: extra_lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 159.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 159.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 154.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 154.
+(Font)              scaled to size 5.54828pt on input line 159.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 159.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 154.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 159.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 159.
 (load cache: extra_haranoajigothic-medium.luc)
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 154.
+(Font)              scaled to size 7.3977pt on input line 159.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 154.
+(Font)              scaled to size 5.54828pt on input line 159.
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
+(Font)              scaled to size 13.31586pt on input line 162.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
+(Font)              scaled to size 13.31586pt on input line 162.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
+(Font)              scaled to size 13.31586pt on input line 162.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
+(Font)              scaled to size 13.31586pt on input line 162.
 (load cache: extra_lmsans12-regular.luc)
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 160.
+(Font)              scaled to size 6.47299pt on input line 168.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 160.
+(Font)              scaled to size 4.62357pt on input line 168.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 160.
+(Font)              scaled to size 9.24713pt on input line 168.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 160.
+(Font)              scaled to size 6.47299pt on input line 168.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 160.
+(Font)              scaled to size 4.62357pt on input line 168.
 (load cache: extra_lmroman7-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 167.
+(Font)              scaled to size 6.47299pt on input line 168.
 (load cache: extra_lmroman5-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 167.
+(Font)              scaled to size 4.62357pt on input line 168.
+LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
+(Font)              scaled to size 11.09656pt on input line 205.
 (load cache: extra_lmroman10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 179.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 207.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 179.
+(Font)              scaled to size 9.24713pt on input line 207.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 179.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 207.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 179.
+(Font)              scaled to size 9.24713pt on input line 207.
  [1
 
 ]
-<Screenshot-227.png.png, id=31, 642.4pt x 260.975pt>
-File: Screenshot-227.png.png Graphic file (type png)
-<use Screenshot-227.png.png>
-Package luatex.def Info: Screenshot-227.png.png  used on input line 182.
-(luatex.def)             Requested size: 426.79134pt x 173.3869pt.
-(load cache: extra_lmroman9-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 183.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 183.
-(load cache: extra_lmroman9-bold.luc)
-LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <9> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 183.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 183.
-LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <9> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 183.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 183.
-<Screenshot-221.png, id=34, 642.4pt x 264.99pt>
-File: Screenshot-221.png Graphic file (type png)
-<use Screenshot-221.png>
-Package luatex.def Info: Screenshot-221.png  used on input line 192.
-(luatex.def)             Requested size: 426.79134pt x 176.0544pt.
- [2<./Screenshot-227.png.png><./Screenshot-221.png>](load cache: extra_lmroman10-italic.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/it' in size <10> not available
-(Font)              Font shape `JT3/mc/m/n' tried instead on input line 210.
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 210.
-LaTeX Font Info:    Font shape `JY3/mc/m/it' in size <10> not available
-(Font)              Font shape `JY3/mc/m/n' tried instead on input line 210.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 210.
-(load cache: extra_lmmono10-regular.luc)
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 226.
- [3] (/Users/kashi/report/out/nanopore.aux)
+<A_Br-.png, id=38, 365.292pt x 221.628pt>
+File: A_Br-.png Graphic file (type png)
+<use A_Br-.png>
+Package luatex.def Info: A_Br-.png  used on input line 214.
+(luatex.def)             Requested size: 219.17688pt x 132.97781pt.
+<A_all_redox.png, id=39, 364.197pt x 221.628pt>
+File: A_all_redox.png Graphic file (type png)
+<use A_all_redox.png>
+Package luatex.def Info: A_all_redox.png  used on input line 218.
+(luatex.def)             Requested size: 218.51988pt x 132.97781pt.
+
+Overfull \hbox (2.22pt too wide) in paragraph at lines 212--220
+[][] [] 
+ []
+
+[2<./A_Br-.png><./A_all_redox.png>]
+<H2SO4_re.png, id=53, 363.321pt x 224.694pt>
+File: H2SO4_re.png Graphic file (type png)
+<use H2SO4_re.png>
+Package luatex.def Info: H2SO4_re.png  used on input line 272.
+(luatex.def)             Requested size: 426.79134pt x 263.95032pt.
+<KBrO3_re.png, id=54, 363.321pt x 226.665pt>
+File: KBrO3_re.png Graphic file (type png)
+<use KBrO3_re.png>
+Package luatex.def Info: KBrO3_re.png  used on input line 281.
+(luatex.def)             Requested size: 426.79134pt x 266.26567pt.
+<maronic_acid_re.png, id=55, 363.321pt x 225.789pt>
+File: maronic_acid_re.png Graphic file (type png)
+<use maronic_acid_re.png>
+Package luatex.def Info: maronic_acid_re.png  used on input line 291.
+(luatex.def)             Requested size: 426.79134pt x 265.23663pt.
+<H2SO4_a.png, id=56, 361.35pt x 218.781pt>
+File: H2SO4_a.png Graphic file (type png)
+<use H2SO4_a.png>
+Package luatex.def Info: H2SO4_a.png  used on input line 301.
+(luatex.def)             Requested size: 284.52756pt x 172.2709pt.
+<maronic_acid.png, id=57, 366.168pt x 216.81pt>
+File: maronic_acid.png Graphic file (type png)
+<use maronic_acid.png>
+Package luatex.def Info: maronic_acid.png  used on input line 309.
+(luatex.def)             Requested size: 284.52756pt x 168.47261pt.
+ [3] [4<./H2SO4_re.png><./KBrO3_re.png>] [5<./maronic_acid_re.png><./H2SO4_a.png>] [6<./maronic_acid.png>]
+<A.png, id=92, 364.197pt x 221.628pt>
+File: A.png Graphic file (type png)
+<use A.png>
+Package luatex.def Info: A.png  used on input line 356.
+(luatex.def)             Requested size: 109.25993pt x 66.4889pt.
+<B.png, id=93, 364.197pt x 221.628pt>
+File: B.png Graphic file (type png)
+<use B.png>
+Package luatex.def Info: B.png  used on input line 360.
+(luatex.def)             Requested size: 109.25993pt x 66.4889pt.
+<C.png, id=94, 364.197pt x 220.752pt>
+File: C.png Graphic file (type png)
+<use C.png>
+Package luatex.def Info: C.png  used on input line 364.
+(luatex.def)             Requested size: 109.25993pt x 66.2261pt.
+<D.png, id=95, 364.197pt x 221.628pt>
+File: D.png Graphic file (type png)
+<use D.png>
+Package luatex.def Info: D.png  used on input line 369.
+(luatex.def)             Requested size: 109.25993pt x 66.4889pt.
+<E.png, id=96, 364.197pt x 222.723pt>
+File: E.png Graphic file (type png)
+<use E.png>
+Package luatex.def Info: E.png  used on input line 373.
+(luatex.def)             Requested size: 109.25993pt x 66.8174pt.
+<F.png, id=97, 364.197pt x 221.628pt>
+File: F.png Graphic file (type png)
+<use F.png>
+Package luatex.def Info: F.png  used on input line 377.
+(luatex.def)             Requested size: 109.25993pt x 66.4889pt.
+<G.png, id=98, 364.197pt x 221.628pt>
+File: G.png Graphic file (type png)
+<use G.png>
+Package luatex.def Info: G.png  used on input line 382.
+(luatex.def)             Requested size: 109.25993pt x 66.4889pt.
+<H.png, id=99, 364.197pt x 221.628pt>
+File: H.png Graphic file (type png)
+<use H.png>
+Package luatex.def Info: H.png  used on input line 386.
+(luatex.def)             Requested size: 109.25993pt x 66.4889pt.
+<I.png, id=100, 364.197pt x 220.752pt>
+File: I.png Graphic file (type png)
+<use I.png>
+Package luatex.def Info: I.png  used on input line 390.
+(luatex.def)             Requested size: 109.25993pt x 66.2261pt.
+<J.png, id=101, 364.197pt x 221.628pt>
+File: J.png Graphic file (type png)
+<use J.png>
+Package luatex.def Info: J.png  used on input line 395.
+(luatex.def)             Requested size: 109.25993pt x 66.4889pt.
+<K.png, id=102, 364.197pt x 221.628pt>
+File: K.png Graphic file (type png)
+<use K.png>
+Package luatex.def Info: K.png  used on input line 399.
+(luatex.def)             Requested size: 109.25993pt x 66.4889pt.
+<L.png, id=103, 364.197pt x 221.628pt>
+File: L.png Graphic file (type png)
+<use L.png>
+Package luatex.def Info: L.png  used on input line 403.
+(luatex.def)             Requested size: 109.25993pt x 66.4889pt.
+ [7<./A.png><./B.png><./C.png><./D.png><./E.png><./F.png><./G.png><./H.png><./I.png><./J.png><./K.png><./L.png>] (/Users/kashi/report/out/BZ.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 )
 
 Here is how much of LuaTeX's memory you used:
- 26033 strings out of 477785
- 382236,953878 words of node,token memory allocated
- 23333 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 405 kern, 1 glyph, 9220 attribute, 302 glue_spec, 475 attribute_list, 2 write, 39 user_defined, 1 pdf_action nodes
-   avail lists: 1:40,2:96517,3:450,4:242,5:122,6:46,7:8502,8:206,9:3899,10:29,11:64
- 45644 multiletter control sequences out of 65536+600000
- 100 fonts using 70134439 bytes
- 114i,9n,115p,1797b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-Output written on nanopore.pdf (3 pages, 319187 bytes).
+ 26193 strings out of 477785
+ 382238,1648299 words of node,token memory allocated
+ 25397 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 355 kern, 1 glyph, 9631 attribute, 522 glue_spec, 508 attribute_list, 2 write, 122 user_defined nodes
+   avail lists: 1:51,2:108226,3:433,4:514,5:86,6:52,7:6241,8:69,9:2547,10:29,11:45
+ 45715 multiletter control sequences out of 65536+600000
+ 95 fonts using 62178399 bytes
+ 114i,18n,115p,1791b,846s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on BZ.pdf (7 pages, 1428118 bytes).
 
-PDF statistics: 150 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
- 15 named destinations out of 1000 (max. 131072)
- 32 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 232 PDF objects out of 1000 (max. 8388607)
+ 153 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 131072)
+ 112 words of extra memory for PDF output out of 10000 (max. 100000000)
 

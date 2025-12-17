@@ -147,30 +147,268 @@
 \newcommand{\ka}{\textasciitilde}
 
 
+
+
 \pagestyle{myheadings}
 \title{Belousov-Zhabotinsky反応}
-\date{実験日:2025/12/}
+\date{実験日:2025/12/9, 10}
 \author{報告者: No.7 05253011 Fumiya Kashiwai / 柏井史哉\\
-共同実験者:No.4 石田、No.48 吉田}
+共同実験者: 林}
 \begin{document}
 \maketitle
 \markboth{Physics experiment No.7 05253011 Fumiya Kashiwai / 柏井史哉} {Physics experiment No.7 05253011 Fumiya Kashiwai / 柏井史哉}
 
 
 \section{Introduction}
-振動反応の一種である
+振動反応の一種であるBelousov-Zhabotinsky (BZ) 反応を通して複雑な化学反応を理解する。各化学種の濃度を変更することによる振動周期への影響を、理論的な化学反応式と対応させながら考察する。
+
 
 \section{Experimental}
 \begin{enumerate}
-    \item 
+    \item 50 mLメスフラスコ中で、20 mL程度のイオン交換水に5 mLの濃硫酸を加え、0.2 g の\ce{Ce(SO4)2}を加え、50 mLに定容した(A液)。
+    \item マロン酸4.0 g、臭素酸カリウム 2.0 gを秤量し、イオン交換水で希釈して50 mLに定容した(B液)。
+    \item ビーカーにA液を入れ、室温($23\D$)で撹拌しながらB液を素早く加えた(この時点を$t=0$とする。)
+    \item 酸化還元電極および臭素イオン電極で溶液の酸化還元電位と\ce{Br-}イオン濃度を0.10 s周期で15 minモニターした。
+    \item A液およびB液に加える濃硫酸、マロン酸、臭素酸カリウムの質量、溶液の温度をを次の表\ref{detail}の通りに変更し、同様に濃度変化を追跡した。
+    \item 温度を変える際には、湯浴の温度を変化させるとともに、定容した溶液を湯浴で加熱し、全体の温度を測定温度に揃えてから測定を行った。
 \end{enumerate}
 
+\begin{table}[htbp]
+  \centering
+  \caption{測定条件}
+  \begin{tabular}{ccccc}
+    \toprule
+    ID & \ce{H2SO4} & マロン酸 & \ce{KBrO3} & 測定温度/$^\circ$C \\
+    \midrule
+    A & 5   & 4 & 2   & r.t. \\
+    B & 2.5 & 4 & 2   & r.t. \\
+    C & 7.5 & 4 & 2   & r.t. \\
+    D & 10  & 4 & 2   & r.t. \\
+    E & 5   & 2 & 2   & r.t. \\
+    F & 5   & 6 & 2   & r.t. \\
+    G & 5   & 8 & 2 & r.t. \\
+    H & 5 & 4 & 1   & r.t. \\
+    I & 5   & 4 & 0.5 & r.t. \\
+    J & 5   & 4 & 3   & r.t. \\
+    K & 5   & 4 & 2   & 35   \\
+    L & 5   & 4 & 2   & 50   \\
+    \bottomrule
+  \end{tabular}
+  \label{detail}
+\end{table}
 
 \section{Results}
 
-\section{Discussion}
 
+
+\section{Discussion}
+\subsection{課題1}
+結晶状の\ce{Ce(SO4)2}、および硫酸酸性の\ce{Ce^{4+}}はともに黄色を呈した。しかし、酸化還元反応に伴い生じる\ce{Ce^{3+}}は無色であった。\ce{Ce^{4+}}は[Xe]型の電子配置を有しており、原子内部の電子遷移は期待されない。周囲に存在する硫酸イオンあるいは水分子からの電荷移動(LMCT)による遷移が青~紫の可視光に相当すると考えられ、その場合には補色の黄色を呈することが説明される。\ce{Ce^{3+}}の場合には、[Xe4f$^1$]の電子配置となる。f-f遷移はラポルテ禁制のため可視光領域であったとしても弱く、また電荷密度は4+と比較して小さいため、遷移先のLUMO(SUMO)は3+と比較して高エネルギーとなると考えられ、LMCTは4+と比べて高エネルギー、すなわち短波長シフトし、UV領域になると考えられる。この場合、可視光を吸収せず\ce{Ce^{3+}}が無色の水溶液となることが説明される。
+
+\subsection{課題2}
+
+
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.5\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.6]{A_Br-.png}
+ \end{minipage}
+ \begin{minipage}[b]{0.5\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.6]{A_all_redox.png}
+ \end{minipage}
+ \caption{基本条件(条件A)での測定}
+ \label{condition_A}
+\end{figure}
+
+基本条件での測定結果を図\ref{condition_A}に示した。
+
+酸化還元電位は、色の変化と対応して変化が見られた。酸化還元電位が正に傾いた時は、\ce{Ce^{3+}}が増えていると考えられ、溶液が無色になると考えられる。その後、\ce{Ce^{4+}}に戻り、溶液が黄色を呈すると考えられる。
+
+
+
+\subsection{課題3}
+反応初期は、各化学種の濃度や、濃度の不均一さにより反応速度が安定しないと考えられる。
+
+マロン酸が徐々に消費されるため、反応の駆動力が減少して反応速度が遅くなると考えられる。\ce{Br-}, \ce{Ce^{4+}}などの濃度は反応中に振動するが、マロン酸は消費される一方であるために反応速度が減少していくと考えられる。
+
+このことから、振動周期が安定したのち、反応速度が遅くなるまでの安定している時間の周期を計算することが適切と考えられる。
+
+以下では2回目以降の数回の、周期が安定している部分のデータのみを用いて、その周期の平均値を記録した。
+
+ただし、最も温度を高くした条件Lでは、図\ref{detail}に示した通り、振動周期を定めることができなかったため、以下の解析から除いた。
+
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{cccccc}
+    \toprule
+    ID & $T$ / min & START / min & END / min & number & $F$ / min$^{-1}$ \\
+    \midrule
+    A & 1.219 & 3.417 & 7.075  & 3  & 0.820 \\
+    B & 1.432 & 3.705 & 8.000  & 3  & 0.698 \\
+    C & 0.439 & 3.260 & 5.895  & 6  & 2.277 \\
+    D & 0.243 & 3.221 & 5.895  & 11 & 4.114 \\
+    E & 0.511 & 3.382 & 5.424  & 4  & 1.959 \\
+    F & 0.368 & 3.362 & 5.570  & 6  & 2.717 \\
+    G & 0.370 & 3.108 & 5.695  & 7  & 2.706 \\
+    H & 1.588 & 4.577 & 7.753  & 2  & 0.630 \\
+    I & 2.459 & 6.531 & 11.450 & 2  & 0.407 \\
+    J & 0.349 & 2.748 & 3.795  & 3  & 2.866 \\
+    K & 0.197 & 2.260 & 2.851  & 3  & 5.073 \\
+    L & N.D.  &       &        &    & N.D.  \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\subsection{課題4}
+硫酸(\ce{H+})、マロン酸、\ce{KBrO3}について反応次数を求めるため、両対数グラフにより直線領域をフィッティングした。
+$F \propto x^n$の関係にある時、両対数グラフの傾きは$n$になることから、これにより反応次数を決定できると考えられる。
+
+\ce{H+}に関して、条件Aを外れ値として除外すると、傾きは1.23であり、反応次数は1次程度と決定される。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{H2SO4_re.png}
+\caption{\ce{H2SO4}}
+\label{H2SO4}
+\end{center}
+\end{figure}
+
+\ce{KBrO3}に関して、条件Jを外れ値として除外すると、傾きは1.12であり、反応次数は2次程度と決定される。
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{KBrO3_re.png}
+\caption{\ce{KBrO3}}
+\label{KBrO3}
+\end{center}
+\end{figure}
+
+マロン酸について、反応次数は0次、すなわち依存しないと考えられる。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{maronic_acid_re.png}
+\caption{maronic acid}
+\label{maronic}
+\end{center}
+\end{figure}
+
+なお、条件Aを外れ値として除くにあたって、下のプロットおよび、課題5で求めた値が外れていることを確認した。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{H2SO4_a.png}
+\caption{\ce{H2SO4}}
+\label{H2SO4_re}
+\end{center}
+\end{figure}
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 10 cm]{maronic_acid.png}
+\caption{\ce{H2SO4}}
+\label{maronic_2}
+\end{center}
+\end{figure}
+
+
+\subsection{課題5}
+$F = k_x [\ce{H+}][\ce{BrO3-}]$と書けることを仮定すると、室温における実験値から求められる量は次のようにかける。
+\begin{table}[htbp]
+  \centering
+  \begin{tabular}{crrrrcl}
+    \toprule
+    ID & F & \ce{H2SO4} & マロン酸 & \ce{KBrO2} & T / $^\circ$C & F/[H][BrO$_3$] \\
+    \midrule
+    A & 0.820 & 1.8 & 0.384 & 0.120 & r.t. & 3.804 \\
+    B & 0.698 & 0.9 & 0.384 & 0.120 & r.t. & 6.480 \\
+    C & 2.277 & 2.7 & 0.384 & 0.120 & r.t. & 7.042 \\
+    D & 4.114 & 3.6 & 0.384 & 0.120 & r.t. & 9.541 \\
+    E & 1.959 & 1.8 & 0.192 & 0.120 & r.t. & 9.087 \\
+    F & 2.717 & 1.8 & 0.577 & 0.120 & r.t. & 12.604 \\
+    G & 2.706 & 1.8 & 0.769 & 0.120 & r.t. & 12.554 \\
+    H & 0.630 & 1.8 & 0.384 & 0.060 & r.t. & 5.841 \\
+    I & 0.407 & 1.8 & 0.384 & 0.030 & r.t. & 7.545 \\
+    J & 2.866 & 1.8 & 0.384 & 0.180 & r.t. & 8.864 \\
+    Average & & & & & & $ 8.8 \pm 2.4$ \\
+    K & 5.073 & 1.8 & 0.384 & 0.120 & 35   & 23.534 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+ただし、平均値では条件Aを除いた。
+この時、室温($23\D$)における反応速度定数$k_x = 8.8 \pm 2.4$、および$35\D$においては24程度であることが確認された。反応温度を$10\D$上昇させた場合、一般的に反応速度は2-3倍になると期待されるため、この結果は妥当であると考えられる。
+
+\subsection{課題6}
+振動実験中に\ce{Br-}を外部から加えることにより確認できると考えられる。教科書に載っているモデルにおいて、振動中に[\ce{Br-}]が小さくなったタイミングにおいては、\ce{HBrO2}の自己触媒反応が卓越するために[\ce{Ce^{4+}}]が増加する。このタイミングにおいて、無色から黄色溶液への変化が観測されると期待される。
+ここで\ce{Br-}を外部から加えることにより、濃度を高く保ち、色の変化が生じなくなる、すなわち振動周期が長くなると期待される。
+同様に、振動の各タイミングにおいて\ce{Br-}を外部から加え、モデルより期待される挙動と合致することが確認できれば、\ce{Br-}がフィードバック機構に寄与していると考えられる。
+
+\subsection{課題7}
+通常の化学反応も、振動反応も、一定の定常状態に向かってエントロピーが増加する = ギブスエネルギーが増加する 傾向に従う。通常の反応では、定常状態まで単調に減少する。
+
+しかし、自己触媒反応など、非線形過程を含むBZ反応のような系では、減衰振動の形を取りながら平衡点に向かうと考えられる。
+
+\section{Appendix}
+\begin{figure}[htbp]
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{A.png}
+ \end{minipage}
+ \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{B.png}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{C.png}
+ \end{minipage}
+
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{D.png}
+ \end{minipage}
+  \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{E.png}
+ \end{minipage}
+   \begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{F.png}
+ \end{minipage}
+
+\begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{G.png}
+ \end{minipage}
+\begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{H.png}
+ \end{minipage}
+\begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{I.png}
+ \end{minipage}
+
+\begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{J.png}
+ \end{minipage}
+\begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{K.png}
+ \end{minipage}
+\begin{minipage}[b]{0.3\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{L.png}
+ \end{minipage}
+ \caption{各条件での測定}
+ \label{detail}
+\end{figure}
+
+\if0
 \begin{thebibliography}{99}
 \end{thebibliography}
+\fi
 
 \end{document}
