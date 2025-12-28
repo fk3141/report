@@ -1,0 +1,341 @@
+\documentclass{ltjsarticle}
+%%%package読み込み
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{bm}
+% \usepackage{tikz} % ★消去: 代わりに graphicx 追加
+% \usetikzlibrary{cd}
+\usepackage{url}
+\usepackage{graphicx} % ★追加: 図を挿入するため
+\usepackage{float} % ★追加: 図の位置を制御するため
+\usepackage{caption} % ★追加: 図のキャプションを柔軟に扱うため
+%\usepackage{xcolor}
+\usepackage{ascmac}
+\usepackage{tcolorbox}
+%\usepackage[dvipdfmx, setpagesize=false, bookmarks=true, bookmarksdepth=tocdepth, bookmarksnumbered=true, colorlinks=true, linkcolor=red]
+\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+\usepackage{braket} % 追加した
+\usepackage{booktabs}
+\usepackage{bookmark}
+%\usepackage[textwidth=45zw,lines=44]{geometry}
+%\usepackage{pxjahyper}
+%%%黒板太字
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+%%%約物
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lr}[1]{\left(#1\right)}
+\newcommand{\st}{\; \mathrm{s.t.}\; }
+\newcommand{\Ae}{\textrm{-a.e.}} 
+%%%繰り返し
+\newcommand{\pluss}[3]{#1_{#2}+\cdots+#1_{#3}}
+\newcommand{\minuss}[3]{#1_{#2}-\cdots-#1_{#3}}
+\newcommand{\timess}[3]{#1_{#2}\times\cdots\times #1_{#3}}
+\newcommand{\leqs}[3]{#1_{#2}\leq\cdots\leq #1_{#3}}
+\newcommand{\geqs}[3]{#1_{#2}\geq\cdots\geq #1_{#3}}
+\newcommand{\opluss}[3]{#1_{#2}\oplus\cdots\oplus #1_{#3}}
+\newcommand{\otimess}[3]{#1_{#2}\otimes\cdots\otimes #1_{#3}}
+\newcommand{\commas}[3]{#1_{#2},\ldots,#1_{#3}}
+%%%微分
+\newcommand{\dx}[1]{\mathrm{d}#1}
+\newcommand{\ddx}[1]{\frac{\mathrm{d}}{\mathrm{d}#1}}
+\newcommand{\dydx}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\dydxn}[3]{\frac{\mathrm{d}^{#3}#1}{\mathrm{d}#2^{#3}}}
+\newcommand{\del}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\dell}[2]{\frac{\partial^2#1}{{\partial#2}^2}}
+\newcommand{\deln}[3]{\frac{\partial^{#3}#1}{{\partial#2}^{#3}}}
+%%%
+%%%演算子
+%log type
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Det}{Det}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\corank}{corank}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\Coker}{Coker}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\arcsech}{arcsech}
+\DeclareMathOperator{\arccsch}{arccsch}
+\DeclareMathOperator{\arccoth}{arccoth}
+\DeclareMathOperator{\grad}{grad}
+\let\div\relax
+\DeclareMathOperator{\div}{div}
+\DeclareMathOperator{\rot}{rot}
+%\DeclareMathOperator{\GL}{GL} % ★消去 : ここから↓
+%\DeclareMathOperator{\SL}{SL}
+%\DeclareMathOperator{\Sym}{Sym}
+%\DeclareMathOperator{\Aut}{Aut}
+%\DeclareMathOperator{\Inn}{Inn}
+%\DeclareMathOperator{\Out}{Out}
+%\DeclareMathOperator{\id}{id}
+%\DeclareMathOperator{\pr}{pr}
+%\DeclareMathOperator{\supp}{supp}
+%\DeclareMathOperator{\diam}{diam}
+%\DeclareMathOperator{\End}{End}
+%\DeclareMathOperator{\Cl}{Cl}
+%\DeclareMathOperator{\Hom}{Hom} % ★消去 : ここまで↑
+%limit type
+\DeclareMathOperator*{\argmin}{arg~min}
+\DeclareMathOperator*{\argmax}{arg~max}
+%%%
+%%%定理
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{lem}{補題}
+\newtheorem*{lem*}{補題}
+\newtheorem{prf}{証明}
+\newtheorem*{prf*}{証明}
+\newtheorem*{ex*}{Example}
+\newtheorem*{rem*}{Remark}
+\newenvironment{prb}[1]%
+{\begin{itembox}[l]{\textbf{問題 #1}}}%
+{\end{itembox}}
+\newenvironment{sol}[2]%
+{\setcounter{lem}{0}
+\setcounter{prf}{0}
+\par\noindent\textbf{解答 #1} (#2)\par}%
+{\par\normalfont}
+
+\renewcommand{\refname}{Reference}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{boxeddefcounter}
+\newenvironment{problem}
+{\refstepcounter{boxeddefcounter}\begin{itembox}[l]{問\theboxeddefcounter}}
+{\end{itembox}}
+
+
+\usepackage{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{format=hang, font=small, labelfont=bf, compatibility=false}
+
+\newcommand{\D}{^\circ\text{C}}
+\newcommand{\ka}{\textasciitilde}
+
+
+\pagestyle{myheadings}
+\title{物理化学特論(石崎先生)}
+\date{\today}
+\author{理学部化学科 3年 05253011 Fumiya Kashiwai / 柏井史哉}
+\begin{document}
+\maketitle
+\markboth{物理化学特論レポート 理学部化学科3年 05253011 Fumiya Kashiwai / 柏井史哉} {物理化学特論レポート 理学部化学科3年 05253011 Fumiya Kashiwai / 柏井史哉}
+%%ここまでタイトル
+
+\part{Marcus theory}
+
+\section{Reaction Coordinate}
+反応の進行度を意味する。ここでは、電子移動が一気に起こる場合を考えており、溶媒の配向変化の度合いを意味していると考えられる。
+
+一般に、各原子の位置、結合角などの主要なパラメータが反応座標として用いられる。Goldbookによれば、"In the formalism of 'transition-state theory', the reaction coordinate is that coordinate in a set of curvilinear coordinates obtained from the conventional ones for the reactants which, for each reaction step, leads smoothly from the configuration of the reactants through that of the transition state to the configuration of the products"\cite{goldbook} とされており、上で挙げたような変数を組み合わせて作られる、出発物から反応物へ、遷移状態を経て滑らかに繋がる経路となるような変数を指す。
+
+Marcus理論では、特にD,Aのポテンシャルカーブが放物線になることを要求される。反応座標の取り方には任意性があるが、関数$f(x)$が単調増加である限り、反応座標(横軸)$X$を$f(X)$に取り替えても(おそらく)、上記の定義上問題ない。そのため、ポテンシャルカーブが放物線になるような適当な反応座標を用意する、と考えている。
+
+\if0
+今回考えているような電荷移動反応においては、反応中の電荷の移動度を$X$と定義しいていると理解している。
+\ce{D^-A -> [D^{-1+$X$} A^{-$X$}] -> DA^-}という形式で反応が進行すると考え、反応の中間状態である\ce{[D^{-1+$X$} A^{-$X$}]}における周囲の溶媒分子の配位等を含めたエネルギーを考えることができると考えられる。
+
+再配向度?
+https://goldbook.iupac.org/terms/view/R05168.html
+\fi
+
+
+\section{reorganization energy}
+溶媒分子の再配向に伴うエネルギーと解釈できる。
+
+このモデルのもとで、$\lambda = F_{\text{A}}(X_{\text{D}}) - F_{\text{A}}(X_{\text{D}}) = F_{\text{A}}(X_{\text{A}}) - F_{\text{D}}(X_{\text{D}})$
+であり、仮想的に電荷移動が生じずに溶媒の再配向のみが生じたとした時の、始状態と終状態のエネルギー差に相当する。
+
+\section{free energy of activation}
+遷移状態におけるReaction coordinate $X_{\text{TS}}$は$F_{\text{A}}(X_{\text{TS}}) = F_{\text{D}}(X_{\text{TS}})$によって特徴づけられる。これは
+\begin{align}
+    \frac{1}{4\alpha}\lr{ X_{\text{TS}} -X_{\text{D}}}^2 = \frac{1}{4\alpha}\lr{ X_{\text{TS}} -X_{\text{A}}}^2 + \Delta F^{\circ}\\
+    X_{\text{TS}} = 2\alpha \frac{\Delta F^\circ}{X_{\text{A}} - X_{\text{D}}} + \frac{X_{\text{A}} + X_{\text{D}}}{2}
+\end{align}
+と計算される。この時
+\begin{align}
+    \Delta F^* = F_{\text{D}} ( X_{\text{TS}} ) = \frac{\alpha}{\lr{X_{\text{A}}-X_{\text{D}}}^2} \lr{\Delta F^\circ + \frac{\lr{X_{\text{A}}-X_{\text{D}}}^2}{4\alpha}} = \frac{\lr{\Delta F^\circ + \lambda}^2}{4\lambda}
+\end{align}
+ただし、$\displaystyle \lambda = \frac{\lr{X_{\text{A}}-X_{\text{D}}}^2}{4\alpha}$ を用いた。
+
+\section{rate constant of electron transfer}
+Fermiの黄金律により、ある点$X$における電子移動反応の遷移確率$T(X)$は次のように表記される。
+\begin{equation}
+T(X) = \frac{2\pi}{\hbar} |\braket{\Psi_{\text{D}}|\hat{H}'|\Psi_{\text{A}}}|^2 \delta(F_{\text{D}}(X) - F_{\text{A}}(X)) = \frac{2\pi}{\hbar} |H_{\text{AD}}|^2 \delta(F_{\text{D}}(X) - F_{\text{A}}(X)) 
+\end{equation}
+ただし、$\Psi_{\text{D}}, \Psi_{\text{A}}$は始状態、終状態の波動関数、$\hat{H}'$は摂動のハミルトニアン、$\rho$は終状態の状態密度である。
+
+また、$D$が$X$を実現する確率$P_{\text{D}}(X)$は、ボルツマン分布により与えられて
+\begin{equation}
+    P_{\text{A}}(X) \propto \exp{\lr{-\frac{F_{\text{D}}(X)}{k_B T}}} = 
+    \exp{\lr{-\frac{\lr{X-X_{\text{D}}}^2}{4\alpha k_B T}}}
+\end{equation}
+となる。さらに、この正規分布の分散$\sigma^2 = 4\alpha k_B T$であるので
+\begin{equation}
+    P_{\text{A}}(X) = \sqrt{\frac{1}{4\pi\alpha k_B T}} \exp{\lr{-\frac{\lr{X-X_{\text{D}}}^2}{4\alpha k_B T}}}
+\end{equation}
+となる。
+
+反応速度定数は、$T(X)$と$P_{\text{A}}(X)$の積を全$X$について足し合わせることにより得られる\footnote{$T(X)$はあるReaction coordinate $X$が実現した時に、反応が起こる"条件付き確率"、$P_{\text{A}}(X)$は状態$X$が生じる"事前確率"と見做せるため、ベイズの定理のようにするとこれが従う。}。
+
+よって
+\begin{equation}
+k_{\text{ET}} = \frac{2\pi}{\hbar} |H_{\text{AD}}|^2 \int_{-\infty}^{\infty} \dx{X} \delta(F_{\text{D}}(X) - F_{\text{A}}(X)) P_{\text{A}}(X)
+\end{equation}
+となる。
+
+物理的な意味について、係数部分
+$\frac{2\pi}{\hbar} |H_{\text{AD}}|^2$
+は、Reaction coordinateが$X$となる、つまり粒子の座標や溶媒配位などの条件が整った場合の、反応の生じる確率を示す。
+
+デルタ関数部分は微視的なエネルギー保存則を意味し、反応の前後で$F$が保存することを要請している。反応(電子移動)は非常に短時間に起こるため、座標等が変化せず、エネルギー保存が要請される(Frank-Condonの原理)。
+
+最後に、$P_{\text{A}}(X)$は状態$X$が生じる確率であり、事前確率に相当する。
+
+
+\section{$k_{\text{ET}}$}
+先の式および、デルタ関数についての性質
+\begin{equation}
+    \int_{-\infty}^{\infty} \dx{x} f(x)\delta(x-a) = f(a)
+\end{equation}
+により、
+\begin{align}
+k_{\text{ET}} &= \frac{2\pi}{\hbar} |H_{\text{AD}}|^2 P_{\text{A}}(X_{\text{TS}}) = \frac{2\pi}{\hbar} |H_{\text{AD}}|^2 \sqrt{\frac{1}{4\pi\alpha k_B T}} \exp{\lr{-\frac{\Delta F^*}{k_B T}}}\\
+=& |H_{\text{AD}}|^2 \sqrt{\frac{\pi}{\hbar^2\pi\alpha k_B T}} \exp{\lr{-\frac{\Delta F^*}{k_B T}}}
+\end{align}
+が従う。
+
+\section{the normal region and the inverted region}
+上で示した表式より、$\Delta F^*$は$\Delta F^\circ, \lambda$により決定する。
+
+$\lambda$を一定とする。
+$\Delta F^\circ$は反応におけるエネルギー変化であり、これが正に大きいほど反応は遅くなることが期待される。実際、
+$\Delta F^\circ > -\lambda$の領域においては、$\displaystyle \dydx{\Delta F^*}{\Delta F^\circ} > 0$であり、エネルギー変化が大きくなるほど活性化エネルギーが大きく、従って(5.3)式より反応速度定数は小さくなる。この領域をNormal regionと呼ぶ。
+
+対して、
+$\Delta F^\circ < -\lambda$では、$\displaystyle \dydx{\Delta F^*}{\Delta F^\circ} < 0$であり、エネルギー変化が大きくなるほど活性化エネルギーが小さく、従って(5.3)式より反応速度定数は大きくなる。この領域をInverted Regionと呼ぶ。
+
+\section{activationless case}
+この時、(5.3)式より
+\begin{align}
+k_{\text{ET}} = |H_{\text{AD}}|^2 \sqrt{\frac{\pi}{\hbar^2\pi\alpha k_B T}} 
+\end{align}
+である温度$T$を小さくすると、$k_{\text{ET}}$は大きく、電子移動は早くなる。
+
+\part{Kramers theory}
+\section{Random force}
+化学種が外界から受けるランダムな力であり、特に溶媒分子から受ける力であると理解する。
+期待値に関する、与えられた二つの式により、次の性質が従う。
+\begin{enumerate}
+    \item 力の時間平均は0となる。
+    \item 初期状態 ($t=0$) と、その後の任意の時間における力には相関がない。すなわち、マルコフ的な、直前の状況に影響されずに働く。
+    \item これは化学的な視点では、溶媒分子が速やかに移動していることを意味すると考えられる。
+    \item さらに、環境が定常状態であるとすると、$t=0$の取り方には任意性があるので$\braket{R(t_1)R(t_2)}=k\delta(t_1 - t_2)$が成立する、つまり任意の2つの時刻における力に相関はない。ここで、やはり定常性より$k$は定数。
+\end{enumerate}
+
+\section{fluctuation-dissipation relation}
+十分時間が経過したのち、
+\begin{align}
+    v(t) = \frac{1}{m} \int_0^{t} \dx{t'} e^{-\gamma (t-t')} R(t')
+\end{align}
+となる。この時、
+\begin{align}
+    \braket{v(t)^2} &= \frac{1}{m^2} \braket{\lr{\int_0^{t} \dx{t'} e^{-\gamma (t-t')} R(t')}^2}\\
+    &= \frac{1}{m^2} \lr{\int_0^{t} \dx{t'} e^{-\gamma (t-t')}\braket{R(t')}}^2\\
+    &= \frac{1}{m^2} \int_0^{t} \dx{t_1} \int_0^{t} \dx{t_2} e^{-\gamma (t-t_1)} e^{-\gamma (t-t_2)}\braket{R(t_1)R(t_2)}\\
+    &= \frac{1}{m^2} \int_0^{t} \dx{t_1} \int_0^{t} \dx{t_2} e^{-\gamma (t-t_1)} e^{-\gamma (t-t_2)} k \delta(t_1-t_2)\\
+    &= \frac{k}{m^2} \int_0^{t}\dx{t_1} e^{-2\gamma (t-t_1)}\\
+    &= \frac{k}{2\gamma m^2}
+\end{align}
+となる。ここで
+\begin{align}
+\braket{v(t)^2} \to \frac{k_B T}{m}
+\end{align}
+より、
+\begin{equation}
+    k = 2mk_B T \gamma, \,\, \braket{R(t)R(0)} = 2mk_B T \gamma \delta(t)
+\end{equation}
+である。
+
+\section{fast reaction}
+上の仮定のうち、$\braket{R(t)R(0)} \propto \delta(t)$が破綻する。すなわち、溶媒の緩和が反応よりも十分早いことを暗に仮定しているが、この部分が非常に早い反応では破綻する。
+
+\begin{thebibliography}{99}
+\bibitem{goldbook}
+\url{https://goldbook.iupac.org/terms/view/R05168.html}
+\bibitem{muki}
+量子論に基づく無機化学-群論からのアプローチ
+高木秀夫 著
+(Marcus理論についての全体的な参考文献)
+\end{thebibliography}
+
+
+\end{document}
+
+
+
+ここでBorn-Oppenheimer近似を用いる。波動関数は電子の波動関数$\psi$と、核の波動関数$\chi$の積に分離できるとする。この時、
+\begin{align}
+\braket{\Psi_{\text{D}}|\hat{H}'|\Psi_{\text{A}}}
+&= \int \int \dx{r} \dx{Q}  \chi_{\text{D}}' \psi_{\text{D}}' \hat{H}' \psi_{\text{A}} \chi_{\text{A}}\\
+&= \int \dx{r} \chi_{\text{D}}' H_{\text{AB}} \chi_{\text{A}}
+\end{align}
+一般に$\displaystyle H_{\text{AB}} = \int \dx{Q} \psi_{\text{D}}'\hat{H}' \psi_{\text{A}}$は核の座標$Q$の関数であるが、$Q$が一定であるとすると、電子位置$r$についての積分の外に出すことができて
+\begin{align}
+    \braket{\Psi_{\text{D}}|\hat{H}'|\Psi_{\text{A}}} = H_{\text{AB}} \int \dx{r}  \chi_{\text{D}}'\chi_{\text{A}}
+\end{align}
+と記述される。これにより、遷移確率は
+\begin{align}
+    T = \frac{2\pi}{\hbar} |\braket{\Psi_{\text{D}}|\hat{H}'|\Psi_{\text{A}}}|^2 = \frac{2\pi}{\hbar} |H_{\text{AB}}|^2 |\braket{\chi_{\text{D}} | \chi_{\text{A}}}|^2
+\end{align}
+と記述される。ただし、状態密度$\rho$は、この系では1である。
+ゆえに、反応速度は次の式で記述される。
+\begin{align}
+    k_{\text{ET}} &= \int_{-\infty}^{\infty} \dx{X} \left[T(X)  P_{\text{D}}(X) \delta(F_{\text{D}}(X) - F_{\text{A}}(X)) \right] \\
+    &= \frac{2\pi}{\hbar} |H_{\text{AB}}|^2 \int_{-\infty}^{\infty} \dx{X} \left[ |\braket{\chi_{\text{D}} | \chi_{\text{A}}}|^2 P_{\text{D}}(X) \delta(F_{\text{D}}(X) - F_{\text{A}}(X)) \right]
+\end{align}
+ただし、最後のデルタ関数は、反応前後での微視的なエネルギー保存則の要請から従う。また、古典的な極限 (高温極限) を考え、エネルギーは連続的な値を取れるとしている。これはMarcus理論の前提より従う。
+
+積分部分$\displaystyle \int_{-\infty}^{\infty} \dx{X} \left[ |\braket{\chi_{\text{D}} | \chi_{\text{A}}}|^2 P_{\text{D}}(X) \delta(P_{\text{D}}(X) - P_{\text{A}}(X)) \right]$ は、ポテンシャル曲線の交点が実現される確率$P_{\text{A}}(X)$であって、すなわちDがReaction coordinate $X$を実現する確率である。ボルツマン分布により
+\begin{equation}
+    P_{\text{A}}(X) \propto \exp{\lr{-\frac{F_{\text{D}}(X)}{k_B T}}} = 
+    \exp{\lr{-\frac{\lr{X-X_{\text{D}}}^2}{4\alpha k_B T}}}
+\end{equation}
+となる。さらに、この正規分布の分散$\sigma^2 = 4\alpha k_B T$であるので
+\begin{equation}
+    P_{\text{A}}(X) = \sqrt{\frac{1}{4\pi\alpha k_B T}} \exp{\lr{-\frac{\lr{X-X_{\text{D}}}^2}{4\alpha k_BT}}}
+\end{equation}
+となる。
+
