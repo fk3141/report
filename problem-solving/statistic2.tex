@@ -1,0 +1,451 @@
+\documentclass{ltjsarticle}
+%%%package読み込み
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{bm}
+% \usepackage{tikz} % ★消去: 代わりに graphicx 追加
+% \usetikzlibrary{cd}
+\usepackage{url}
+\usepackage{graphicx} % ★追加: 図を挿入するため
+\usepackage{float} % ★追加: 図の位置を制御するため
+\usepackage{caption} % ★追加: 図のキャプションを柔軟に扱うため
+%\usepackage{xcolor}
+\usepackage{ascmac}
+\usepackage{tcolorbox}
+%\usepackage[dvipdfmx, setpagesize=false, bookmarks=true, bookmarksdepth=tocdepth, bookmarksnumbered=true, colorlinks=true, linkcolor=red]
+\usepackage{hyperref}
+\usepackage[version=4]{mhchem}
+\usepackage{braket} % 追加した
+\usepackage{booktabs}
+\usepackage{bookmark}
+%\usepackage[textwidth=45zw,lines=44]{geometry}
+%\usepackage{pxjahyper}
+%%%黒板太字
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+%%%約物
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lr}[1]{\left(#1\right)}
+\newcommand{\st}{\; \mathrm{s.t.}\; }
+\newcommand{\Ae}{\textrm{-a.e.}} 
+%%%繰り返し
+\newcommand{\pluss}[3]{#1_{#2}+\cdots+#1_{#3}}
+\newcommand{\minuss}[3]{#1_{#2}-\cdots-#1_{#3}}
+\newcommand{\timess}[3]{#1_{#2}\times\cdots\times #1_{#3}}
+\newcommand{\leqs}[3]{#1_{#2}\leq\cdots\leq #1_{#3}}
+\newcommand{\geqs}[3]{#1_{#2}\geq\cdots\geq #1_{#3}}
+\newcommand{\opluss}[3]{#1_{#2}\oplus\cdots\oplus #1_{#3}}
+\newcommand{\otimess}[3]{#1_{#2}\otimes\cdots\otimes #1_{#3}}
+\newcommand{\commas}[3]{#1_{#2},\ldots,#1_{#3}}
+%%%微分
+\newcommand{\dx}[1]{\mathrm{d}#1}
+\newcommand{\ddx}[1]{\frac{\mathrm{d}}{\mathrm{d}#1}}
+\newcommand{\dydx}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\dydxn}[3]{\frac{\mathrm{d}^{#3}#1}{\mathrm{d}#2^{#3}}}
+\newcommand{\del}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\dell}[2]{\frac{\partial^2#1}{{\partial#2}^2}}
+\newcommand{\deln}[3]{\frac{\partial^{#3}#1}{{\partial#2}^{#3}}}
+%%%
+%%%演算子
+%log type
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Det}{Det}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\corank}{corank}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\Coker}{Coker}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\arcsech}{arcsech}
+\DeclareMathOperator{\arccsch}{arccsch}
+\DeclareMathOperator{\arccoth}{arccoth}
+\DeclareMathOperator{\grad}{grad}
+\let\div\relax
+\DeclareMathOperator{\div}{div}
+\DeclareMathOperator{\rot}{rot}
+%\DeclareMathOperator{\GL}{GL} % ★消去 : ここから↓
+%\DeclareMathOperator{\SL}{SL}
+%\DeclareMathOperator{\Sym}{Sym}
+%\DeclareMathOperator{\Aut}{Aut}
+%\DeclareMathOperator{\Inn}{Inn}
+%\DeclareMathOperator{\Out}{Out}
+%\DeclareMathOperator{\id}{id}
+%\DeclareMathOperator{\pr}{pr}
+%\DeclareMathOperator{\supp}{supp}
+%\DeclareMathOperator{\diam}{diam}
+%\DeclareMathOperator{\End}{End}
+%\DeclareMathOperator{\Cl}{Cl}
+%\DeclareMathOperator{\Hom}{Hom} % ★消去 : ここまで↑
+%limit type
+\DeclareMathOperator*{\argmin}{arg~min}
+\DeclareMathOperator*{\argmax}{arg~max}
+%%%
+%%%定理
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{lem}{補題}
+\newtheorem*{lem*}{補題}
+\newtheorem{prf}{証明}
+\newtheorem*{prf*}{証明}
+\newtheorem*{ex*}{Example}
+\newtheorem*{rem*}{Remark}
+\newenvironment{prb}[1]%
+{\begin{itembox}[l]{\textbf{問題 #1}}}%
+{\end{itembox}}
+\newenvironment{sol}[2]%
+{\setcounter{lem}{0}
+\setcounter{prf}{0}
+\par\noindent\textbf{解答 #1} (#2)\par}%
+{\par\normalfont}
+
+\renewcommand{\refname}{Reference}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{boxeddefcounter}
+\newenvironment{problem}
+{\refstepcounter{boxeddefcounter}\begin{itembox}[l]{問\theboxeddefcounter}}
+{\end{itembox}}
+
+
+\usepackage{caption}
+\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{format=hang, font=small, labelfont=bf, compatibility=false}
+
+\newcommand{\D}{^\circ\text{C}}
+\newcommand{\ka}{\textasciitilde}
+
+
+\pagestyle{myheadings}
+\title{統計力学2 レポート}
+\date{\today}
+\author{理学部化学科 3年 05253011 Fumiya Kashiwai / 柏井史哉}
+\begin{document}
+\maketitle
+\markboth{統計力学2レポート 理学部化学科3年 05253011 Fumiya Kashiwai / 柏井史哉} {統計力学2レポート 理学部化学科3年 05253011 Fumiya Kashiwai / 柏井史哉}
+%%ここまでタイトル
+
+\section{平均場近似の変分法としての定式化}
+(a) 
+$t>0$に対して
+\begin{equation}
+    \ln{\frac{1}{t}} \ge 1-t
+\end{equation}
+である。よって、
+\begin{equation}
+    D_{\text{KL}}(P||Q) 
+    = \sum_{S \in \Omega} P(S) \ln{\frac{P(S)}{Q(S)}  }
+    \ge \sum_{S \in \Omega} P(S) \lr{1-\frac{Q(S)}{P(S)}} 
+    = \sum_{S \in \Omega} \lr{P(S) - Q(S)}
+    = 0
+\end{equation}
+
+(b)
+同様に、量子系の密度演算子について
+\begin{align}
+    \rho = \sum_j p_j \ket{i}\bra{i}, \, \sigma = \sum_i q_i \ket{j}\bra{j}
+\end{align}
+とスペクトル分解できるとする。この時、$\ket{i}, \ket{j}$は必ずしも同じではない正規直交基底である。
+
+これより
+\begin{align}
+    D_{\text{KL}}(\rho||\sigma) 
+    &= \Tr(\rho \ln{\rho}) - \Tr(\rho \ln{\sigma}) = \sum_i p_i \ln{p_i}  - \sum_i \bra{i}\rho \ln{\sigma}\ket{i} \notag \\
+    &= \sum_i p_i \ln{p_i} - \sum_i \sum_j p_i \braket{i|j}\bra{j} \ln{\sigma}\ket{i}\notag \\
+    &= \sum_i p_i \ln{p_i} - \sum_i \sum_j p_i |\braket{i|j}|^2\ln{q_j}\notag \\
+    &= \sum_i \sum_j p_i |\braket{i|j}|^2 \lr{\ln{p_i} - \ln{q_j}}\notag\\
+    & \ge \sum_i \sum_j \lr{p_i - q_j} |\braket{i|j}|^2\notag \\
+    &= \sum_i p_i \lr{ \sum_j |\braket{i|j}|^2 } - \sum_j q_j \lr{ \sum_i |\braket{i|j}|^2 } \notag\\
+    &= 1-1 = 0
+\end{align}
+が従う。
+% p_j = 0 のケア
+
+(c)
+まず、古典系の場合、
+\begin{align}
+    Z = \int \dx{S} e^{-\beta H(S)}, \, Z_0 = \int \dx{S} e^{-\beta H_0(S)}
+\end{align}
+である。この時、状態空間$S\in \Omega$上の二つの確率変数
+\begin{align}
+    P(S) = \frac{e^{-\beta H(S)}}{Z},\, P_0(S) = \frac{e^{-\beta H_0(S)}}{Z}
+\end{align}
+に対して(a)を用いると
+\begin{align}
+    D_{\text{KL}}(P_0||P) &= \sum_{S\in \Omega} \frac{e^{-\beta H_0(S)}}{Z_0} \ln{\frac{e^{-\beta H_0(S)}}{Z_0}\frac{Z}{e^{-\beta H(S)}}}\notag \\
+    &= \ln{Z} - \ln{Z_0} + \sum_{S\in \Omega} \frac{e^{-\beta H_0(S)}}{Z_0} \beta (H(S)-H_0(S))\notag \\
+    &= \ln{Z} - \ln{Z_0} +\beta \braket{H-H_0}_0 \ge 0
+\end{align}
+$\displaystyle F=-\frac{\ln{Z}}{\beta}$より
+\begin{equation}
+    -F + F_0 + \braket{H-H_0}_0 \ge 0 
+\end{equation}
+よって、次の式が従う。
+\begin{equation}
+    F_\nu = F_0 + \braket{H-H_0}_0 \ge F
+\end{equation}
+
+%%%%%%%%%%%%%%%%%%
+量子系の場合にも、同様にKL-情報量の非負性から従う。
+%
+
+(d) 状態空間$S \in \Omega$の要素の総数は$2^N$である。
+\begin{align}
+    Z_0 &= \sum_{S \in \Omega} e^{\beta H_0} = \sum_{S \in \Omega} \prod_i e^{\beta \Lambda S_i}\notag \\
+    &=e^{-\beta \Lambda N} \sum_{S \in \Omega} \prod_i e^{\beta \Lambda S_i+1}\notag \\
+    &= e^{-\beta \Lambda N} \sum_{k=0}^N 
+        \begin{pmatrix}
+            N\\k
+        \end{pmatrix}
+    e^{2\beta\Lambda k} \notag\\
+    &= e^{-\beta \Lambda N} \lr{1+e^{2\beta\Lambda k}}^N = \lr{2\cosh{\beta \Lambda}}^N
+\end{align}
+
+よって、
+\begin{align}
+    \braket{H_0}_0 &= \frac{1}{Z_0} \sum_{S \in \Omega} H_0 e^{-\beta H_0}\notag\\ 
+    &= \frac{\Lambda}{\lr{2\cosh{\beta \Lambda}}^N} \sum_{k=0}^N 
+        \begin{pmatrix}
+            N\\k
+        \end{pmatrix}
+    (2k-N) e^{-2\beta \Lambda k}\notag\\
+    &= \frac{\Lambda e^{\beta \Lambda N}}{\lr{2\cosh{\beta \Lambda}}^N} \lr{2N e^{-2\beta \Lambda} \lr{1+e^{-2\beta\Lambda}}^{N-1}-N\lr{1+e^{-2\beta\Lambda}}^N} \notag\\
+    &= \frac{\Lambda Ne^{\beta \Lambda }}{\lr{2\cosh{\beta \Lambda}}}\lr{2e^{-2\beta \Lambda} - \lr{1+e^{-2\beta\Lambda}}} \notag\\
+    &= -\frac{\Lambda N}{\lr{2\cosh{\beta \Lambda}}}\lr{e^{\beta \Lambda} - e^{-\beta\Lambda}}\\
+    &= -N\Lambda \tanh{\beta \Lambda}
+\end{align}
+$\braket{H_0}_0 = -\Lambda N m$より 
+\begin{equation}
+    m = \tanh{\beta \Lambda}
+\end{equation}
+
+上の式を満たす$m = m_0$とする。
+この時、
+\begin{align}
+    \braket{H - H_0}_0 &= -J \frac{Nz}{2} m^2 - (B-\Lambda) N m\\
+    F_\nu &= - \frac{NzJ}{2} m^2 - (B-\Lambda) N m + F_0 
+\end{align}
+
+と表せる。ここで、
+\begin{align}
+    m &= \tanh{\beta \Lambda} = \frac{e^{\beta \Lambda}-e^{-\beta \Lambda}}{e^{\beta \Lambda} + e^{-\beta \Lambda}}\\
+    \Lambda &= \frac{1}{2\beta}\ln{\frac{1+m}{1-m}}
+\end{align}
+である。
+
+$\displaystyle F_0 = -\frac{\ln{Z_0}}{\beta} = -N \frac{\ln{\lr{\cosh{\beta \Lambda}}}}{\beta}$であり、
+この時、
+
+\begin{align}
+    F_\nu &= - \frac{NzJ}{2} m^2 - \lr{B- \frac{1}{2\beta}\ln{\frac{1+m}{1-m}}} N m - N \frac{\ln{\lr{\cosh{\beta \Lambda}}}}{\beta}\\
+    \frac{1}{\cosh^2{\beta\Lambda}} &= 1-\tanh^2{\beta \Lambda} = 1-m^2
+\end{align}
+
+であるので、
+\begin{align}
+    f_\nu &= - \frac{zJ}{2} m^2 - \lr{B- \frac{1}{2\beta}\ln{\frac{1+m}{1-m}}}  m + \frac{\ln{\lr{1-m^2}}}{2\beta}\notag\\
+    &= -\frac{zJ}{2} m^2 - Bm - \frac{1}{\beta} \lr{\frac{1+m}{2}\ln{\frac{1+m}{2}} +\frac{1-m}{2}\ln{\frac{1-m}{2}} }\notag\\
+    &= -\frac{zJ}{2} m^2 - Bm - T\sigma(m)
+\end{align}
+
+を得る。
+
+\begin{align}
+    \del{f_\nu}{m} &= -zJm - B - \frac{1}{\beta} \lr{\frac{1}{2}\ln{\frac{1+m}{2}} - \frac{1}{2}\frac\ln{{1-m}{2}} + 1 - 1}\notag \\
+    &= -zJm - B - \frac{1}{\beta} \lr{\frac{1}{2}\ln{\frac{1+m}{1-m}}} = 0 \\
+    \frac{1}{2\beta}\ln{\frac{1-m}{1+m}} &= zJm + B\\
+    m &= \tanh{\beta\lr{zJm + B}}
+\end{align}
+が成立する。
+
+・長所
+
+
+
+\section{階層格子上のIsing 模型と実空間繰り込み群}
+
+(a)
+
+\begin{align}
+    Ae^{K'e_i e_j} &= \sum_{e_1,e_2 = \pm 1} e^{K\lr{\lr{\sigma_i + \sigma_j}\lr{\sigma_1 + \sigma_2} + \sigma_1 \sigma_2}}\notag\\
+     &= e^{2K\lr{\sigma_i + \sigma_j} + K} + 2e^{-K} + e^{-2K\lr{\sigma_i + \sigma_j}+K}
+\end{align}
+である。また、$\{ e_i, e_j\} = \{1,1\}, \{1, -1\}$の場合をそれぞれ考えることにより
+\begin{align}
+    Ae^{K'} &= e^{5K} + 2e^{-K} + e^{-3K}\\
+    Ae^{-K'} &= 2\lr{e^{K} + e^{-K}}
+\end{align}
+を得る。これより
+\begin{align}
+    e^{2K'} = \frac{Ae^{K'}}{Ae^{-K'}} = \frac{e^{5K} + 2e^{-K} + e^{-3K}}{2\lr{e^{K} + e^{-K}}}\\
+    e^{2K} = \frac{1+t}{1-t}
+\end{align}
+を用いて変形し、
+\begin{equation}
+    t' = \frac{2t^2}{1-t+t^2+t^3}
+\end{equation}
+を得る。ただし、$t' = \tanh{K'}, t = \tanh{K}$とした。
+$t' = t = t_0$として $t_0 = 0, 1 , -1 \pm \sqrt{2}$を得る。
+
+$-1 \le t_0 \le 1$であるので、$t_0 = 0,1, \sqrt{2}-1$となる。
+\begin{equation}
+     \frac{2t^2}{1-t+t^2+t^3}-t
+\end{equation}
+のグラフを考えると、$t = 0,1$の近傍で傾き負、$t = t_c = 
+\sqrt{2}-1$の近傍で傾き正である。
+
+ゆえに、$t = 0,1$は安定点、$t = t_c$は不安定点である。
+$\tanh{K_c} = t_c = \sqrt{2}-1$とすると、
+\begin{align}
+    e^{2K_c} = \frac{1+t}{1-t} = \sqrt{2}+1\\ 
+    K_c = \frac{1}{2} \ln{\lr{\sqrt{2}+1}}
+\end{align}
+
+固定点の近傍において、
+\begin{align}
+    t = \tanh{K} = \sqrt{2}-1 + \frac{1}{\cosh^2{K_c}}(K-K_c)
+\end{align}
+と線形化することにすると、
+\begin{align}
+    \lambda_t = 
+    \left. \dydx{K'}{K} \right|_{K=K_c} = \left.\dydx{t'}{t} \right|_{t=t_c} 
+    &= \frac{4t_c(1-t_c+t_c^2+t_c^3)-2t_c^2(-1+2t_c+3t_c^2)}{\lr{1-t_c+t_c^2+t_c^3}^2} \notag\\
+    &= \frac{4t_c\cdot 2t_c - 2t_c^2(-1+2t_c+3t_c^2)}{4t_c^2}\notag\\
+    &= \frac{5-2t_c-3t_c^2}{2}\notag\\
+    &= 1+ 2t_c\notag\\
+    &= 2\sqrt{2}-1 \simeq 1.83\\
+    y_t &=\frac{\ln{\lambda_t}}{\ln{2}} =\frac{\ln{\lr{2\sqrt{2}-1}}}{\ln{2}} \simeq 0.87\\
+    \nu &= \frac{1}{y_t} \simeq 1.15
+\end{align}
+
+
+$K \propto 1/T$であることから、$T_c,K_c$の相対誤差の値は等しく、0である。
+\begin{align}
+    \frac{\nu^{\text{MK}}-\nu^{\text{exact}}}{\nu^{\text{exact}}} \simeq 15\%
+\end{align}
+となる。$K_c$あるいは臨界温度$T_c$は正確に計算されており、相関長臨界係数は誤差15\%程度であることがわかった。
+
+(d)
+\begin{equation}
+    t = \tanh^2{\lr{4 \arctanh{(t)}}}
+\end{equation}
+を数値的に(Wolfram Alphaを使って)解くと、
+
+$t = 0, 0.0655642580585243..., 0.992326060468120...$ を得る。非自明な固定点$t_c = 0.06556$について、これも不安定な固定点であり、
+\begin{align}
+    K_c^{\text{(MK)}} = \arctanh{0.06556} &= 0.06565\\
+    y_t^{\text{(MK)}} &= \left. \dydx{t'}{t} \right|_{t=t_c} = 1.9058\\
+    \nu^{\text{(MK)}} &= 0.5247
+\end{align}
+となる。
+
+(e)
+まだ
+
+\section{量子Ising 模型とMajorana chain}
+(a)
+仮定の下で
+\begin{equation}
+    H = -iJ \sum_{j=0}^{2N} \gamma_{i}\gamma_{i+1} = \sum_{k=1}^{N} \varepsilon_k \lr{d_k^\dagger d_k -\frac{1}{2}}
+\end{equation}
+となる。ただし、$\gamma_0 = \gamma_{2N+1} = 0$とする。
+\begin{equation}
+    d_k = \sum_{j=0}^{2N+1} w_{k,j} \gamma_j 
+\end{equation}
+となるように要請する。ただし$w_{k,j} \in \C$とする。
+この時、Heisenberg方程式を考えると
+\begin{align}
+    [\gamma_i , H ] &= 2i J \lr{\gamma_{i+1}-\gamma_{i-1}}\\
+    [d_k, H ] &= \varepsilon_k d_k
+\end{align}
+となる。$d_k$と$\gamma_k$の間の関係式を用いると、
+\begin{equation}
+    2i J \sum_{j=0}^{2N+1} w_{k,j}\lr{\gamma_{j+1}-\gamma_{j-1}}=  \sum_{j=0}^{2N+1} w_{k,j} [\gamma_j , H ] = \varepsilon_k \sum_{j=0}^{2N+1} w_{k,j} \gamma_j 
+\end{equation}
+を得る。$\gamma_i$の係数を比較することによって
+\begin{align}
+    2iJ (w_{k,j-1} - w_{k,j+1}) = \varepsilon_k w_{k,j}
+\end{align}
+$i^j u_{k,j} =  w_{k,j}$と改めておくことによって
+\begin{align}
+    u_{k,j-1} + u_{k,j+1} = \frac{\varepsilon_k}{2J} u_{k,j}
+\end{align}
+となる。境界条件として、$u_{k,0} = u_{k,2N+1} = 0$が課される。この差分方程式の解として$u_{k,j} \propto e^{i\alpha_k j}$をとると、
+\begin{align}
+    \lr{e^{-i\alpha_k} + e^{i\alpha_k}} &= \frac{\varepsilon_k}{2J}\\
+    \varepsilon_k &= 4J\cos{\alpha_k}
+\end{align}
+が要請される。さらに、境界条件から、$u_{k,j}$は$\sin{}$型の関数であって、
+\begin{align}
+    u_{k,j} &\propto \sin{\alpha_k}\\
+    \sin{(2N+1)\alpha_k} &= 0\\
+    \alpha_{k} &= \frac{k\pi}{2N+1}
+\end{align}
+となるので、
+\begin{equation}
+    \varepsilon_k = 4J \cos{\frac{k\pi}{2N+1}}
+\end{equation}
+となる。
+
+(b)
+$d_k$は、励起による準粒子の fermion演算子であり、基底状態においてはすべての$k$で$d_k^\dagger d_k =0$となる。
+
+よって基底状態は
+\begin{equation}
+    E_0 = -2J \sum_{k=1}^N \cos{\frac{k\pi}{2N+1}} = -2J \frac{\cos{\frac{N\pi}{2(2N+1)}}\sin{\frac{(N+1)\pi}{2(2N+1)}}}{\sin{\frac{\pi}{2(2N+1)}}-1} = -J \lr{\frac{1}{\sin{\frac{\pi}{2(2N+1)}}} -1 }¥
+\end{equation}
+
+$N \to \infty$において$E_0$を展開する。
+$\sin{x} = x- \frac{x^3}{6} O(x^5)$であるので、$\displaystyle x = \frac{\pi}{2(2N+1)}$として
+\begin{align}
+    E_0 &\simeq -J \lr{\frac{1}{x(1-\frac{x^2}{6})}-1} \simeq -J \frac{1}{x} \lr{1+\frac{x^2}{6} - x} = -J \lr{\frac{1}{x} + \frac{x}{6} - 1}\notag\\
+    &= - J \lr{\frac{4N + 2}{\pi} + \frac{\pi}{12(2N+1)} - 1}\notag\\
+    &\simeq - J \lr{\frac{4N + 2}{\pi} + \frac{\pi}{2} + \frac{\pi}{24N} \lr{1-\frac{1}{2N}} - 1}\notag\\
+    &= -J \lr{\frac{4N}{\pi} + \frac{2}{\pi} - 1 + \frac{\pi}{24N} + O(N^{-2})
+    }\\
+    \frac{E_0}{N} &= -J \lr{\frac{4}{\pi} + \frac{1}{N}\lr{\frac{2}{\pi } - 1} + \frac{\pi}{24N^2} + O(N^{-3})}
+\end{align}
+を得る。よって
+\begin{align}
+    e_0 = -\frac{4J}{\pi}, \, e_1 = -J \lr{\frac{2}{\pi } - 1},\, e_2 = -\frac{\pi J}{24}
+\end{align}
+
+(d) 
+
+
+\end{document}
+
+\begin{align}
+    Z = \int \dx{S} e^{-\beta H(S)} = \int \dx{S} e^{-\beta H_0(S)} e^{\beta \lr{H(S) - H_0(S)}}\\
+    = Z_0 \int \dx{S} \frac{e^{-\beta H_0(S)}}{Z_0} e^{\beta \lr{H(S) - H_0(S)}}
+    = Z_0 \braket{H-H_0}_0
+\end{align}
