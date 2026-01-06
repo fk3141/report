@@ -240,7 +240,7 @@ $\displaystyle F=-\frac{\ln{Z}}{\beta}$より
     (2k-N) e^{-2\beta \Lambda k}\notag\\
     &= \frac{\Lambda e^{\beta \Lambda N}}{\lr{2\cosh{\beta \Lambda}}^N} \lr{2N e^{-2\beta \Lambda} \lr{1+e^{-2\beta\Lambda}}^{N-1}-N\lr{1+e^{-2\beta\Lambda}}^N} \notag\\
     &= \frac{\Lambda Ne^{\beta \Lambda }}{\lr{2\cosh{\beta \Lambda}}}\lr{2e^{-2\beta \Lambda} - \lr{1+e^{-2\beta\Lambda}}} \notag\\
-    &= -\frac{\Lambda N}{\lr{2\cosh{\beta \Lambda}}}\lr{e^{\beta \Lambda} - e^{-\beta\Lambda}}\\
+    &= -\frac{\Lambda N}{\lr{2\cosh{\beta \Lambda}}}\lr{e^{\beta \Lambda} - e^{-\beta\Lambda}}\notag \\
     &= -N\Lambda \tanh{\beta \Lambda}
 \end{align}
 $\braket{H_0}_0 = -\Lambda N m$より 
@@ -289,8 +289,12 @@ $\displaystyle F_0 = -\frac{\ln{Z_0}}{\beta} = -N \frac{\ln{\lr{\cosh{\beta \Lam
 
 ・長所
 
+まず、自己無撞着方程式を導出する過程の物理的意味が明瞭である。GBF-不等式は、近似なしに成立する理論的な式であり、最小エネルギー法という明確な物理的目標に向かって議論することが可能である。不必要な近似を入れる必要がなく、熱力学的な正当性が担保できると考えられる。
+
+また、モデルを拡張、あるいは改変する際に、通常の平均場近似では再度複雑な議論を必要とする場合がある。しかし、変分法ではエネルギー密度さえ求められればあとは同一の手法により統一的に議論することが可能である。
 
 
+\newpage
 \section{階層格子上のIsing 模型と実空間繰り込み群}
 
 (a)
@@ -358,18 +362,92 @@ $K \propto 1/T$であることから、$T_c,K_c$の相対誤差の値は等し�
 \begin{equation}
     t = \tanh^2{\lr{4 \arctanh{(t)}}}
 \end{equation}
-を数値的に(Wolfram Alphaを使って)解くと、
+は、まず自明な解 $t = 0$を持つ。これは下に示すグラフの概形より、安定点である。
 
-$t = 0, 0.0655642580585243..., 0.992326060468120...$ を得る。非自明な固定点$t_c = 0.06556$について、これも不安定な固定点であり、
+Newton法により初期値$t=0.1$として解くと、 $0 < t$なる解として $ t = 0.0651738$を得る。
+非自明な固定点$t_c = 0.0651738$について、これは不安定な固定点であり、
 \begin{align}
-    K_c^{\text{(MK)}} = \arctanh{0.06556} &= 0.06565\\
-    y_t^{\text{(MK)}} &= \left. \dydx{t'}{t} \right|_{t=t_c} = 1.9058\\
-    \nu^{\text{(MK)}} &= 0.5247
+    K_c^{\text{(MK)}} = \arctanh{\lr{0.0651738}} &= 0.065266\\
+    \lambda_t^{\text{(MK)}} &= \left. \dydx{t'}{t} \right|_{t=t_c} = 1.91773\\
+    y_t^{\text{(MK)}} &= \frac{\ln{\lambda_t^{\text{(MK)}}}}{\ln{2}} = 0.9394
+    \nu^{\text{(MK)}} = 1.0645
 \end{align}
 となる。
 
 (e)
-まだ
+\begin{equation}
+    f(x) = \tanh^2{\lr{2^{d-1}\arctanh{x}}} - x
+\end{equation}
+として、$f(x) = 0$の根について考察する。
+
+$ d = 2-10$に関して、プロットを行うと下の図\ref{overall}となる。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{statistic2_overall.png}
+\caption{Overall plot}
+\label{overall}
+\end{center}
+\end{figure}
+
+$f(x)$は、$d$が大きい時$x\simeq 0$と、$0 \ll x$の2種類の漸近的な挙動により議論できる。
+
+\paragraph{$x\simeq 0$\\}
+$\tanh{x} \simeq x, \arctanh{x} \simeq x, \cosh(x) \simeq 1 + \frac{1}{4}x^2$に留意すると、
+\begin{equation}
+    f(x) \simeq \tanh^2{\lr{2^{d-1}x}} - x \simeq 2^{2d-2} x^2 -x 
+\end{equation}
+
+\paragraph{$0 \ll x$\\}
+$\arctanh{x}$は急激に増加するため、特に$d$が大きければ$\lr{2^{d-1}\arctanh{x}}$は十分大きく、
+\begin{equation}
+    f(x) \simeq 1 - x
+\end{equation}
+となる。
+
+以上の議論より、$0 < x$なる解について、
+\begin{align}
+     2^{2d-2} x_c^2 -x_c =0\\
+     x_c = 2^{2-2d}
+\end{align}
+と見積もられる。実際$d=3$について、上の数値解 $
+0.0651738 \sim 2^{-4}=0.0625$である。
+
+次に、解付近での微分係数$f'(x_c)$について議論する。
+図\ref{sol}より、$f'(x_c) \sim 1$が期待できる。実際、
+\begin{align}
+    f'(x) &= \frac{1}{\cosh^2{\lr{2^{d-1}\arctanh{x}}}}\cdot 2^{d-1} \frac{1}{1-x^2} 2\tanh{\lr{2^{d-1}\arctanh{x}}}-1\notag\\
+    &\simeq \frac{2^d}{1+\frac{1}{4}(\lr{2^{d-1}x}^2)} 2^{d-1}x -1\notag\\
+    &\simeq 2^{2d-1} x -1\\
+    f'(x_c) &\simeq 2^{2d-1} \cdot 2^{2-2d}  -1 = 1
+\end{align}
+である。
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]{statistic2_sol.png}
+\caption{解の拡大}
+\label{sol}
+\end{center}
+\end{figure}
+
+これより
+
+(i)
+\begin{equation}
+t_c^{\text{MK}}(d) \simeq 2^{2-2d}\\
+\end{equation}
+なお、これは$d$について急激に0に収束するため、大きい$d$では数値的な解析が困難である。
+
+(ii)
+\begin{align}
+    \lambda_t^{\text{(MK)}}(d) &\simeq f'(x_c) + 1 = 2\\
+    y_t^{\text{(MK)}}(d) &= \frac{\ln{\lambda_t^{\text{(MK)}}(d)}}{\ln{2}} \simeq 1\\
+    \nu^{\text{(MK)}}(d) &\simeq 1
+\end{align}
+を得る。つまり平均場領域では、相関長臨界指数は$d\to \infty$としてしまった場合と近似的に一致することになる。
+\newpage
+
 
 \section{量子Ising 模型とMajorana chain}
 (a)
@@ -414,14 +492,19 @@ $i^j u_{k,j} =  w_{k,j}$と改めておくことによって
 \begin{equation}
     \varepsilon_k = 4J \cos{\frac{k\pi}{2N+1}}
 \end{equation}
-となる。
+となる。ここで、$\varepsilon_1 < \cdots < \varepsilon_N$とするため、あらためて
+\begin{equation}
+    \varepsilon_k = 4J \sin{\frac{k\pi}{2N+1}}
+\end{equation}
+とする。
+
 
 (b)
 $d_k$は、励起による準粒子の fermion演算子であり、基底状態においてはすべての$k$で$d_k^\dagger d_k =0$となる。
 
 よって基底状態は
 \begin{equation}
-    E_0 = -2J \sum_{k=1}^N \cos{\frac{k\pi}{2N+1}} = -2J \frac{\cos{\frac{N\pi}{2(2N+1)}}\sin{\frac{(N+1)\pi}{2(2N+1)}}}{\sin{\frac{\pi}{2(2N+1)}}-1} = -J \lr{\frac{1}{\sin{\frac{\pi}{2(2N+1)}}} -1 }¥
+    E_0 = -2J \sum_{k=1}^N \sin{\frac{k\pi}{2N+1}} = -2J \frac{\cos{\frac{N\pi}{2(2N+1)}}\sin{\frac{(N+1)\pi}{2(2N+1)}}}{\sin{\frac{\pi}{2(2N+1)}}-1} = -J \lr{\frac{1}{\sin{\frac{\pi}{2(2N+1)}}} -1 }¥
 \end{equation}
 
 $N \to \infty$において$E_0$を展開する。
@@ -440,7 +523,40 @@ $\sin{x} = x- \frac{x^3}{6} O(x^5)$であるので、$\displaystyle x = \frac{\p
 \end{align}
 
 (d) 
+ fermi分布の式を用いると、
+\begin{equation}
+    \braket{d_k^\dagger d_k} = \frac{1}{e^{\beta \varepsilon_k} + 1}
+\end{equation}
+となる。これより、
+\begin{align}
+    \braket{H} &= \sum_{k=1}^N \varepsilon_k \lr{\frac{1}{e^{\beta \varepsilon_k} + 1} - \frac{1}{2}} = -\frac{1}{2} \sum_{k=1}^N \varepsilon_k \frac{e^{\beta \varepsilon_k}}{e^{\beta \varepsilon_k} + 1} \\
+    c(T) &= -\frac{1}{N} \del{}{T} \lr{ \frac{1}{2} \sum_{k=1}^N \varepsilon_k \frac{e^{\beta \varepsilon_k}}{e^{\beta \varepsilon_k} + 1}}
+    = -\frac{1}{2N} \sum_{k=1}^N \varepsilon_k  \del{\beta}{T} \del{}{\beta} \frac{e^{\beta \varepsilon_k}}{e^{\beta \varepsilon_k} + 1} \notag\\
+    &= \frac{1}{2Nk_B T^2} \sum_{k=1}^N \frac{\varepsilon_k^2 e^{\beta \varepsilon_k}}{\lr{e^{\beta \varepsilon_k} + 1}^2}
+\end{align}
+これが比熱$c(T)$の表式となる。
 
+まず、粒子数について古典極限$N \to \infty$をとると、和を積分で置き換えられる。
+\begin{align}
+    \varepsilon_k &= 4J \sin{\frac{k\pi}{2N+1}} = 4J \sin{q} \\
+    \frac{1}{2Nk_B T^2} \sum_{k=1}^N \frac{\varepsilon_k^2 e^{\beta \varepsilon_k}}{\lr{e^{\beta \varepsilon_k} + 1}^2} &\xrightarrow[N \to \infty]{} \frac{1}{2k_B T^2} \int_0^{\frac{\pi}{2}} \dx{q} \frac{\lr{4J\sin{q}}^2}{\lr{e^{4J\beta \sin{q}}+1}^2} \frac{2}{\pi}
+\end{align}
+さらに、低温極限$\beta \to \infty$では、小さい$q$のみが寄与する。$\sin{q} \simeq q$とした上で、積分区間を$0 \to \infty$としても影響は十分に小さく、
+\begin{align}
+    \frac{1}{2k_B T^2} \int_0^{\frac{\pi}{2}} \dx{q} \frac{\lr{4J\sin{q}}^2}{\lr{e^{4J\beta \sin{q}}+1}^2} \frac{2}{\pi}
+    \xrightarrow[\beta \to \infty]{} 
+    &\frac{k_B}{\pi} \int_0^{\infty} \dx{q} \frac{\lr{4\beta Jq}^2}{\lr{e^{4J\beta q}+1}^2}\notag\\
+    =
+    &\frac{k_B}{\pi} \int_0^{\infty} \dx{x} \frac{x^2}{\lr{e^{x}+1}^2} \frac{1}{4\beta J}\notag\\
+    = &\frac{k_B^2 T}{4\pi J} \left[ -\frac{x^2}{e^x + 1}\right]\int_0^{\infty} \dx{x} \frac{2x}{e^{x}+1}\notag\\
+    = &\frac{2k_B^2 T}{4\pi J} \frac{\pi^2}{12} \notag\\
+    = & \frac{\pi^2 k_B^2 T}{24\pi J}
+\end{align}
+よって、
+\begin{equation}
+    \gamma = \frac{\pi^2 k_B^2}{24J}
+\end{equation}
+として、$c(T) \propto \gamma T$である。
 
 \end{document}
 
@@ -449,3 +565,7 @@ $\sin{x} = x- \frac{x^3}{6} O(x^5)$であるので、$\displaystyle x = \frac{\p
     = Z_0 \int \dx{S} \frac{e^{-\beta H_0(S)}}{Z_0} e^{\beta \lr{H(S) - H_0(S)}}
     = Z_0 \braket{H-H_0}_0
 \end{align}
+
+
+\frac{1}{\pi Nk_B T^2} \int_0^{\frac{\pi}{2}} \dx{q} \frac{\lr{4J\sin{q}}^2}{\lr{e^{4J\beta \sin{q}}+1}^2} \\
+    &\simeq 

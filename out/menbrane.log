@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  5 JAN 2026 21:22
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  6 JAN 2026 14:15
  restricted system commands enabled.
  file:line:error style messages enabled.
-**/Users/kashi/report/problem-solving/statistic2.tex
-(/Users/kashi/report/problem-solving/statistic2.tex
+**/Users/kashi/report/biophysics/menbrane.tex
+(/Users/kashi/report/biophysics/menbrane.tex
 LaTeX2e <2021-11-15> patch level 1
 Lua module: luaotfload 2022-03-18 3.21 Lua based OpenType font support
 Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
@@ -877,8 +877,8 @@ Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
 Package: lltjp-tascmac 2020/12/24 Patch to (t)ascmac for LuaTeX-ja
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 warning  (map file): entry for 'ascgrp' already exists, duplicates ignored
-) (/Users/kashi/report/out/statistic2.aux)
-\openout1 = statistic2.aux
+) (/Users/kashi/report/out/menbrane.aux)
+\openout1 = menbrane.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
 LaTeX Font Info:    ... okay on input line 152.
@@ -973,15 +973,6 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 7.3977pt on input line 154.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 5.54828pt on input line 154.
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
-(load cache: extra_lmsans12-regular.luc)
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
 (Font)              scaled to size 6.47299pt on input line 159.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
@@ -994,67 +985,37 @@ LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 4.62357pt on input line 159.
 (load cache: extra_lmroman7-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 165.
+(Font)              scaled to size 6.47299pt on input line 160.
 (load cache: extra_lmroman5-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 165.
+(Font)              scaled to size 4.62357pt on input line 160.
 (load cache: extra_lmroman10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 201.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 212.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 201.
+(Font)              scaled to size 9.24713pt on input line 212.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 201.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 212.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 201.
+(Font)              scaled to size 9.24713pt on input line 212.
  [1
 
-] [2] [3] [4]
-<statistic2_overall.png, id=77, 611.4042pt x 398.9304pt>
-File: statistic2_overall.png Graphic file (type png)
-<use statistic2_overall.png>
-Package luatex.def Info: statistic2_overall.png  used on input line 387.
-(luatex.def)             Requested size: 426.79134pt x 278.48239pt.
-(load cache: extra_lmroman9-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 388.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 388.
-(load cache: extra_lmroman9-bold.luc)
-LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <9> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 388.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 388.
-LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <9> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 388.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 8.32242pt on input line 388.
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 396.
-(load cache: extra_lmsans10-regular.luc) [5]
-<statistic2_sol.png, id=96, 625.8582pt x 398.9304pt>
-File: statistic2_sol.png Graphic file (type png)
-<use statistic2_sol.png>
-Package luatex.def Info: statistic2_sol.png  used on input line 428.
-(luatex.def)             Requested size: 426.79134pt x 272.04216pt.
- [6<./statistic2_overall.png>] [7<./statistic2_sol.png>]
-Missing character: There is no ¥ (U+00A5) in font cmr10!
-[8] [9] [10] (/Users/kashi/report/out/statistic2.aux))
+] [2] (/Users/kashi/report/out/menbrane.aux))
 
 Here is how much of LuaTeX's memory you used:
- 26078 strings out of 477785
- 195698,794899 words of node,token memory allocated
- 41858 words of node memory still in use:
-   11 hlist, 2 vlist, 5 rule, 2 glue, 532 kern, 1 glyph, 15519 attribute, 1091 glue_spec, 815 attribute_list, 2 write, 205 user_defined nodes
-   avail lists: 1:46,2:41711,3:280,4:419,5:737,6:35,7:3510,8:132,9:2358,10:18,11:11
- 45610 multiletter control sequences out of 65536+600000
- 99 fonts using 70008031 bytes
- 114i,18n,115p,1804b,696s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on statistic2.pdf (10 pages, 350305 bytes).
+ 25942 strings out of 477785
+ 125244,794899 words of node,token memory allocated
+ 18504 words of node memory still in use:
+   11 hlist, 2 vlist, 5 rule, 2 glue, 317 kern, 1 glyph, 7472 attribute, 162 glue_spec, 387 attribute_list, 2 write, 34 user_defined nodes
+   avail lists: 1:25,2:31915,3:231,4:418,5:166,6:37,7:2845,8:44,9:1245,10:12,11:7
+ 45566 multiletter control sequences out of 65536+600000
+ 90 fonts using 54217015 bytes
+ 114i,13n,115p,1797b,343s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on menbrane.pdf (2 pages, 102961 bytes).
 
-PDF statistics: 272 PDF objects out of 1000 (max. 8388607)
- 212 compressed objects within 3 object streams
- 94 named destinations out of 1000 (max. 131072)
- 40 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 105 PDF objects out of 1000 (max. 8388607)
+ 73 compressed objects within 1 object stream
+ 10 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
 
