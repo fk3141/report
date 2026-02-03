@@ -1,0 +1,214 @@
+\documentclass{ltjsarticle}
+%%%package読み込み
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{bm}
+% \usepackage{tikz} % ★消去: 代わりに graphicx 追加
+% \usetikzlibrary{cd}
+\usepackage{url}
+\usepackage{graphicx} % ★追加: 図を挿入するため
+\usepackage{float} % ★追加: 図の位置を制御するため
+\usepackage{caption} % ★追加: 図のキャプションを柔軟に扱うため
+%\usepackage{xcolor}
+\usepackage{ascmac}
+\usepackage{tcolorbox}
+%\usepackage[dvipdfmx, setpagesize=false, bookmarks=true, bookmarksdepth=tocdepth, bookmarksnumbered=true, colorlinks=true, linkcolor=red]
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{multirow}
+\usepackage[version=4]{mhchem}
+\usepackage{braket} % 追加した
+\usepackage{booktabs}
+\usepackage{bookmark}
+%\usepackage[textwidth=45zw,lines=44]{geometry}
+%\usepackage{pxjahyper}
+%%%黒板太字
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+%%%約物
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lr}[1]{\left(#1\right)}
+\newcommand{\st}{\; \mathrm{s.t.}\; }
+\newcommand{\Ae}{\textrm{-a.e.}} 
+%%%繰り返し
+\newcommand{\pluss}[3]{#1_{#2}+\cdots+#1_{#3}}
+\newcommand{\minuss}[3]{#1_{#2}-\cdots-#1_{#3}}
+\newcommand{\timess}[3]{#1_{#2}\times\cdots\times #1_{#3}}
+\newcommand{\leqs}[3]{#1_{#2}\leq\cdots\leq #1_{#3}}
+\newcommand{\geqs}[3]{#1_{#2}\geq\cdots\geq #1_{#3}}
+\newcommand{\opluss}[3]{#1_{#2}\oplus\cdots\oplus #1_{#3}}
+\newcommand{\otimess}[3]{#1_{#2}\otimes\cdots\otimes #1_{#3}}
+\newcommand{\commas}[3]{#1_{#2},\ldots,#1_{#3}}
+%%%微分
+\newcommand{\dx}[1]{\mathrm{d}#1}
+\newcommand{\ddx}[1]{\frac{\mathrm{d}}{\mathrm{d}#1}}
+\newcommand{\dydx}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\dydxn}[3]{\frac{\mathrm{d}^{#3}#1}{\mathrm{d}#2^{#3}}}
+\newcommand{\del}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\dell}[2]{\frac{\partial^2#1}{{\partial#2}^2}}
+\newcommand{\deln}[3]{\frac{\partial^{#3}#1}{{\partial#2}^{#3}}}
+%%%
+%%%演算子
+%log type
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Det}{Det}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\corank}{corank}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\Coker}{Coker}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\arcsech}{arcsech}
+\DeclareMathOperator{\arccsch}{arccsch}
+\DeclareMathOperator{\arccoth}{arccoth}
+\DeclareMathOperator{\grad}{grad}
+\let\div\relax
+\DeclareMathOperator{\div}{div}
+\DeclareMathOperator{\rot}{rot}
+%\DeclareMathOperator{\GL}{GL} % ★消去 : ここから↓
+%\DeclareMathOperator{\SL}{SL}
+%\DeclareMathOperator{\Sym}{Sym}
+%\DeclareMathOperator{\Aut}{Aut}
+%\DeclareMathOperator{\Inn}{Inn}
+%\DeclareMathOperator{\Out}{Out}
+%\DeclareMathOperator{\id}{id}
+%\DeclareMathOperator{\pr}{pr}
+%\DeclareMathOperator{\supp}{supp}
+%\DeclareMathOperator{\diam}{diam}
+%\DeclareMathOperator{\End}{End}
+%\DeclareMathOperator{\Cl}{Cl}
+%\DeclareMathOperator{\Hom}{Hom} % ★消去 : ここまで↑
+%limit type
+\DeclareMathOperator*{\argmin}{arg~min}
+\DeclareMathOperator*{\argmax}{arg~max}
+%%%
+%%%定理
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{lem}{補題}
+\newtheorem*{lem*}{補題}
+\newtheorem{prf}{証明}
+\newtheorem*{prf*}{証明}
+\newtheorem*{ex*}{Example}
+\newtheorem*{rem*}{Remark}
+\newenvironment{prb}[1]%
+{\begin{itembox}[l]{\textbf{問題 #1}}}%
+{\end{itembox}}
+\newenvironment{sol}[2]%
+{\setcounter{lem}{0}
+\setcounter{prf}{0}
+\par\noindent\textbf{解答 #1} (#2)\par}%
+{\par\normalfont}
+
+\renewcommand{\refname}{Reference}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{boxeddefcounter}
+\newenvironment{problem}
+{\refstepcounter{boxeddefcounter}\begin{itembox}[l]{問\theboxeddefcounter}}
+{\end{itembox}}
+
+%\usepackage[hang,small,bf]{caption}
+%\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{compatibility=false}
+
+
+\newcommand{\D}{^\circ\text{C}}
+\newcommand{\ka}{\textasciitilde}
+
+
+\pagestyle{myheadings}
+\title{Inorganic and Analyutical experiment unit.2}
+\date{\today}
+\author{Author: No.7 05253011 Fumiya Kashiwai / 柏井史哉}
+\begin{document}
+\maketitle
+\markboth{Inorganic and Analytical experiment Unit.2   No.7 05253011 Fumiya Kashiwai / 柏井史哉} {Inorganic and Analytical experiment Unit.2   No.7 05253011 Fumiya Kashiwai / 柏井史哉}
+%%ここまでタイトル
+
+\newpage
+\section{Purpose}
+同位体希釈法により、未知試料中のリン酸濃度を決定する。同位体希釈法では、既知濃度のリン酸溶液との放射線量を比較することによって、資料を100\% 回収せずとも未知試料中のリン酸濃度を決定することができる。
+
+\section{Experimental}
+\begin{enumerate}
+    \item ブランチェットの風袋の質量を計測した。
+    \item 2本の遠沈管に濃度既知、未知のリン酸ナトリウム水溶液を1.0 mL分取し、蒸留水を3.0 mL加えて希釈した。
+    \item 放射性\ce{^32 P}標識のリン酸水溶液0.1 mLを加え、よく混合した。
+    \item 沈澱が生じなくなるまで\ce{CaCl2}水溶液を徐々に加えた。
+    \item 生じた沈澱を遠心分離 (2000 rpm, 2 min)して、上澄を除去した。
+    \item 沈殿に2.0 mLの蒸留水を加え、voltexして施錠した。再び遠心分離 (2000 rpm, 2 min)して、上澄を除去した。
+    \item 沈澱の大部分をブランチェットに移し、ホットプレートと赤外ランプで乾燥させた。
+    \item ブランチェットの質量を計測し、沈澱の質量を求めた。
+    \item GM管の測定電圧を、unit.1で決定した1100 Vとして、両方の試料の放射線の測定を5 min行った。
+    \item backgroundの放射線の測定を5 min行った。
+\end{enumerate}
+
+\section{Results}
+測定結果は次のようになった。
+
+
+\begin{table}[htbp]
+  \centering
+  \caption{Measurement Data: Weight, Count Rates, and Concentration}
+  \label{tab:measurement_data_4}
+  \begin{tabular}{@{}lccccccc@{}}
+    \toprule
+    Sample & \begin{tabular}[c]{@{}c@{}}Weight\\ (\si{g})\end{tabular} & Count & \begin{tabular}[c]{@{}c@{}}Time\\ (\si{min})\end{tabular} & cpm & \begin{tabular}[c]{@{}c@{}}Net cpm\\ (\si{cpm})\end{tabular} & \begin{tabular}[c]{@{}c@{}}S\\ (\si{cpm.g^{-1}})\end{tabular} & \begin{tabular}[c]{@{}c@{}}Concentration\\ (\si{mM})\end{tabular} \\
+    \midrule
+    Unknown    & 0.0138 & 63231 & 5 & 12646.2 & 12593.8 & 912594.20 & 89.35 \\
+    Known      & 0.0209 & 71269 & 5 & 14253.8 & 14201.4 & 679492.82 & 120   \\
+    Background & --     & 262   & 5 & 52.4    & --      & --        & --    \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Discussion}
+\subsection{課題1}
+既知試料の濃度120 mMを用いる。
+
+
+\subsection{課題2}
+別法としては、モリブデンブルー法が挙げられる。酸性条件下でモリブデン酸アンモニウムを加えると、黄色のりんモリブデン酸が生じ、これを還元すると青色のモリブデンブルーの錯体が生じる。この吸光度を測定することで、濃度を決定することができる。
+
+\paragraph{長所}
+放射線を扱わないために操作や廃液の処理が楽である。また、吸光度分析は簡便かつ高感度であり、低濃度の溶液であっても十分な精度で決定できると期待される。
+
+\paragraph{短所}
+妨害物質が存在している場合、測定値に誤差を与えることになってしまう。また、定量的な分析を行う必要があるため、試料の希釈時などに、容量などを正確に計る必要がある。また、高濃度過ぎるばあいにはそのままでは吸光度分析ができず、適切な割合に希釈する必要がある。
+
+\paragraph{同位体希釈法}
+放射性同位体を扱うために手続きや実験操作が煩雑であるが、100\%の回収をせずとも相対比から、定量分析が可能である点が長所である。
+
+\end{document}
