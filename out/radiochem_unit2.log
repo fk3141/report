@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  3 FEB 2026 12:08
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  3 FEB 2026 12:24
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/kashi/report/inorganic_analytical/unit2/radiochem_unit2.tex
@@ -1057,23 +1057,23 @@ LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
 (Font)              scaled to size 11.09656pt on input line 198.
  [2]
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 206.
+(Font)              scaled to size 9.24713pt on input line 211.
 (load cache: extra_lmsans10-regular.luc) [3] (/Users/kashi/report/out/radiochem_unit2.aux))
 
 Here is how much of LuaTeX's memory you used:
- 29388 strings out of 477785
- 244629,953878 words of node,token memory allocated
- 20421 words of node memory still in use:
-   10 hlist, 2 vlist, 5 rule, 2 glue, 355 kern, 1 glyph, 8109 attribute, 240 glue_spec, 419 attribute_list, 2 write, 36 user_defined nodes
-   avail lists: 1:45,2:65971,3:324,4:412,5:73,6:44,7:4081,8:35,9:1399,10:11,11:64
- 48950 multiletter control sequences out of 65536+600000
+ 29392 strings out of 477785
+ 195698,953878 words of node,token memory allocated
+ 20687 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 356 kern, 1 glyph, 8186 attribute, 259 glue_spec, 423 attribute_list, 2 write, 37 user_defined nodes
+   avail lists: 1:46,2:62786,3:297,4:407,5:86,6:40,7:3910,8:51,9:1324,10:11,11:63
+ 48951 multiletter control sequences out of 65536+600000
  96 fonts using 62309767 bytes
  114i,17n,115p,1820b,823s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on radiochem_unit2.pdf (3 pages, 110969 bytes).
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on radiochem_unit2.pdf (3 pages, 131649 bytes).
 
-PDF statistics: 131 PDF objects out of 1000 (max. 8388607)
- 98 compressed objects within 1 object stream
- 24 named destinations out of 1000 (max. 131072)
+PDF statistics: 143 PDF objects out of 1000 (max. 8388607)
+ 107 compressed objects within 2 object streams
+ 27 named destinations out of 1000 (max. 131072)
  64 words of extra memory for PDF output out of 10000 (max. 100000000)
 

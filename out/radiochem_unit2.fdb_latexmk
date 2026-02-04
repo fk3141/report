@@ -1,5 +1,5 @@
 # Fdb version 3
-["lualatex"] 1770088135 "/Users/kashi/report/inorganic_analytical/unit2/radiochem_unit2.tex" "/Users/kashi/report/out/radiochem_unit2.pdf" "radiochem_unit2" 1770088137
+["lualatex"] 1770089055 "/Users/kashi/report/inorganic_analytical/unit2/radiochem_unit2.tex" "/Users/kashi/report/out/radiochem_unit2.pdf" "radiochem_unit2" 1770089057
   "/Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/haranoajigothic-medium.luc" 1754553821 1875292 410c3324c1fe22623b9898970742fdb2 ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/haranoajimincho-regular.luc" 1754553819 1961805 a4e8ee39345c1319a0076bad6921f9ae ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/lmmono9-regular.luc" 1754553819 81875 9e8265965c5b4584efdeff727dbbed59 ""
@@ -28,8 +28,8 @@
   "/Users/kashi/Library/texlive/2022/texmf-var/luatexja/ltj-cid-auto-adobe-japan1.luc" 1754553817 1643631 91cfe6be2985e96c1aa98a60c52fbe03 ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatexja/ltj-jisx0208.luc" 1754553819 93919 1f6dc76354e6e3b148c06f9f9254f22e ""
   "/Users/kashi/Library/texlive/2022/texmf-var/luatexja/ltj-kinsoku_default.luc" 1754553817 17710 2bc89a84ede82dabd46ec677aef5f865 ""
-  "/Users/kashi/report/inorganic_analytical/unit2/radiochem_unit2.tex" 1770088133 8800 0f7ab76cddd673459669741f851a6e49 ""
-  "/Users/kashi/report/out/radiochem_unit2.aux" 1770088137 3796 6cb5edd99ba833680371e4d481bd86f0 "lualatex"
+  "/Users/kashi/report/inorganic_analytical/unit2/radiochem_unit2.tex" 1770089055 9371 882d2dd335c6fe711c9e250bb3d23838 ""
+  "/Users/kashi/report/out/radiochem_unit2.aux" 1770089056 3821 817e558d5509b7fe2a0639e30da240f7 "lualatex"
   "/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf" 1645391598 4689988 4bd9bbfdb9c60b058a20001e71194cb6 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf" 1645391598 6355800 6b1b8c908756db366b95140471b25bc0 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -81,8 +81,10 @@
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy7.tfm" 1136768653 1120 2b3f9b25605010c69bc328bea6ac000f ""
   "/usr/local/texlive/2022/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
+  "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1248133631 32716 08e384dc442464e7285e891af9f45947 ""
   "/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2022/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty" 1576625341 40635 c40361e206be584d448876bba8a64a3b ""
@@ -316,7 +318,7 @@
   "/usr/local/texlive/2022/texmf-dist/tex/platex/jsclasses/jslogo.sty" 1601931076 5585 8e4615c54073c390d14154b29cee89cb ""
   "/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1647878959 4410336 7d30a02e9fa9a16d7d1f8d037ba69641 ""
   "/usr/local/texlive/2022/texmf-var/web2c/luahbtex/lualatex.fmt" 1678257777 4558587 838f6d4fc2e50e2840c760e642192066 ""
-  "radiochem_unit2.tex" 1770088133 8800 0f7ab76cddd673459669741f851a6e49 ""
+  "radiochem_unit2.tex" 1770089055 9371 882d2dd335c6fe711c9e250bb3d23838 ""
   (generated)
   "/Users/kashi/report/out/radiochem_unit2.aux"
   "/Users/kashi/report/out/radiochem_unit2.log"

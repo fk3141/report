@@ -534,6 +534,8 @@ INPUT /Users/kashi/Library/texlive/2022/texmf-var/luatexja/extra_lmroman5-regula
 INPUT /Users/kashi/Library/texlive/2022/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc
 INPUT /Users/kashi/Library/texlive/2022/texmf-var/luatexja/extra_lmsans10-regular.luc
 INPUT /Users/kashi/report/out/radiochem_unit2.aux
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
+INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT /usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb
