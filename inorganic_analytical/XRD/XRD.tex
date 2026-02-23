@@ -1,0 +1,361 @@
+\documentclass{ltjsarticle}
+%%%package読み込み
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{bm}
+% \usepackage{tikz} % ★消去: 代わりに graphicx 追加
+% \usetikzlibrary{cd}
+\usepackage{url}
+\usepackage{graphicx} % ★追加: 図を挿入するため
+\usepackage{float} % ★追加: 図の位置を制御するため
+\usepackage{caption} % ★追加: 図のキャプションを柔軟に扱うため
+%\usepackage{xcolor}
+\usepackage{ascmac}
+\usepackage{tcolorbox}
+%\usepackage[dvipdfmx, setpagesize=false, bookmarks=true, bookmarksdepth=tocdepth, bookmarksnumbered=true, colorlinks=true, linkcolor=red]
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{multirow}
+\usepackage[version=4]{mhchem}
+\usepackage{braket} % 追加した
+\usepackage{booktabs}
+\usepackage{bookmark}
+\usepackage{caption}
+%\usepackage[textwidth=45zw,lines=44]{geometry}
+%\usepackage{pxjahyper}
+%%%黒板太字
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+%%%約物
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lr}[1]{\left(#1\right)}
+\newcommand{\st}{\; \mathrm{s.t.}\; }
+\newcommand{\Ae}{\textrm{-a.e.}} 
+%%%繰り返し
+\newcommand{\pluss}[3]{#1_{#2}+\cdots+#1_{#3}}
+\newcommand{\minuss}[3]{#1_{#2}-\cdots-#1_{#3}}
+\newcommand{\timess}[3]{#1_{#2}\times\cdots\times #1_{#3}}
+\newcommand{\leqs}[3]{#1_{#2}\leq\cdots\leq #1_{#3}}
+\newcommand{\geqs}[3]{#1_{#2}\geq\cdots\geq #1_{#3}}
+\newcommand{\opluss}[3]{#1_{#2}\oplus\cdots\oplus #1_{#3}}
+\newcommand{\otimess}[3]{#1_{#2}\otimes\cdots\otimes #1_{#3}}
+\newcommand{\commas}[3]{#1_{#2},\ldots,#1_{#3}}
+%%%微分
+\newcommand{\dx}[1]{\mathrm{d}#1}
+\newcommand{\ddx}[1]{\frac{\mathrm{d}}{\mathrm{d}#1}}
+\newcommand{\dydx}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\dydxn}[3]{\frac{\mathrm{d}^{#3}#1}{\mathrm{d}#2^{#3}}}
+\newcommand{\del}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\dell}[2]{\frac{\partial^2#1}{{\partial#2}^2}}
+\newcommand{\deln}[3]{\frac{\partial^{#3}#1}{{\partial#2}^{#3}}}
+%%%
+%%%演算子
+%log type
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Det}{Det}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\corank}{corank}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\Coker}{Coker}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\arcsech}{arcsech}
+\DeclareMathOperator{\arccsch}{arccsch}
+\DeclareMathOperator{\arccoth}{arccoth}
+\DeclareMathOperator{\grad}{grad}
+\let\div\relax
+\DeclareMathOperator{\div}{div}
+\DeclareMathOperator{\rot}{rot}
+%\DeclareMathOperator{\GL}{GL} % ★消去 : ここから↓
+%\DeclareMathOperator{\SL}{SL}
+%\DeclareMathOperator{\Sym}{Sym}
+%\DeclareMathOperator{\Aut}{Aut}
+%\DeclareMathOperator{\Inn}{Inn}
+%\DeclareMathOperator{\Out}{Out}
+%\DeclareMathOperator{\id}{id}
+%\DeclareMathOperator{\pr}{pr}
+%\DeclareMathOperator{\supp}{supp}
+%\DeclareMathOperator{\diam}{diam}
+%\DeclareMathOperator{\End}{End}
+%\DeclareMathOperator{\Cl}{Cl}
+%\DeclareMathOperator{\Hom}{Hom} % ★消去 : ここまで↑
+%limit type
+\DeclareMathOperator*{\argmin}{arg~min}
+\DeclareMathOperator*{\argmax}{arg~max}
+%%%
+%%%定理
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{lem}{補題}
+\newtheorem*{lem*}{補題}
+\newtheorem{prf}{証明}
+\newtheorem*{prf*}{証明}
+\newtheorem*{ex*}{Example}
+\newtheorem*{rem*}{Remark}
+\newenvironment{prb}[1]%
+{\begin{itembox}[l]{\textbf{問題 #1}}}%
+{\end{itembox}}
+\newenvironment{sol}[2]%
+{\setcounter{lem}{0}
+\setcounter{prf}{0}
+\par\noindent\textbf{解答 #1} (#2)\par}%
+{\par\normalfont}
+
+\renewcommand{\refname}{Reference}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{boxeddefcounter}
+\newenvironment{problem}
+{\refstepcounter{boxeddefcounter}\begin{itembox}[l]{問\theboxeddefcounter}}
+{\end{itembox}}
+
+%\usepackage[hang,small,bf]{caption}
+%\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{compatibility=false}
+
+
+\newcommand{\D}{^\circ\text{C}}
+\newcommand{\ka}{\textasciitilde}
+
+
+\pagestyle{myheadings}
+\title{Inorganic and Analytical experiment XRD}
+\date{\today}
+\author{Author: No.7 05253011 Fumiya Kashiwai / 柏井史哉}
+\begin{document}
+\maketitle
+\markboth{Inorganic and Analytical experiment XRD  No.7 05253011 Fumiya Kashiwai / 柏井史哉} {Inorganic and Analytical experiment XRD   No.7 05253011 Fumiya Kashiwai / 柏井史哉}
+%%ここまでタイトル
+
+\newpage
+\section{Purpose}
+酸化チタン(IV)（\ce{TiO2}​）の多形であるルチル（Rutile）相とアナターゼ（Anatase）相の混合試料について、粉末X線回折（XRD）測定を行う。得られた回折パターンのピーク強度を解析し、用いたRutile試料中に微量に不純物として含まれる、Anataseの割合を定量分析する。
+
+\section{Experimental}
+\begin{enumerate}
+    \item RutileとAnataseを、表\ref{sosei}の割合で混合した試料を、ガラス板に薄く広げた。
+    \item 混合試料については、メノウ乳鉢上でアセトンを用いて均一になるまで粉砕した。
+    \item $2\theta = 20-60°$, 0.01°ステップ、 10°/minでXRD測定を行った。
+    \item Rutileの(101)、Anataseの(110)面に由来するピークについて、バックグラウンド除去後のピーク面積を算出し、Rutile試料に含まれるAnatase割合を算出した。
+\end{enumerate}
+
+\begin{table}[htbp]
+  \centering
+  \caption{各試料の組成: $\alpha$はRutile試料の割合を示す。}
+  \label{sosei}
+  \begin{tabular}{@{}lSSS@{}}
+    \toprule
+    ID & {Rutile (\si{g})} & {Anatase (\si{g})} & {$\alpha$} \\
+    \midrule
+    A & {--}   & {--}   & 1 \\
+    B & {--}   & {--}   & 0 \\
+    C & 0.1976 & 0.8059 & 0.197 \\
+    D & 0.4    & 0.5986 & 0.401 \\
+    E & 0.6008 & 0.4014 & 0.599 \\
+    F & 0.7978 & 0.2    & 0.800 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+
+\section{Results}
+図\ref{XRD}に示した。
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]
+{data_plot.png}
+\caption{XRD測定結果}
+\label{XRD}
+\end{center}
+\end{figure}
+
+\newpage
+\section{Discussion}
+
+\subsection{課題1}
+RutileとAnataseについて、結晶型や空間群を表\ref{crystal}に示した。ともにTetragonalであり、空間群が異なる。
+
+\begin{table}[htbp]
+  \centering
+  \caption{結晶型、空間群、$Z$は単位結晶ない}
+  \label{crystal}
+  \begin{tabular}{@{}lllll@{}}
+    \toprule
+    Phase & \begin{tabular}[t]{@{}l@{}}Crystal System / \\ Space Group\end{tabular} & Lattice Parameters & $Z$ & Atomic Coordinates \\
+    \midrule
+    \multirow{3}{*}{Rutile} & Tetragonal & $a = \qty{4.594}{\angstrom}$ & \multirow{3}{*}{2} & Ti ($2a$): $(0, 0, 0)$ \\
+     & $P4_2/mnm$ & $c = \qty{2.959}{\angstrom}$ & & O ($4f$): $(u, u, 0)$ \\
+     & (No. 136) & & & $u\sim 0.305$\\
+    \midrule
+    \multirow{3}{*}{Anatase} & Tetragonal & $a = \qty{3.785}{\angstrom}$ & \multirow{3}{*}{4} & Ti ($4a$): $(0, 0, 0)$ \\
+     & $I4_1/amd$ & $c = \qty{9.514}{\angstrom}$ & & O ($8e$): $(0, 0, u)$ \\
+     & (No. 141) & & & $u\sim 0.208$\\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\newpage
+\subsection{課題2}
+結晶の密度 $\rho$ ($\text{g/cm}^3$) は、単位格子体積 $V$ ($\text{\AA}^3$)、単位格子中の化学単位数 $Z$、モル質量 $M$ ($\text{g/mol}$)、およびアボガドロ定数 $N_A$ ($\text{mol}^{-1}$) を用いて以下の式で求められる。
+
+\begin{equation}
+\rho = \frac{Z \times M}{N_A \times V \times 10^{-24}}
+\end{equation}
+
+ここで、$\text{TiO}_2$ のモル質量 $M$ は、
+\[
+M = 79.865 \, \text{g/mol}
+\]
+また、アボガドロ定数 $N_A \approx 6.022 \times 10^{23} \, \text{mol}^{-1}$ 
+
+\paragraph{1. Rutile (ルチル)}
+(i)で得られた結晶学的情報より、格子定数 $a = 4.594 \, \text{\AA}$、$c = 2.959 \, \text{\AA}$、 $Z = 2$ とする。
+単位格子体積 $V_R$ は次のように計算される。
+\[
+V_R = a^2 c = (4.594)^2 \times 2.959 \approx 62.45 \, \text{\AA}^3
+\]
+したがって、密度 $\rho_R$ は、
+\begin{align}
+\rho_R &= \frac{2 \times 79.865}{6.022 \times 10^{23} \times 62.45 \times 10^{-24}} \notag\\
+&\approx 4.25 \, \text{g/cm}^3
+\end{align}
+となる。
+
+\paragraph{2. Anatase (アナターゼ)}
+同様に、格子定数 $a = 3.785 \, \text{\AA}$、$c = 9.514 \, \text{\AA}$、$Z = 4$ とする。
+単位格子体積 $V_A$ は次のように計算される。
+\[
+V_A = a^2 c = (3.785)^2 \times 9.514 \approx 136.31 \, \text{\AA}^3
+\]
+したがって、密度 $\rho_A$ は、
+\begin{align}
+\rho_A &= \frac{4 \times 79.865}{6.022 \times 10^{23} \times 136.31 \times 10^{-24}} \notag\\
+&\approx 3.89 \, \text{g/cm}^3
+\end{align}
+となる。
+
+\subsection{課題3}
+Rutile 試薬中に含まれる Anatase の質量分率（不純物濃度）を $x$ とし、混合試薬中の Rutile 試薬の質量分率（添加率）を $\alpha$ とする。なお、Anatase相にはRutileが含まれないものとする。
+
+Rutile 相の質量分率 ($w_{\text{rutile}}$):
+\begin{equation}
+w_{\text{rutile}} = \alpha (1 - x)
+\end{equation}
+となる。
+
+Anatase 相の質量分率 ($w_{\text{anatase}}$):
+\begin{align}
+w_{\text{anatase}} &= (1 - \alpha) + \alpha x 
+= 1 - \alpha + \alpha x 
+= 1 - \alpha (1 - x)
+\end{align}
+となる。
+
+以上より、混合物中の各相の質量分率は $\alpha$ と $x$ を用いて次のように表される。
+\begin{equation}
+\begin{cases}
+w_{\text{rutile}} &= \alpha (1 - x) \\
+w_{\text{anatase}} &= 1 - \alpha (1 - x)
+\end{cases}
+\end{equation}
+
+\subsection{課題4}
+図2のように、それぞれの結晶に対する面指数が帰属される。特に吸収が大きい、Anataseの(101)、Rutileの(110)に対応する反射を用いることで、精度良く解析ができると考えられる。さらに、他のピークと重なっておらず、面積が正確に求められると期待される。そのため、これらのピークを用いる。
+
+\begin{figure}[htbp]
+\label{xrd_attribute}
+ \begin{minipage}[b]{0.5\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{Anatase_xrd.png}
+ \end{minipage}
+ \begin{minipage}[b]{0.5\linewidth}
+  \centering
+  \includegraphics[keepaspectratio, scale=0.3]{Rutile_xrd.png}
+ \end{minipage}
+ \caption{左:Anatase、右: Ruliteの吸収ピークと面指数との対応}
+\end{figure}
+
+\subsection{課題5}
+ピーク強度を、台形近似により計算した。
+なお、理由は不明だがAのみ4サンプルのデータがあるため、すべてのデータを用いた。
+\begin{table}[htbp]
+  \centering
+  \caption{各試料のAnatase,Rutileの吸収ピークの面積}
+  \label{tab:intensity_stats}
+  \begin{tabular}{@{}lccc@{}}
+    \toprule
+    Condition & Sample Size ($N$) & \begin{tabular}[c]{@{}c@{}}$I_{\text{A}}$(Mean $\pm$ SD)\end{tabular} & \begin{tabular}[c]{@{}c@{}}$I_{\text{R}}$ (Mean $\pm$ SD)\end{tabular} \\
+    \midrule
+    A & 4 & $418.0 \pm 57.7$     & $21118.7 \pm 763.5$ \\
+    B & 3 & $24409.7 \pm 3920.8$ & $88.2 \pm 18.4$ \\
+    C & 3 & $22125.9 \pm 1171.8$ & $4044.8 \pm 124.3$ \\
+    D & 3 & $18104.5 \pm 618.3$  & $8653.0 \pm 63.4$ \\
+    E & 3 & $11370.0 \pm 928.0$  & $12278.7 \pm 1087.8$ \\
+    F & 3 & $5534.0 \pm 321.9$   & $14834.0 \pm 666.1$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{課題6}
+課題3より、次の理論式が成立する。
+\begin{equation}
+    \frac{I_{\text{R}}}{I_{\text{A}}} = K\frac{w_{\text{R}}}{w_{\text{A}}} = K\frac{1-\alpha(1-x)}{\alpha(1-x)} = \frac{K}{1-x}\frac{1}{\alpha} -K
+\end{equation}
+ただし、$K$は定数。
+これより、
+$\frac{I_{\text{R}}}{I_{\text{A}}}$に対して$\frac{1}{\alpha}$をプロットした傾きおよび切片によって、不純物の割合$x$を決定する。図\ref{prb6}に示したプロットにより、傾き1.3363、切片-1.2961である($R^2 = 0.999$)。よって
+\begin{equation}
+   x = 1 + (\text{切片}/\text{傾き}) = 0.0300
+\end{equation}
+より、不純物濃度は3\% 程度と計算された。
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width = 15 cm]
+{problem6.png}
+\caption{不純物濃度決定のためのプロット}
+\label{prb6}
+\end{center}
+\end{figure}
+
+\begin{thebibliography}{99}
+\bibitem{Rutile}
+Materials Project. (2020). Materials Data for TiO2 (mp-2657) [データセット]. \url{https://doi.org/10.17188/1184648}
+\bibitem{Anatase}
+Materials Project. (2020). Materials Data for TiO2 (mp-390) [データセット]. \url{https://doi.org/10.17188/1207597}
+\end{thebibliography}
+
+
+\end{document}

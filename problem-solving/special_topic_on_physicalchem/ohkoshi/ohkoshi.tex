@@ -1,0 +1,196 @@
+\documentclass{ltjsarticle}
+%%%package読み込み
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathtools}
+\usepackage{bm}
+% \usepackage{tikz} % ★消去: 代わりに graphicx 追加
+% \usetikzlibrary{cd}
+\usepackage{url}
+\usepackage{graphicx} % ★追加: 図を挿入するため
+\usepackage{float} % ★追加: 図の位置を制御するため
+\usepackage{caption} % ★追加: 図のキャプションを柔軟に扱うため
+%\usepackage{xcolor}
+\usepackage{ascmac}
+\usepackage{tcolorbox}
+%\usepackage[dvipdfmx, setpagesize=false, bookmarks=true, bookmarksdepth=tocdepth, bookmarksnumbered=true, colorlinks=true, linkcolor=red]
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{multirow}
+\usepackage[version=4]{mhchem}
+\usepackage{braket} % 追加した
+\usepackage{booktabs}
+\usepackage{bookmark}
+\usepackage{caption}
+%\usepackage[textwidth=45zw,lines=44]{geometry}
+%\usepackage{pxjahyper}
+%%%黒板太字
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\F}{\mathbb{F}}
+%%%約物
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\lr}[1]{\left(#1\right)}
+\newcommand{\st}{\; \mathrm{s.t.}\; }
+\newcommand{\Ae}{\textrm{-a.e.}} 
+%%%繰り返し
+\newcommand{\pluss}[3]{#1_{#2}+\cdots+#1_{#3}}
+\newcommand{\minuss}[3]{#1_{#2}-\cdots-#1_{#3}}
+\newcommand{\timess}[3]{#1_{#2}\times\cdots\times #1_{#3}}
+\newcommand{\leqs}[3]{#1_{#2}\leq\cdots\leq #1_{#3}}
+\newcommand{\geqs}[3]{#1_{#2}\geq\cdots\geq #1_{#3}}
+\newcommand{\opluss}[3]{#1_{#2}\oplus\cdots\oplus #1_{#3}}
+\newcommand{\otimess}[3]{#1_{#2}\otimes\cdots\otimes #1_{#3}}
+\newcommand{\commas}[3]{#1_{#2},\ldots,#1_{#3}}
+%%%微分
+\newcommand{\dx}[1]{\mathrm{d}#1}
+\newcommand{\ddx}[1]{\frac{\mathrm{d}}{\mathrm{d}#1}}
+\newcommand{\dydx}[2]{\frac{\mathrm{d}#1}{\mathrm{d}#2}}
+\newcommand{\dydxn}[3]{\frac{\mathrm{d}^{#3}#1}{\mathrm{d}#2^{#3}}}
+\newcommand{\del}[2]{\frac{\partial#1}{\partial#2}}
+\newcommand{\dell}[2]{\frac{\partial^2#1}{{\partial#2}^2}}
+\newcommand{\deln}[3]{\frac{\partial^{#3}#1}{{\partial#2}^{#3}}}
+%%%
+%%%演算子
+%log type
+\let\Re\relax
+\DeclareMathOperator{\Re}{Re}
+\let\Im\relax
+\DeclareMathOperator{\Im}{Im}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\sign}{sign}
+\DeclareMathOperator{\Supp}{Supp}
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\Tr}{Tr}
+\DeclareMathOperator{\Det}{Det}
+\DeclareMathOperator{\Log}{Log}
+\DeclareMathOperator{\rank}{rank}
+\DeclareMathOperator{\diag}{diag}
+\DeclareMathOperator{\corank}{corank}
+\DeclareMathOperator{\Res}{Res}
+\DeclareMathOperator{\Ker}{Ker}
+\DeclareMathOperator{\coker}{coker}
+\DeclareMathOperator{\Coker}{Coker}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\sech}{sech}
+\DeclareMathOperator{\csch}{csch}
+\DeclareMathOperator{\arcsec}{arcsec}
+\DeclareMathOperator{\arccot}{arccot}
+\DeclareMathOperator{\arccsc}{arccsc}
+\DeclareMathOperator{\arccosh}{arccosh}
+\DeclareMathOperator{\arcsinh}{arcsinh}
+\DeclareMathOperator{\arctanh}{arctanh}
+\DeclareMathOperator{\arcsech}{arcsech}
+\DeclareMathOperator{\arccsch}{arccsch}
+\DeclareMathOperator{\arccoth}{arccoth}
+\DeclareMathOperator{\grad}{grad}
+\let\div\relax
+\DeclareMathOperator{\div}{div}
+\DeclareMathOperator{\rot}{rot}
+%\DeclareMathOperator{\GL}{GL} % ★消去 : ここから↓
+%\DeclareMathOperator{\SL}{SL}
+%\DeclareMathOperator{\Sym}{Sym}
+%\DeclareMathOperator{\Aut}{Aut}
+%\DeclareMathOperator{\Inn}{Inn}
+%\DeclareMathOperator{\Out}{Out}
+%\DeclareMathOperator{\id}{id}
+%\DeclareMathOperator{\pr}{pr}
+%\DeclareMathOperator{\supp}{supp}
+%\DeclareMathOperator{\diam}{diam}
+%\DeclareMathOperator{\End}{End}
+%\DeclareMathOperator{\Cl}{Cl}
+%\DeclareMathOperator{\Hom}{Hom} % ★消去 : ここまで↑
+%limit type
+\DeclareMathOperator*{\argmin}{arg~min}
+\DeclareMathOperator*{\argmax}{arg~max}
+%%%
+%%%定理
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{lem}{補題}
+\newtheorem*{lem*}{補題}
+\newtheorem{prf}{証明}
+\newtheorem*{prf*}{証明}
+\newtheorem*{ex*}{Example}
+\newtheorem*{rem*}{Remark}
+\newenvironment{prb}[1]%
+{\begin{itembox}[l]{\textbf{問題 #1}}}%
+{\end{itembox}}
+\newenvironment{sol}[2]%
+{\setcounter{lem}{0}
+\setcounter{prf}{0}
+\par\noindent\textbf{解答 #1} (#2)\par}%
+{\par\normalfont}
+
+\renewcommand{\refname}{Reference}
+
+
+%%%%%%%%%%%%%%%%%%%%%
+\numberwithin{equation}{section}
+%%%%%%%%%%%%%%%%%%%%%%
+
+\newcounter{boxeddefcounter}
+\newenvironment{problem}
+{\refstepcounter{boxeddefcounter}\begin{itembox}[l]{問\theboxeddefcounter}}
+{\end{itembox}}
+
+%\usepackage[hang,small,bf]{caption}
+%\usepackage[subrefformat=parens]{subcaption}
+\captionsetup{compatibility=false}
+
+
+\newcommand{\D}{^\circ\text{C}}
+\newcommand{\ka}{\textasciitilde}
+
+
+\pagestyle{myheadings}
+\title{Special topics on physical chemistry (Ohkoshi lab)}
+\date{\today}
+\author{Author: No.7 05253011 Fumiya Kashiwai / 柏井史哉}
+\begin{document}
+\maketitle
+\markboth{Special topics on physical chemistry (Ohkoshi lab) 05253011 Fumiya Kashiwai / 柏井史哉} {Special topics on physical chemistry (Ohkoshi lab) 05253011 Fumiya Kashiwai / 柏井史哉}
+%%ここまでタイトル
+\section*{圧力応答性の蓄熱材料について}
+講義で紹介された$\lambda-\ce{Ti3O5}$の圧力応答性の蓄熱特性や、関連する蓄熱材料についてまとめる。
+
+\paragraph{蓄熱材料に対する社会的要請}
+全世界において、1次エネルギーの排熱の約半分は200$\D$以下の低品位熱として捨てられている。低品位熱は他のエネルギーへの変換が困難であり、この領域の熱の活用に関する技術が求められている\cite{low-grade}。
+
+\paragraph{$\lambda-\ce{Ti3O5}$について}
+$\lambda-\ce{Ti3O5}$と$\beta-\ce{Ti3O5}$の多型が存在し、高温で$\lambda$相、低温で$\beta$相が安定相である(相転移温度は190$\D$程度)。しかしながら、ナノ粒子状の\ce{Ti3O5}では、高温下から温度を下げると、$\lambda$相が半永久的な準安定相となる。ところが、高圧 (概ね60 GPa以上程度)をかけると、$\beta$相に相転移し、エネルギーを放出する。このため、200$\D$程度の熱を蓄える材料として用いることができる。すなわち、熱を結晶の化学エネルギーの形で蓄え、望むときに圧力をかけることで取り出すことができると期待できる。
+
+\paragraph{物理化学的な特性}
+バルクの\ce{Ti3O5}では、温度変化に伴う相転移が、エネルギー障壁なく生じる。しかしながら、ナノ粒子状の\ce{Ti3O5}では、低温領域(< 500 K)においてはエネルギー障壁が生じる。これは、Slichter-Drickamer Model(SD model)における、相互作用パラメータが大きくなってヒステリシスが生じる場合に相当する。このため、$\lambda$相が低温でも準安定相になる\cite{heat}。
+
+\paragraph{その他の圧力応答性蓄熱材料}
+結晶-柔粘性結晶の相転移に関わるエントロピー変化を利用する、Barocaloric材料についても研究が行われている。ネオペンチルグリコール(GPG: \ce{C5H12O2} )では、圧力印加下では分子の回転が制限されるた結晶化し、低圧下では分子位置は規定されているものの、配向は自由に回転可能な
+柔粘性結晶相をとることが報告されている\cite{barocaloric}。この原理により、数十K GPa$^{-1}$の温度の圧力応答性が報告されている。
+
+また、Flexibleなリンカー構造を有するある種のMOF(金属-有機構造体)においては、圧力印加により構造変化し、ガス吸着の様子がヒステリシスに変わることが報告されている\cite{mof}。ゲスト分子の、MOFヘの出入りに伴うエントロピー変化を圧力により制御することによって、機械的なエネルギーを熱として蓄える、あるいはその逆を行うことが可能であると期待される。
+
+\paragraph{$\lambda-\ce{Ti3O5}$の利点}
+これらの他の機構と比較して、$\lambda-\ce{Ti3O5}$は
+比較的単純な組成の金属酸化物であるため合成が安価、また、他の原子のドーピングの検討が容易、などの利点があると考えられる。また、他の手法は軒並みGPaオーダーでのエネルギー貯蔵に関する文献であるのに対し、$\lambda-\ce{Ti3O5}$では数10~100 MPaでのエネルギー貯蔵が可能である点が突出する。さらに、半永久的に貯蔵が可能である点も挙げられる。
+
+\begin{thebibliography}{99}
+\bibitem{low-grade}
+ouhara, H., Khniefeh, N., Almahmoud, T., Delpech, B., Chauhan, A., \& Tassou, S. A. (2018). Waste heat recovery technologies and applications. Thermal Science and Engineering Progress, 6, 268-289. 
+\bibitem{heat}
+Ohkoshi, S. et al., "Heat-storage ceramics of $\lambda-\ce{Ti3O5}$	
+ ," Nature Chemistry, 2, 539-544 (2010).
+\bibitem{barocaloric}
+Lloveras, P. et al., "Giant barocaloric effect at low pressure in ferrielectric ammonium sulphate," Nature Communications, 6, 8801 (2015).
+\bibitem{mof}
+Férey, G. and Serre, C., "Large breathing effects in three-dimensional porous hybrid matter," Chemical Society Reviews, 38, 1380-1399 (2009).
+\end{thebibliography}
+
+
+
+\end{document}

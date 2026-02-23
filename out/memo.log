@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  5 JAN 2026 23:16
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  17 FEB 2026 11:23
  restricted system commands enabled.
  file:line:error style messages enabled.
 **/Users/kashi/report/problem-solving/memo.tex
@@ -980,12 +980,12 @@ Here is how much of LuaTeX's memory you used:
  125244,794899 words of node,token memory allocated
  11120 words of node memory still in use:
    11 hlist, 2 vlist, 5 rule, 2 glue, 186 kern, 2 sub_mlist, 1 glyph, 4485 attribute, 79 glue_spec, 236 attribute_list, 2 write, 23 user_defined nodes
-   avail lists: 1:25,2:2614,3:40,4:116,5:82,6:3,7:319,8:38,9:285
+   avail lists: 1:25,2:2614,3:40,4:116,5:82,6:3,7:322,8:39,9:285
  45519 multiletter control sequences out of 65536+600000
  54 fonts using 29447079 bytes
  114i,13n,115p,1798b,339s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on memo.pdf (1 page, 53126 bytes).
+Output written on memo.pdf (1 page, 53391 bytes).
 
 PDF statistics: 48 PDF objects out of 1000 (max. 8388607)
  35 compressed objects within 1 object stream

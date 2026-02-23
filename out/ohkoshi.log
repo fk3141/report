@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  17 FEB 2026 11:22
+This is LuaHBTeX, Version 1.15.0 (TeX Live 2022)  (format=lualatex 2023.3.8)  6 FEB 2026 01:01
  restricted system commands enabled.
  file:line:error style messages enabled.
-**/Users/kashi/report/problem-solving/ishizaki.tex
-(/Users/kashi/report/problem-solving/ishizaki.tex
+**/Users/kashi/report/problem-solving/special_topic_on_physicalchem/ohkoshi/ohkoshi.tex
+(/Users/kashi/report/problem-solving/special_topic_on_physicalchem/ohkoshi/ohkoshi.tex
 LaTeX2e <2021-11-15> patch level 1
 Lua module: luaotfload 2022-03-18 3.21 Lua based OpenType font support
 Lua module: lualibs 2021-05-20 2.74 ConTeXt Lua standard libraries.
@@ -803,124 +803,165 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
 \Hy@SectionHShift=\skip57
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/mhchem/mhchem.sty
-Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen296
+\lightrulewidth=\dimen297
+\cmidrulewidth=\dimen298
+\belowrulesep=\dimen299
+\belowbottomsep=\dimen300
+\aboverulesep=\dimen301
+\abovetopsep=\dimen302
+\cmidrulesep=\dimen303
+\cmidrulekern=\dimen304
+\defaultaddspace=\dimen305
+\@cmidla=\count318
+\@cmidlb=\count319
+\@aboverulesep=\dimen306
+\@belowrulesep=\dimen307
+\@thisruleclass=\count320
+\@lastruleclass=\count321
+\@thisrulewidth=\dimen308
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2022-02-15 v3.0.49 A comprehensive (SI) units package
+\l__siunitx_angle_tmp_dim=\dimen309
+\l__siunitx_angle_marker_box=\box98
+\l__siunitx_angle_unit_box=\box99
+\l__siunitx_compound_count_int=\count322
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations.sty
+Package: translations 2022/02/05 v1.12 internationalization of LaTeX2e packages (CN)
+)
+\l__siunitx_number_exponent_fixed_int=\count323
+\l__siunitx_number_min_decimal_int=\count324
+\l__siunitx_number_min_integer_int=\count325
+\l__siunitx_number_round_precision_int=\count326
+\l__siunitx_number_group_minimum_int=\count327
+\l__siunitx_table_tmp_box=\box100
+\l__siunitx_table_tmp_dim=\dimen310
+\l__siunitx_table_column_width_dim=\dimen311
+\l__siunitx_table_integer_box=\box101
+\l__siunitx_table_decimal_box=\box102
+\l__siunitx_table_before_box=\box103
+\l__siunitx_table_after_box=\box104
+\l__siunitx_table_before_dim=\dimen312
+\l__siunitx_table_carry_dim=\dimen313
+\l__siunitx_unit_tmp_int=\count328
+\l__siunitx_unit_position_int=\count329
+\l__siunitx_unit_total_int=\count330
  (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2022-01-12 LaTeX2e option processing using LaTeX3 keys
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/chemgreek/chemgreek.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/tools/array.sty
+Package: array 2021/10/04 v2.5f Tabular extension package (FMi)
+\col@sep=\dimen314
+\ar@mcellbox=\box105
+\extrarowheight=\dimen315
+\NC@list=\toks46
+\extratabsurround=\skip58
+\backup@length=\skip59
+\ar@cellbox=\box106
+)) (/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-siunitx.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip60
+\multirow@cntb=\count331
+\multirow@dima=\skip61
+\bigstrutjot=\dimen316
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/mhchem/mhchem.sty
+Package: mhchem 2021/12/31 v4.09 for typesetting chemical formulae
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/chemgreek/chemgreek.sty (/usr/local/texlive/2022/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2022-01-12 L3 Experimental document command parser
 )
 Package: chemgreek 2020/01/16 v1.1a interface for upright Greek letters for use in chemistry (CN)
-\l__chemgreek_tmpa_int=\count318
-\g__chemgreek_tmpa_int=\count319
+\l__chemgreek_tmpa_int=\count332
+\g__chemgreek_tmpa_int=\count333
 )
-\l__mhchem_ce_distanceFromLastComma_int=\count320
-\__mhchem_arrow_extPgfLength_skip=\skip58
-\mhchem@minispace@tmp=\skip59
-\mhchem@minibackspace@tmp=\skip60
-\mhchem@bondwidth=\skip61
-\mhchem@bondheight=\skip62
-\mhchem@smallbondwidth@tmpA=\skip63
-\mhchem@smallbondwidth@tmpB=\skip64
-\mhchem@smallbondwidth=\skip65
-\mhchem@bondtmp@minussidebearingleft=\skip66
-\mhchem@bondtmp@minussidebearingright=\skip67
-\l__mhchem_option_version_int=\count321
-\mhchem@option@minusmathsidebearingleft=\dimen296
-\mhchem@option@minusmathsidebearingright=\dimen297
-\mhchem@option@minustextsidebearingleft=\dimen298
-\mhchem@option@minustextsidebearingright=\dimen299
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen300
-\lightrulewidth=\dimen301
-\cmidrulewidth=\dimen302
-\belowrulesep=\dimen303
-\belowbottomsep=\dimen304
-\aboverulesep=\dimen305
-\abovetopsep=\dimen306
-\cmidrulesep=\dimen307
-\cmidrulekern=\dimen308
-\defaultaddspace=\dimen309
-\@cmidla=\count322
-\@cmidlb=\count323
-\@aboverulesep=\dimen310
-\@belowrulesep=\dimen311
-\@thisruleclass=\count324
-\@lastruleclass=\count325
-\@thisrulewidth=\dimen312
-) (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bookmark.sty
+\l__mhchem_ce_distanceFromLastComma_int=\count334
+\__mhchem_arrow_extPgfLength_skip=\skip62
+\mhchem@minispace@tmp=\skip63
+\mhchem@minibackspace@tmp=\skip64
+\mhchem@bondwidth=\skip65
+\mhchem@bondheight=\skip66
+\mhchem@smallbondwidth@tmpA=\skip67
+\mhchem@smallbondwidth@tmpB=\skip68
+\mhchem@smallbondwidth=\skip69
+\mhchem@bondtmp@minussidebearingleft=\skip70
+\mhchem@bondtmp@minussidebearingright=\skip71
+\l__mhchem_option_version_int=\count335
+\mhchem@option@minusmathsidebearingleft=\dimen317
+\mhchem@option@minusmathsidebearingright=\dimen318
+\mhchem@option@minustextsidebearingleft=\dimen319
+\mhchem@option@minustextsidebearingright=\dimen320
+) (/usr/local/texlive/2022/texmf-dist/tex/latex/braket/braket.sty) (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
  (/usr/local/texlive/2022/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
-\BKM@id=\count326
+\BKM@id=\count336
 )) (/usr/local/texlive/2022/texmf-dist/tex/latex/amscls/amsthm.sty
 Package: amsthm 2020/05/29 v2.20.6
-\thm@style=\toks46
-\thm@bodyfont=\toks47
-\thm@headfont=\toks48
-\thm@notefont=\toks49
-\thm@headpunct=\toks50
-\thm@preskip=\skip68
-\thm@postskip=\skip69
-\thm@headsep=\skip70
-\dth@everypar=\toks51
+\thm@style=\toks47
+\thm@bodyfont=\toks48
+\thm@headfont=\toks49
+\thm@notefont=\toks50
+\thm@headpunct=\toks51
+\thm@preskip=\skip72
+\thm@postskip=\skip73
+\thm@headsep=\skip74
+\dth@everypar=\toks52
 )
-\c@lem=\count327
-\c@prf=\count328
-\c@boxeddefcounter=\count329
- (/usr/local/texlive/2022/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2022/01/07 v1.5 Sub-captions (AR)
-\c@subfigure=\count330
-\c@subtable=\count331
-) (/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-tascmac.sty
+\c@lem=\count337
+\c@prf=\count338
+\c@boxeddefcounter=\count339
+ (/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-tascmac.sty
 Package: lltjp-tascmac 2020/12/24 Patch to (t)ascmac for LuaTeX-ja
 {/usr/local/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 warning  (map file): entry for 'ascgrp' already exists, duplicates ignored
-) (/Users/kashi/report/out/ishizaki.aux)
-\openout1 = ishizaki.aux
+) (/usr/local/texlive/2022/texmf-dist/tex/luatex/luatexja/patches/lltjp-array.sty
+Package: lltjp-array 2019-07-18 Patch to array for LuaTeX-ja
+)
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 156.
+ (/Users/kashi/report/out/ohkoshi.aux)
+\openout1 = ohkoshi.aux
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 152.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 152.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 156.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 156.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 152.
-LaTeX Font Info:    ... okay on input line 152.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for JY3/mc/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for JT3/mc/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 156.
+LaTeX Font Info:    ... okay on input line 156.
  (/usr/local/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count332
-\scratchdimen=\dimen313
-\scratchbox=\box98
-\nofMPsegments=\count333
-\nofMParguments=\count334
-\everyMPshowfont=\toks52
-\MPscratchCnt=\count335
-\MPscratchDim=\dimen314
-\MPnumerator=\count336
-\makeMPintoPDFobject=\count337
-\everyMPtoPDFconversion=\toks53
+\scratchcounter=\count340
+\scratchdimen=\dimen321
+\scratchbox=\box107
+\nofMPsegments=\count341
+\nofMParguments=\count342
+\everyMPshowfont=\toks53
+\MPscratchCnt=\count343
+\MPscratchDim=\dimen322
+\MPnumerator=\count344
+\makeMPintoPDFobject=\count345
+\everyMPtoPDFconversion=\toks54
 ) (/usr/local/texlive/2022/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
@@ -930,7 +971,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 152.
+Package hyperref Info: Link coloring OFF on input line 156.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (/usr/local/texlive/2022/texmf-dist/tex/latex/refcount/refcount.sty
@@ -938,119 +979,99 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (/usr/local/texlive/2022/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count338
+\c@section@level=\count346
 )
-LaTeX Info: Redefining \ref on input line 152.
-LaTeX Info: Redefining \pageref on input line 152.
-LaTeX Info: Redefining \nameref on input line 152.
+LaTeX Info: Redefining \ref on input line 156.
+LaTeX Info: Redefining \pageref on input line 156.
+LaTeX Info: Redefining \nameref on input line 156.
+ (/usr/local/texlive/2022/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
+File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
+)
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 156.
 
-Package chemgreek Info: Activating mapping `default' on line 152.
+Package chemgreek Info: Activating mapping `default' on line 156.
 
 (load cache: extra_lmroman17-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 154.
+(Font)              scaled to size 15.97903pt on input line 158.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 15.97903pt on input line 154.
+(Font)              scaled to size 15.97903pt on input line 158.
 (load cache: extra_lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 158.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 158.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 154.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 154.
+(Font)              scaled to size 5.54828pt on input line 158.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 158.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 154.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 158.
  (/usr/local/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 11.09656pt on input line 154.
+(Font)              scaled to size 11.09656pt on input line 158.
 (load cache: extra_haranoajigothic-medium.luc)
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 7.3977pt on input line 154.
+(Font)              scaled to size 7.3977pt on input line 158.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 154.
+(Font)              scaled to size 5.54828pt on input line 158.
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
+(Font)              scaled to size 13.31586pt on input line 160.
 LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
+(Font)              scaled to size 13.31586pt on input line 160.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
+(Font)              scaled to size 13.31586pt on input line 160.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 13.31586pt on input line 157.
-(load cache: extra_lmsans12-regular.luc)(load cache: extra_lmsans17-regular.luc)
+(Font)              scaled to size 13.31586pt on input line 160.
+(load cache: extra_lmsans12-regular.luc)
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 161.
+LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 161.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 9.24713pt on input line 161.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 6.47299pt on input line 161.
+LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
+(Font)              scaled to size 4.62357pt on input line 161.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 157.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 19.17854pt on input line 157.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 164.
-LaTeX Font Info:    Font shape `JY3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 164.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
 (Font)              scaled to size 9.24713pt on input line 164.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 164.
-LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 164.
-(load cache: extra_lmroman7-regular.luc)
+(load cache: extra_lmsans10-regular.luc)(load cache: extra_lmroman7-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 178.
+(Font)              scaled to size 6.47299pt on input line 164.
 (load cache: extra_lmroman5-regular.luc)
 LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 4.62357pt on input line 178.
+(Font)              scaled to size 4.62357pt on input line 164.
 (load cache: extra_lmroman10-bold.luc)
 LaTeX Font Info:    Font shape `JT3/mc/b/n' in size <10> not available
-(Font)              Font shape `JT3/gt/m/n' tried instead on input line 186.
+(Font)              Font shape `JT3/gt/m/n' tried instead on input line 182.
 LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 186.
+(Font)              scaled to size 9.24713pt on input line 182.
 LaTeX Font Info:    Font shape `JY3/mc/b/n' in size <10> not available
-(Font)              Font shape `JY3/gt/m/n' tried instead on input line 186.
+(Font)              Font shape `JY3/gt/m/n' tried instead on input line 182.
 LaTeX Font Info:    Font shape `JY3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 186.
+(Font)              scaled to size 9.24713pt on input line 182.
  [1
 
-](load cache: extra_lmroman6-regular.luc)
-LaTeX Font Info:    Font shape `JT3/mc/m/n' will be
-(Font)              scaled to size 5.54828pt on input line 211.
-(load cache: extra_lmsans10-regular.luc)
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 9.24713pt on input line 228.
-(load cache: extra_lmsans8-regular.luc)
-LaTeX Font Info:    Font shape `JT3/gt/m/n' will be
-(Font)              scaled to size 6.47299pt on input line 228.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 228.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 228.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 228.
-
-[2] [3](load cache: extra_lmmono10-regular.luc) [4] [5] (/Users/kashi/report/out/ishizaki.aux))
+] [2] (/Users/kashi/report/out/ohkoshi.aux))
 
 Here is how much of LuaTeX's memory you used:
- 26025 strings out of 477785
- 195712,794899 words of node,token memory allocated
- 27643 words of node memory still in use:
-   11 hlist, 2 vlist, 5 rule, 3 glue, 444 kern, 1 glyph, 10711 attribute, 477 glue_spec, 553 attribute_list, 2 write, 62 user_defined nodes
-   avail lists: 1:34,2:54233,3:307,4:401,5:217,6:40,7:5046,8:101,9:1813,10:17,11:168
- 45613 multiletter control sequences out of 65536+600000
- 109 fonts using 67041631 bytes
- 114i,15n,115p,1802b,440s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on ishizaki.pdf (5 pages, 232601 bytes).
+ 29367 strings out of 477785
+ 305800,1373583 words of node,token memory allocated
+ 19791 words of node memory still in use:
+   10 hlist, 2 vlist, 5 rule, 2 glue, 355 kern, 1 glyph, 7905 attribute, 210 glue_spec, 407 attribute_list, 2 write, 24 user_defined nodes
+   avail lists: 1:47,2:88581,3:502,4:463,5:174,6:37,7:7971,8:66,9:3760,10:26,11:110
+ 48939 multiletter control sequences out of 65536+600000
+ 95 fonts using 62178399 bytes
+ 114i,9n,115p,1839b,773s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmsans12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiGothic-Medium.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/haranoaji/HaranoAjiMincho-Regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman17-regular.otf></usr/local/texlive/2022/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
+Output written on ohkoshi.pdf (2 pages, 131358 bytes).
 
-PDF statistics: 266 PDF objects out of 1000 (max. 8388607)
- 203 compressed objects within 3 object streams
- 46 named destinations out of 1000 (max. 131072)
- 112 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 112 PDF objects out of 1000 (max. 8388607)
+ 78 compressed objects within 1 object stream
+ 14 named destinations out of 1000 (max. 131072)
+ 16 words of extra memory for PDF output out of 10000 (max. 100000000)
 

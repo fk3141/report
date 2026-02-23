@@ -144,12 +144,77 @@
 \newcommand{\D}{^\circ\text{C}}
 \newcommand{\ka}{\textasciitilde}
 
+
 \pagestyle{myheadings}
+\title{流体力学(今井) 第二章}
+\date{\today}
+\author{理学部化学科 3年 05253011 Fumiya Kashiwai / 柏井史哉}
 \begin{document}
+\maketitle
+\markboth{物理化学特論レポート 理学部化学科3年 05253011 Fumiya Kashiwai / 柏井史哉} {物理化学特論レポート 理学部化学科3年 05253011 Fumiya Kashiwai / 柏井史哉}
+%%ここまでタイトル
+\setcounter{part}{1}
+\part{縮まない流体の渦なし運動}
 
+\setcounter{section}{12}
+ラグランジュの渦定理: 渦に関する保存則
+\begin{itemize}
+    \item 外力が保存力 (ポテンシャル$U$で$ K = \nabla U$ )
+    \item バロトロピー流体 (密度が圧力のみの関数)
+    \item 粘性項なし
+\end{itemize}
+粘性が小さい流体 (粘性項なしで近似できる) における、渦なし運動を記述する。
+
+\section{渦なし運動とラプラースの方程式}
+
+\begin{equation}
+    \bm{v} = \grad{\Phi}
+\end{equation}
+
+オイラーの運動方程式を変形して、外力$F(t)$の下での運動は
+\begin{equation}
+    \del{\Phi}{t} + \frac{1}{2}q^2 + \int \dx{p}\frac{1}{\rho} + \Omega = F(t)
+\end{equation}
+と記述される。\\
+オイラーの連続方程式
+\footnote{
+\begin{equation}
+    \del{\rho}{t}+ \div{(\rho\bm{v})} = 0 \notag 
+\end{equation}
+}
+に代入し、Laplaceの方程式を得る\footnote{電磁気学等で出てくるやつと同一である。電荷が存在しない空間での平衡状態の静電ポテンシャル、熱源が存在しない場合の温度分布など、何らかの供給源がない状態に普遍的に見られる
+}。
 \begin{align}
-    \lim_{N \to \infty} \text{Prob}z_{p}\left[ \left| \lr{\frac{1}{N} \sum_j \hat{f}_j} - \braket{\hat{f}}_p \right| \ge \varepsilon \right] = 0
+    \del{\rho}{t} + \del{}{x} \lr{\rho\del{\Phi}{x}}
+    +
+    \del{}{y} \lr{\rho\del{\Phi}{y}}
+    +
+    \del{}{z} \lr{\rho\del{\Phi}{z}}
+    = 0\\
+    \dell{\Phi}{x}
+    +
+    \dell{\Phi}{y}
+    +
+    \dell{\Phi}{z}
+    = \Delta \Phi = 0
 \end{align}
+ただし、$\rho = const.$を用いた。
 
+実用上では、適当な境界条件を与えてLaplaceの方程式を解き、ポテンシャル$\Phi$を得る。そこから$\bm{v}$、$p$が求められる。
 
+\paragraph{Note: 時間依存性について}
+Laplaceの方程式は時間に陽には依存しないため、過去の歴史によらず状態が定まる。(遠隔作用)
+
+つまり、ある瞬間の境界条件それ自体は時間に依存するが、その時の流れは境界条件から一意に定まる。これは、境界条件の情報が、瞬時に全ての点に伝わることを意味する\footnote{電磁気の遅延ポテンシャルとかとの話につながりますね、と語れるほど電磁気わかってない}。
+
+ただし、圧力には陽に影響する。
+
+\section{ラプラース方程式の簡単な解}
+Laplace方程式を解いていく。まず、線形であることに留意する。つまり任意の解$\Phi_1, \Phi_2$について、一般に$\Phi = a\Phi_1 + b Phi_2$も解となる。
+
+\section{グリーンの公式の流体力学的解釈}
+
+\section{循環、速度ポテンシャル}
+
+\section{流体の運動エネルギー、解の一意性}
 \end{document}
